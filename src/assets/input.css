@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Fuentes desde ./fonts/poppins*/
+@font-face {
+    font-family: 'Poppins-bold';
+    font-style:normal;
+    font-weight: 400;
+    src: url('../assets/fonts/Poppins/Poppins-bold.ttf') format('truetype');
+  }
+
+    @font-face {
+        font-family: 'Poppins-semibold';
+        font-style:normal;
+        font-weight: 400;
+        src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    }
