@@ -16,3 +16,7 @@
         font-weight: 400;
         src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
     }
+
+    body::-webkit-scrollbar{
+      display: none;
+    }

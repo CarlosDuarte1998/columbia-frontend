@@ -2,21 +2,21 @@
 
 </script>
 <template>
-    <div class="section-home">
-        <div class="bg-header">
-            <div class="logo-header">
+    <div class="section-home" >
+        <div class="bg-header" style="overflow-x: hidden;">
+            <div class="logo-header" style="filter: invert(100%);">
                 <img src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia">
             </div>
         </div>
-        <div class="section-intro bg-white flex ">
+        <div class="section-intro bg-white flex  ">
             <div class="w-1/2">
-                <div class="h-max flex items-center text-center">
-                    <h1 class="flex-1">BE THE GOAT</h1>
+                <div class="h-max flex items-center ">
+                    <h1 class="flex-1 text-start">BE THE GOAT</h1>
                 </div>
             </div>
             <div class="w-1/2">
                 <div class="flex-1 flex items-center justify-center text-center ">
-                   <div class=" w-3/4 bg-slate-300 text-start">
+                   <div class=" w-3/4 text-start">
                     Introducing theall-terrain, hyper-grippy Facet™ 75 Mid.
                    </div>
                    <div class=" w-1/4 ">
@@ -71,6 +71,9 @@
     align-items: center;
     height: 100%;
 }
+.section-intro{
+    padding: 0 2%;
+}
 .section-intro > :nth-child(1) h1{
     font-family: 'Poppins-Bold';
     font-size: 4em;
@@ -86,6 +89,13 @@
     transition: all 0.2s ease-in-out;
     text-transform:uppercase;
     font-size: 15px;
+    background-image: url('../assets/img/arrow-black.png');
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position:right 20px center;
+   transform: rotate(-90deg);
 }
-
+.btn-icon-scroll:hover{
+    background-image: url('../assets/img/arrow-white.png');
+}
 </style>
