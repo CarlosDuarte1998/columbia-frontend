@@ -1,9 +1,3 @@
-<template>
-  
-    <button  :class="buttonClass" @click="scrollToSection">{{ buttonText }}</button>
-
-</template>
-
 <script>
 export default {
   props: {
@@ -38,6 +32,13 @@ export default {
   }
 };
 </script>
+<template>
+  
+    <button  :class="buttonClass" @click="scrollToSection">{{ buttonText }}</button>
+  
+</template>
+
+
 
 <style scoped>
 button{
