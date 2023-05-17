@@ -1,5 +1,5 @@
 <script>
-import ButtonScroll from "./ButtonScroll.Vue";
+import ButtonScroll from "./ScrollButton.vue";
 import LogoColumbia from "./LogoColumbia.vue";
 
 export default {

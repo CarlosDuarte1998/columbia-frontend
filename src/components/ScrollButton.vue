@@ -1,18 +1,9 @@
 <script>
 export default {
   props: {
-    buttonText: {
-      type: String,
-      required: true,
-    },
-    buttonColor: {
-      type: String,
-      required: true,
-    },
-    sectionId: {
-      type: String,
-      required: true,
-    },
+    buttonText: String,
+    buttonColor: String,
+    sectionId: String,
   },
   computed: {
     buttonClass() {
@@ -31,7 +22,7 @@ export default {
         });
       }
     },
-  }
+  },
 };
 </script>
 <template>
