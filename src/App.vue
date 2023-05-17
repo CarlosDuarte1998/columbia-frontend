@@ -1,11 +1,15 @@
 <script setup>
-import PageHeader from './components/PageHeader.vue'
-import PageFooter from './components/PageFooter.vue'
+import PageSection1 from './components/PageSection1.vue'
+import PageSection2 from './components/PageSection2.vue'
+import PageSection3 from './components/PageSection3.vue';
+import PageSection4 from './components/PageSection4.vue';
+import PageSection5 from './components/PageSection5.vue';
+import PageSection6 from './components/PageSection6.vue';
 </script>
 
 <template>
-<PageHeader class="mx-auto"/>
-<PageFooter class="container mx-auto px-4"/>
+<PageSection1 class="mx-auto"/>
+<PageSection2 class="mx-auto"/>
 </template>
 
 <style scoped>

@@ -1,0 +1,157 @@
+<script></script>
+<template>
+  <div class="section-home" id="section-1">
+    <div class="bg-header" style="overflow-x: hidden">
+      <div class="logo-header" style="filter: invert(100%)">
+        <img
+          src="../assets/img/logo-Columbia.png"
+          alt=""
+          class="logo-columbia"
+        />
+      </div>
+    </div>
+    <div class="section-intro bg-white lg:flex sm:block">
+      <div class="lg:w-1/2 md:w-full sm:w-full">
+        <div class="h-max flex items-center">
+          <h1 class="flex-1 lg:text-start md:text-center sm:text-center">
+            BE THE GOAT
+          </h1>
+        </div>
+      </div>
+      <div class="lg:w-1/2 md:w-full sm:w-full">
+        <div
+          class="flex-1 lg:flex md:block sm:block items-center justify-center text-center"
+        >
+          <div class="lg:w-3/4 md:3/4 sm:w-full text-start">
+            Introducing theall-terrain, hyper-grippy Facet™ 75 Mid.
+          </div>
+          <div class="lg:w-1/4 md:1/4 sm:w-full sm:mt-3">
+            <a
+              href="#section-2"
+              class="btn-icon-scroll border-black border hover:bg-black hover:text-white"
+              >Scroll Down</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.section-home {
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo-header {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0%;
+  left: 4%;
+}
+
+.bg-header {
+  width: 100%;
+  height: 85%;
+  background-image: url("../assets/img/bg-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.section-intro {
+  width: 100%;
+  height: 15%;
+  top: 0%;
+  left: 0%;
+}
+
+.items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.section-intro {
+  padding: 0 2%;
+}
+
+/*Secciones de intro elementos padres e hijos mobile*/
+.section-intro > :nth-child(1) h1 {
+  font-family: "Poppins-Bold";
+  font-size: 4em;
+  word-spacing: 20px;
+  letter-spacing: 5px;
+}
+.section-intro > :nth-child(2) {
+  font-family: "Poppins-semibold";
+}
+
+.btn-icon-scroll {
+  padding: 10px 40px 10px 10px;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-size: 15px;
+  background-image: url("../assets/img/arrow-black.png");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: right 20px center;
+  transform: rotate(-90deg);
+}
+
+.btn-icon-scroll:hover {
+  background-image: url("../assets/img/arrow-white.png");
+}
+
+/*Pantallas medianas*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bg-header {
+    background-position: center;
+  }
+
+  .items-center {
+    display: flex;
+  }
+}
+
+/*Pantallas mobiles*/
+@media (max-width: 767px) {
+  .bg-header {
+    height: 75%;
+    background-image: url("../assets/img/bg-header-mobile.png");
+    background-position: center;
+  }
+
+  .section-intro {
+    height: 25%;
+  }
+
+  .section-intro > :nth-child(1) h1 {
+    font-family: "Poppins-Bold";
+    font-size: 2em;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+  }
+
+  .items-center {
+    display: block;
+  }
+
+  /*Secciones de intro elementos padres e hijos mobile*/
+  .section-intro > :nth-child(1) {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .section-intro > :nth-child(2) .flex-1 > :nth-child(1) {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .section-intro > :nth-child(2) .flex-1 > :nth-child(2) {
+    margin-top: 15px;
+  }
+}
+</style>
