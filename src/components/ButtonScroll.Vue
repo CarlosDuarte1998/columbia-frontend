@@ -1,5 +1,7 @@
 <template>
-  <button class="" :class="buttonClass" @click="scrollToSection">{{ buttonText }}</button>
+  
+    <button  :class="buttonClass" @click="scrollToSection">{{ buttonText }}</button>
+
 </template>
 
 <script>
