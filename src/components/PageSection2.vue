@@ -86,15 +86,31 @@ export default {
 .container-info h1{
   font-family: 'GerTT-Bold';
   font-size: 30px;
+  hyphens: auto;
 }
 .container-info p{
   font-family: 'GerTT-Regular';
   font-size: 20px;
   margin-top: 30px;
+  hyphens: auto;
 }
 /* Pantallas para tablets */
-@media (min-width: 768px) {
-
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .section-1{
+    height: 50%;
+    background-position: top center;
+  }
+  .section-2{
+    height: 50%;
+  }
+  .container-info h1{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .btn-scroll{
+    right: -40%;
+    margin-top: 10%;
+  }
 }
 
 /* Pantallas mobiles */

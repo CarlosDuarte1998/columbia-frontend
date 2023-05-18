@@ -8,6 +8,9 @@
 </template>
 <style scoped>
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
   top: 0%;

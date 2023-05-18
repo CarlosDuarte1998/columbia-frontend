@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lt": "npx localtunnel --port 5173"
+    "lt": "npx lt --port 5173 --subdomain dive-columbia --auth usuario:contrasena"
   },
   "dependencies": {
     "vue": "^3.3.2"

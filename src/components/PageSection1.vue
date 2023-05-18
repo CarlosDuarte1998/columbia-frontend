@@ -1,4 +1,6 @@
-<script></script>
+<script>
+
+</script>
 <template>
   <div class="section-home" id="section-1">
     <div class="bg-header" style="overflow-x: hidden">
@@ -27,6 +29,7 @@
           </div>
           <div class="lg:w-1/4 md:1/4 sm:w-full sm:mt-3">
             <a
+              id="btn"
               href="#section-2"
               class="btn-icon-scroll border-black border hover:bg-black hover:text-white"
               >Scroll Down</a
@@ -91,7 +94,7 @@
 }
 
 .btn-icon-scroll {
-  padding: 10px 40px 10px 10px;
+  padding: 13px 40px 13px 13px;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   font-size: 15px;
@@ -114,6 +117,11 @@
 
   .items-center {
     display: flex;
+  }
+
+  .bg-header{
+    background-image: url("../assets/img/bg-header-mobile.png");
+    background-position: center;
   }
 }
 
@@ -148,6 +156,7 @@
   .section-intro > :nth-child(2) .flex-1 > :nth-child(1) {
     margin-top: 5px;
     text-align: center;
+  
   }
 
   .section-intro > :nth-child(2) .flex-1 > :nth-child(2) {
