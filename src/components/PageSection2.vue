@@ -21,18 +21,16 @@ export default {
         <div class="section-2">
           <div class="info-section">
             <div class="">
-              <div class="container">
+              <div class="container-info">
                 <h1 class="text-xl text-start">
                   You probably don’t set off from the trailhead looking to be
                   the greatest hiker of all time.
                 </h1>
-                <br>
                 <p>
                   Like must of us, you just want to get out there. Disconnect.
                   Or reconnect. And no matter you trail acumen, you appreciate
                   gear that leaves you feeling a bit more confident and capable.
                 </p>
-                <br />
                 <p>
                   Facet 75’s AdaptTrax system were designed to help you become
                   more at home in wild and wily places. Almost like... you
@@ -43,7 +41,7 @@ export default {
                 class="btn-scroll"
                 buttonText="Scroll Down"
                 buttonColor="black"
-                sectionId="section-1"
+                sectionId="section-3"
               />
             </div>
           </div>
@@ -85,16 +83,18 @@ export default {
   height: 100%;
   width: 85%;
 }
-.container h1{
+.container-info h1{
   font-family: 'GerTT-Bold';
   font-size: 30px;
 }
-.container p{
+.container-info p{
   font-family: 'GerTT-Regular';
-  font-size: 17px;
+  font-size: 20px;
+  margin-top: 30px;
 }
 /* Pantallas para tablets */
 @media (min-width: 768px) {
+
 }
 
 /* Pantallas mobiles */
@@ -102,5 +102,29 @@ export default {
   .btn-scroll {
     text-align: center;
   }
+  .section-1{
+    height: 50%;
+  }
+  .section-2{
+    height: 50%;
+  }
+  .section-2 .info-section div {
+    width: 95%;
+  }
+  .container-info h1{
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .container-info p{
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .btn-scroll {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 25%;
+}
 }
 </style>

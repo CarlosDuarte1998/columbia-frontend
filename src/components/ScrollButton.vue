@@ -40,7 +40,7 @@ button {
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: right 20px center;
-  font-family: "Poppins-semibold";
+  font-family: "GerTT-Bold";
 }
 .btn-icon-white {
   background-image: url("../assets/img/arrow-black.png");

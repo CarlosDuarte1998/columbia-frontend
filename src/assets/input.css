@@ -7,21 +7,21 @@
     font-family: 'Poppins-bold';
     font-style:normal;
     font-weight: 400;
-    src: url('../assets/fonts/Poppins/Poppins-bold.ttf') format('truetype');
+    src: url('../assets/fonts/GerTT/GerTTBold.otf') format('truetype');
   }
 
     @font-face {
         font-family: 'Poppins-semibold';
         font-style:normal;
         font-weight: 400;
-        src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+        src: url('../assets/fonts/GerTT/GerTTMedium.otf') format('truetype');
     }
 
     @font-face {
       font-family: 'GerTT-regular';
       font-style: normal;
       font-weight: normal; 
-      src: url('../assets/fonts/Poppins/GerTTRegular.otf') format('truetype');
+      src: url('../assets/fonts/GerTT/GerTTRegular.otf') format('truetype');
     }
     
     @font-face {

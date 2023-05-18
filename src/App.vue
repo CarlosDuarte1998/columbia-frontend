@@ -10,6 +10,7 @@ import PageSection6 from './components/PageSection6.vue';
 <template>
 <PageSection1 class="mx-auto"/>
 <PageSection2 class="mx-auto"/>
+<PageSection3 class="mx-auto"/>
 </template>
 
 <style scoped>
