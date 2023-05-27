@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div class="container-logo" style="overflow-x: hidden">
-    <div class="logo text-white" style="filter: invert(100%)">
+    <div class="logo text-white">
       <img src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia" />
     </div>
   </div>

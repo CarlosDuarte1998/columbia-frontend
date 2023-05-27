@@ -1,15 +1,30 @@
 <script>
+export default {
+ 
+  methods: {
+    scrollToSection() {
+      const section = document.getElementById('section-2');
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    },
+  },
+};
 
 </script>
 <template>
   <div class="section-home" id="section-1">
     <div class="bg-header" style="overflow-x: hidden">
-      <div class="logo-header" style="filter: invert(100%)">
+      <div class="logo-header">
         <img
           src="../assets/img/logo-Columbia.png"
           alt=""
           class="logo-columbia"
         />
+      
       </div>
     </div>
     <div class="section-intro bg-white lg:flex sm:block">
@@ -29,8 +44,9 @@
           </div>
           <div class="lg:w-1/4 md:1/4 sm:w-full sm:mt-3">
             <a
+            style="cursor: pointer;"
+            @click="scrollToSection"
               id="btn"
-              href="#section-2"
               class="btn-icon-scroll border-black border hover:bg-black hover:text-white"
               >Scroll Down</a
             >
@@ -51,8 +67,8 @@
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 0%;
-  left: 4%;
+  top: 5%;
+  left: 2%;
 }
 
 .bg-header {
