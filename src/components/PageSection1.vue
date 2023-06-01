@@ -113,7 +113,6 @@ export default {
   padding: 13px 40px 13px 13px;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
-  font-size: 15px;
   background-image: url("../assets/img/arrow-black.png");
   background-repeat: no-repeat;
   background-size: 12px;

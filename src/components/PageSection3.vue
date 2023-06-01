@@ -57,7 +57,7 @@ export default {
 .btn-scroll {
   position: relative;
   width: auto;
-  right: 2%;
+  right: -88%;
   top:0%;
 }
 /*Pantallas tablets*/
@@ -65,5 +65,8 @@ export default {
 }
 /*Pantallas mobiles*/
 @media (min-width: 320px) and (max-width: 767px) {
+  .btn-scroll {
+right: -57%;
+}
 }
 </style>

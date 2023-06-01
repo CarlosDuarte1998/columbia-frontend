@@ -163,6 +163,7 @@ font-size: 2.5em;
 
 /* Mobile */
 @media (max-width: 767px) {
+
   .container-header {
   display: block;
 }

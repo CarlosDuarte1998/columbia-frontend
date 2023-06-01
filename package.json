@@ -9,8 +9,10 @@
     "lt": "npx lt --port 5173 --subdomain dive-columbia"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "swiper": "^9.3.2",
-    "vue": "^3.3.2"
+    "vue": "^3.3.2",
+    "vue-modal-dialogs": "^3.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

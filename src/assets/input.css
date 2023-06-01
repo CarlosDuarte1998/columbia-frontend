@@ -28,14 +28,14 @@
       font-family: 'GerTT-Medium';
       font-style: normal;
       font-weight: 500; 
-      src: url('../assets/fonts/Poppins/GerTTMedium.otf') format('truetype');
+      src: url('../assets/fonts/GerTT/GerTTMedium.otf') format('truetype');
     }
     
     @font-face {
       font-family: 'GerTT-Bold';
       font-style: normal;
       font-weight: bold; 
-      src: url('../assets/fonts/Poppins/GerTTBold.otf') format('truetype');
+      src: url('../assets/fonts/GerTT/GerTTBold.otf') format('truetype');
     }
 
   html, body {
