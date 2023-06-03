@@ -1,56 +1,29 @@
-<script>
-import ModalCompetitor from "./Modal/ModalCompetitor.vue";
-import axios from 'axios';
-export default {
-  props: {},
-  data() {
-    return {
-      isModalOpen: false,
-      name: String,
-      description: String,
-    profileImageUrl: String,
-    country: String,
-    };
-  },
-  methods: {
+<script setup>
+import { ModalsContainer, useModal } from 'vue-final-modal'
+import ModalConfirmPlainCss from './Modal/CompetitorModal.vue'
 
-
-    openModal() {
-    axios.get('https://randomuser.me/api/')
-    .then(response => {
-      const user = response.data.results[0];
-      this.name = `${user.name.first} ${user.name.last}`;
-      this.description = user.email;
-      this.profileImageUrl = user.picture.large;
-      this.country = user.location.country;
-      this.isModalOpen = true;
-    })
-    .catch(error => {
-      console.error('Error al obtener los datos del usuario:', error);
-    });
-    
-    },
-    closeModal() {
-      this.isModalOpen = false;
+const { open, close } = useModal({
+  component: ModalConfirmPlainCss,
+  attrs: {
+    nameCompetitor: 'Hello World!',
+    userCompetitor: 'Hello World!',
+    urlImgCompetitor: 'https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    countryCompetitor: 'Colombia',
+    infoCompetitor: 'Lorem ipsum dolor sit amet',
+    onConfirm() {
+      close()
     },
   },
-  components: {
-    ModalCompetitor,
+  slots: {
+    default: '<p>The content of the modal</p>',
   },
-};
+});
 </script>
-<template>
-  <div>
-    <!-- Tu contenido actual -->
 
-    <button @click="openModal">Abrir modal</button>
-    <ModalCompetitor
-      v-if="isModalOpen"
-      @close="closeModal"
-        :nameText="name"
-        :descriptionText="description"
-        :imgCompetitor="profileImageUrl"
-        :country="country"
-    />
-  </div>
+<template>
+  <VButton @click="open">
+    Open Modal
+  </VButton>
+
+  <ModalsContainer />
 </template>

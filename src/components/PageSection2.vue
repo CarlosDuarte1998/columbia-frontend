@@ -2,6 +2,7 @@
 import ButtonScroll from "./ScrollButton.vue";
 import LogoColumbia from "./LogoColumbia.vue";
 
+
 export default {
   components: {
     ButtonScroll,
