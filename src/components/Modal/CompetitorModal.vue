@@ -102,11 +102,13 @@ export default {
           #{{ user ? user.country : countryCompetitor }}
         </p>
       </div>
+   
+      
     </div>
   </VueFinalModal>
 </template>
 
-<style>
+<style scoped>
 .container-img {
   display: flex;
   justify-content: center;
@@ -156,25 +158,7 @@ export default {
   margin-bottom: 12px;
 }
 
-.confirm-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.confirm-modal-content {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 0.5rem;
-  width: 80%;
-}
-.confirm-modal-content > * + * {
-  margin: 0.5rem 0;
-}
-.confirm-modal-content h1 {
-  font-size: 1.375rem;
-}
+
 .btn-close {
   position: relative;
   display: flex;

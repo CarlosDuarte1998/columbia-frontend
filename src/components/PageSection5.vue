@@ -1,12 +1,12 @@
 <script>
 import ScrollButtonVue from './ScrollButton.vue';
 import LogoColumbiaVue from './LogoColumbia.vue';
-import ModalCompetitor from './Modal/ModalCompetitor.vue';
+
 export default {
   components: {
     ScrollButtonVue,
     LogoColumbiaVue,
-    ModalCompetitor,
+    
   },
 };
 
