@@ -1,17 +1,17 @@
-<script >
-import { useVuelidate } from '@vuelidate/core'
-import { required, email } from '@vuelidate/validators'
+<script>
+// import { useVuelidate } from '@vuelidate/core'
+// import { required, email } from '@vuelidate/validators'
 
-export default {
-  components: {
-  },
-  setup(){
+// export default {
+//   components: {
+//   },
+//   setup(){
 
-    return {
-      v$: useVuelidate(),
-    }
-  }
-}
+//     return {
+//       v$: useVuelidate(),
+//     }
+//   }
+// }
 
 </script>
 <template>
