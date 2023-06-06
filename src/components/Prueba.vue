@@ -1,6 +1,6 @@
 <script setup>
 import { ModalsContainer, useModal } from 'vue-final-modal'
-import ModalConfirmPlainCss from './Modal/discountModal.vue'
+import ModalConfirmPlainCss from './Modal/DiscountModal.vue'
 
 const { open, close } = useModal({
   component: ModalConfirmPlainCss,
