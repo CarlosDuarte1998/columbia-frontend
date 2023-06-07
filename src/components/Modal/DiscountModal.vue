@@ -26,6 +26,11 @@ export default {
       hideDiscount,
     };
   },
+  methods: {
+    close() {
+      this.$emit('confirm');
+    }
+  },
 };
 </script>
 
@@ -36,10 +41,8 @@ export default {
     overlay-transition="vfm-fade"
     content-transition="vfm-fade"
     lock-scroll="true"
-    @close="closeModal"
-    @click.stop
   >
-    <button @click="closeModal" class="btn-close">
+    <button @click="close" class="btn-close">
       <svg
         width="39"
         height="38"

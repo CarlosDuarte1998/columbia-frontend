@@ -522,6 +522,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -736,6 +740,22 @@ html, body {
 
 .confirm-modal-content h1 {
   font-size: 1.375rem;
+}
+
+/* Color de la barra de desplazamiento */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #3f3f3f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #646464;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fffefe;
 }
 
 /* Pantallas grandes */

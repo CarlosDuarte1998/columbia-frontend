@@ -52,6 +52,11 @@ export default {
       user,
     };
   },
+  methods: {
+    close() {
+      this.$emit('confirm');
+    }
+  },
 };
 </script>
 
@@ -63,7 +68,7 @@ export default {
     content-transition="vfm-fade"
     lock-scroll="true"
   >
-    <button @click="emit('confirm')" class="btn-close">
+    <button @click="close" class="btn-close">
       <svg
         width="39"
         height="38"

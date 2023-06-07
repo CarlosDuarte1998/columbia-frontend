@@ -1,41 +1,71 @@
 <script>
-// import { useVuelidate } from '@vuelidate/core'
-// import { required, email } from '@vuelidate/validators'
+import { useVuelidate } from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
 
-// export default {
-//   components: {
-//   },
-//   setup(){
+export default {
+  setup () {
+    return { }
+  },
+ data(){
 
-//     return {
-//       v$: useVuelidate(),
-//     }
-//   }
-// }
+  return{
+  v$: useVuelidate(),
+  email:'',
+  name:'',
+  country:'',
+  }
+ },
+ validations(){
+  return{
+    email:{required, email,},
+    name:{required, },
+    country:{required}
+  }
+  },
+  methods:{
+    submitForm(){
+      this.v$.$validate()
+      if(this.v$.$error){
+        console.log('error')
+      }else{
+        console.log('success')
+
+      }
+    }
+  },
+  
+}
 
 </script>
 <template>
   <div>
-    <form action="" class="form-discount">
-      <input type="text" placeholder="Nombre" class="input-name" />
-      <input type="email" placeholder="Correo" class="input-email" />
-      <select name="" id="" class="input-select">
-        <option value="" disabled>País</option>
+    <form @submit.prevent="" action="" class="form-discount">
+      <input type="text" placeholder="Nombre" v-model="name" class="input-name" />
+      <input type="email" placeholder="Correo" v-model="email" class="input-email" />
+      <select name="" id="" class="input-select" v-model="country">
         <option value="sv">El Salvador</option>
         <option value="hn">Honduras</option>
         <option value="gt">Guatemala</option>
         <option value="cr">Costa Rica</option>
         <option value="pa">Panama</option>
         <option value="ni">Nicaragua</option>
-        <option value="bz">Republica Dominicana</option>
+        <option value="rd">Republica Dominicana</option>
         <option value="bz">Venezuela</option>
       </select>
-      <input type="submit" value="Obtener descuento" />
+      <div v-if="v$.$error" class="error">
+      <p>Los campos no deben quedar vacios </p>
+      </div>
+      <input type="submit" value="Obtener descuento" @click="submitForm"/>
     </form>
   </div>
 </template>
 <style scoped>
-
+.error{
+  color: red;
+  font-size: 12px;
+  font-family: "GerTT-medium";
+  margin-bottom: 10px;
+}
 .form-discount{
   display: flex;
   flex-direction: column;

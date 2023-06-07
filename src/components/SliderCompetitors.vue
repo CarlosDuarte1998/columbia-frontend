@@ -31,14 +31,11 @@ export default {
     const { open: openModal, close: closeModal } = useModal({
       component: ModalConfirmPlainCss,
       props: {
-        nameCompetitor: 'Hello World!',
-        userCompetitor: 'Hello World!',
-        urlImgCompetitor: 'https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        countryCompetitor: 'Colombia',
-        infoCompetitor: 'Lorem ipsum dolor sit amet',
       },
-      onConfirm: () => {
-        closeModal()
+      attrs: {
+        onConfirm() {
+          closeModal();
+        },
       },
       slots: {
         default: '<p>The content of the modal</p>',
@@ -115,7 +112,7 @@ export default {
 
 
 
-  <ModalsContainer />
+ 
 </template>
 
 <style scoped>
