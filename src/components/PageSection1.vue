@@ -74,7 +74,7 @@ export default {
 .bg-header {
   width: 100%;
   height: 85%;
-  background-image: url("../assets/img/bg-header.png");
+  background-image: url("../assets/img/bg-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
@@ -144,7 +144,7 @@ export default {
 @media (max-width: 767px) {
   .bg-header {
     height: 75%;
-    background-image: url("../assets/img/bg-header-mobile.png");
+    background-image: url("../assets/img/bg-header-mobile.jpg");
     background-position: center;
   }
 

@@ -28,8 +28,8 @@ export default {
   },
   methods: {
     close() {
-      this.$emit('confirm');
-    }
+      this.$emit("confirm");
+    },
   },
 };
 </script>
@@ -65,15 +65,17 @@ export default {
         <img
           class="img-discount w-auto"
           src="../../assets/img/shoes-discount-2.png"
-          alt="" v-if="showDiscount"
+          alt=""
+          v-if="showDiscount"
         />
         <img
           class="img-discount w-auto"
           src="../../assets/img/shoes-discount-1.png"
-          alt="" v-else
+          alt=""
+          v-else
         />
       </div>
-      <div class="container-infoCompetitor" >
+      <div class="container-infoCompetitor">
         <div v-if="showDiscount">
           <p class="rate-discount">10% OFF</p>
 
@@ -91,23 +93,20 @@ export default {
         <div class="container-form" v-else>
           <div>
             <p class="title-form">BE THE GOAT</p>
-         
+
             <p class="time-discount">1:30:00</p>
             <div class="flex flex-col">
               <FormDiscount />
             </div>
             <p class="subtitle-form text-center">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti id dolores optio harum, expedita consectetur 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+              id dolores optio harum, expedita consectetur
             </p>
           </div>
         </div>
       </div>
-      
     </div>
-
- </VueFinalModal>
- 
-
+  </VueFinalModal>
 </template>
 
 <style scoped>
@@ -235,10 +234,6 @@ export default {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-
-
-
-
   .country-competitor,
   .info-discount,
   .rate-discount,
@@ -251,7 +246,6 @@ export default {
     width: 150px;
   }
 
-
   .img-discount {
     width: 200px;
     margin-bottom: 20px;
@@ -263,7 +257,6 @@ export default {
   .container-discount {
     flex-direction: column;
   }
-
 
   .container-img {
     width: 100%;
@@ -286,24 +279,24 @@ export default {
   .img-discount {
     width: 75%;
   }
-  .rate-discount{
+  .rate-discount {
     font-size: 60px;
   }
   .btn-discount {
-  padding: 10px 10px 10px 10px;
-  transition: all 0.2s ease-in-out;
-  text-transform: uppercase;
-  font-family: "GerTT-Bold";
-  border: 1px solid #000000;
-  width: 100%;
-  font-size: 25px;
-}
- 
-.title-form{
-  font-size: 40px;
-}
-.time-discount{
-  font-size: 30px;
-}
+    padding: 10px 10px 10px 10px;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-family: "GerTT-Bold";
+    border: 1px solid #000000;
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .title-form {
+    font-size: 40px;
+  }
+  .time-discount {
+    font-size: 30px;
+  }
 }
 </style>

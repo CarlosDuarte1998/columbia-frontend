@@ -1,12 +1,27 @@
-<script setup></script>
+<script >
+export default {
+  methods: {
+    scrollToSection() {
+      const section = document.getElementById('section-1');
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+    },
+  },
+};
+</script>
 <template>
   <div class="container-logo" style="overflow-x: hidden">
     <div class="logo text-white">
-      <img src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia" />
+      <img @click="scrollToSection" src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia" />
     </div>
   </div>
 </template>
 <style scoped>
+.logo img {
+  cursor: pointer;
+}
 .logo {
   display: flex;
   justify-content: center;

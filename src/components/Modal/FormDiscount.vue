@@ -29,7 +29,6 @@ export default {
         console.log('error')
       }else{
         console.log('success')
-
       }
     }
   },
@@ -43,6 +42,7 @@ export default {
       <input type="text" placeholder="Nombre" v-model="name" class="input-name" />
       <input type="email" placeholder="Correo" v-model="email" class="input-email" />
       <select name="" id="" class="input-select" v-model="country">
+        <option value="" disabled selected>País</option>
         <option value="sv">El Salvador</option>
         <option value="hn">Honduras</option>
         <option value="gt">Guatemala</option>

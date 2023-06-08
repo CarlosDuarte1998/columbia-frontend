@@ -103,8 +103,8 @@ export default {
           repellendus nesciunt, necessitatibus voluptatibus earum? Dignissimos
           alias culpa laboriosam dicta aut.
         </p>
-        <p class="country-competitor">
-          #{{ user ? user.country : countryCompetitor }}
+        <p class="challenge-competitor">
+          Challenge: Walk 1,893 meters
         </p>
       </div>
    
@@ -127,7 +127,7 @@ export default {
   width: 50%;
 }
 
-.country-competitor,
+.challenge-competitor,
 .info-competitor,
 .name-competitor,
 .user-competitor {
@@ -147,7 +147,7 @@ export default {
   margin-top: 15px;
 }
 
-.country-competitor {
+.challenge-competitor {
   font-size: 1.5rem;
   font-family: "GerTT-Medium";
   margin-top: 15px;
@@ -197,7 +197,7 @@ export default {
   .modal-content {
     width: 90%;
   }
-  .country-competitor,
+  .challenge-competitor,
   .info-competitor,
   .name-competitor,
   .user-competitor {
