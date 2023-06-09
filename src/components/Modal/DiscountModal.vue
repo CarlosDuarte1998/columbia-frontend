@@ -2,12 +2,14 @@
 import { defineProps, defineEmits, ref } from "vue";
 import { VueFinalModal, ModalsContainer } from "vue-final-modal";
 import FormDiscount from "./FormDiscount.vue";
+import { Countdown } from "vue3-flip-countdown";
 
 export default {
   components: {
     VueFinalModal,
     ModalsContainer,
     FormDiscount,
+    Countdown,
   },
   props: {},
 
@@ -83,7 +85,16 @@ export default {
             OBTENER DESCUENTO
           </button>
 
-          <p class="time-discount">1:30:00</p>
+          <div class="flex justify-center pt-5">
+            <Countdown 
+            :mainColor="'#fff'"
+            :secondaryColor="'#fff'"
+            :borderWidth="'0px'"
+            :labelColor="'#000'"
+            :deadline="'2023-10-10 00:00:00'"
+            :showDays="false"
+            />
+          </div>
           <p class="info-discount">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Praesentium veritatis sapiente dolores. Odit libero minima dicta
@@ -93,8 +104,18 @@ export default {
         <div class="container-form" v-else>
           <div>
             <p class="title-form">BE THE GOAT</p>
-
-            <p class="time-discount">1:30:00</p>
+            <div class="flex justify-center pb-6">
+            <Countdown 
+            :mainColor="'#fff'"
+            :secondaryColor="'#fff'"
+            :borderWidth="'0px'"
+            :labelColor="'#000'"
+            :size="'large'"
+            :deadline="'2023-10-10 00:00:00'"
+            :showDays="false"
+            :showLabels=false
+            />
+          </div>
             <div class="flex flex-col">
               <FormDiscount />
             </div>
@@ -110,6 +131,7 @@ export default {
 </template>
 
 <style scoped>
+
 .title-form {
   font-size: 60px;
   font-family: "GerTT-Bold";
