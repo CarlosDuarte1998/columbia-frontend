@@ -67,7 +67,6 @@ export default {
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #fff;
-  transform: scale(1.1);
 }
 Button p {
   font-size: 20px;

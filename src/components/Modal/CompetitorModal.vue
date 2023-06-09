@@ -87,7 +87,7 @@ export default {
         />
       </svg>
     </button>
-    <div class="container-competitor flex">
+    <div class="container-competitor flex lg:p-16">
       <div class="w-2/4 container-img">
         <img
           class="img-competitor"

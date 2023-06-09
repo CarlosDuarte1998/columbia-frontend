@@ -4,7 +4,14 @@ export default {
   components: {
     LogoColumbia,
   },
-
+  data() {
+    return {
+      currentYear: null,
+    };
+  },
+  mounted() {
+    this.getCurrentYear();
+  },
   methods: {
     goToFilter() {
       window.open("https://www.instagram.com/columbia_cr/", "_blank");
@@ -16,11 +23,18 @@ export default {
           behavior: "smooth",
         });
     },
+
+    getCurrentYear() {
+      const date = new Date();
+      this.currentYear = date.getFullYear();
+    }
+
+
   },
 };
 </script>
 <template>
-  <div class="bg-black">
+  <div class="bg-black" id="section-6">
     <div class="h-screen">
       <div class="container-logo">
         <LogoColumbia class="logo" />
@@ -56,10 +70,10 @@ export default {
         <div class="line-separator"></div>
       </div>
     </div>
-    <footer class="">
+    <footer >
       <div class="container-footer">
         <div class="copyright-info">
-          <p class="">© 2021 Columbia</p>
+          <p class="">© {{currentYear}} Columbia Sportswear</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             facere perferendis dolores ad eius ex nisi, iure alias, provident
@@ -134,10 +148,12 @@ export default {
   color: white;
   width: 100%;
   font-family: "Gertt-regular";
+  font-size: 0.7rem;
 }
 .container-footer {
   display: flex;
   justify-content: space-between;
+  padding: 20px 10px 20px 10px;
 }
 .line-separator {
   width: 40%;
@@ -155,13 +171,13 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid white;
 }
 
 .btn-filter-ig:hover {
   background-color: black;
   color: white;
   transition: 0.5s;
-  border: 1px solid white;
 }
 
 .btn-filter-ig:hover img {
@@ -241,6 +257,12 @@ export default {
   }
   .copyright-info {
     width: 100%;
+    text-align: center;
+  }
+  .copyright-info p{
+    text-align: center;
+    width: 100%;
+    font-size: 0.6em;
   }
   .container-footer> *:nth-child(1) {
     display: flex;

@@ -11,7 +11,17 @@ export default {
     FormDiscount,
     Countdown,
   },
-  props: {},
+  props: {
+    labels: {
+      type: Object,
+      default: () => ({
+        days: "Días",
+        hours: "Horas",
+        minutes: "Minutos",
+        seconds: "Segundos",
+      }),
+    },
+  },
 
   setup(_, { emit }) {
     const showDiscount = ref(true);
@@ -75,6 +85,7 @@ export default {
           src="../../assets/img/shoes-discount-1.png"
           alt=""
           v-else
+          style="transition: all 0.5s ease-in-out;"
         />
       </div>
       <div class="container-infoCompetitor">
@@ -86,42 +97,47 @@ export default {
           </button>
 
           <div class="flex justify-center pt-5">
-            <Countdown 
-            :mainColor="'#fff'"
-            :secondaryColor="'#fff'"
-            :borderWidth="'0px'"
-            :labelColor="'#000'"
-            :deadline="'2023-10-10 00:00:00'"
-            :showDays="false"
+            <Countdown
+              :mainColor="'white'"
+              :secondaryColor="'white'"
+              :mainFlipBackgroundColor="'#000'"
+              :labelColor="'black'"
+              :deadline="'2023-10-10 00:00:00'"
+              :countdownSize="'2em'"
+              :showDays="true"
+              :showLabels="true"
+              :labels="labels"
             />
           </div>
           <p class="info-discount">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium veritatis sapiente dolores. Odit libero minima dicta
-            harum ea rerum
+            Llena el formulario y recibe al instante 10% de descuento en tu
+            próxima compra en tienda o sitio web. Producto sujeto a existencias.
+            Fotografía de carácter ilustrativo.
           </p>
         </div>
         <div class="container-form" v-else>
           <div>
             <p class="title-form">BE THE GOAT</p>
             <div class="flex justify-center pb-6">
-            <Countdown 
-            :mainColor="'#fff'"
-            :secondaryColor="'#fff'"
-            :borderWidth="'0px'"
-            :labelColor="'#000'"
-            :size="'large'"
-            :deadline="'2023-10-10 00:00:00'"
-            :showDays="false"
-            :showLabels=false
-            />
-          </div>
+              <Countdown
+                :mainColor="'white'"
+                :secondaryColor="'white'"
+                :mainFlipBackgroundColor="'#000'"
+                :labelColor="'black'"
+                :deadline="'2023-10-10 00:00:00'"
+                :countdownSize="'2em'"
+                :showDays="true"
+                :showLabels="true"
+                :labels="labels"
+              />
+            </div>
             <div class="flex flex-col">
               <FormDiscount />
             </div>
-            <p class="subtitle-form text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-              id dolores optio harum, expedita consectetur
+            <p class="info-discount text-center">
+              Llena el formulario y recibe al instante 10% de descuento en tu
+              próxima compra en tienda o sitio web. Producto sujeto a
+              existencias. Fotografía de carácter ilustrativo.
             </p>
           </div>
         </div>
@@ -131,7 +147,6 @@ export default {
 </template>
 
 <style scoped>
-
 .title-form {
   font-size: 60px;
   font-family: "GerTT-Bold";
@@ -181,7 +196,7 @@ export default {
 }
 
 .info-discount {
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-family: "GerTT-medium";
   margin-top: 15px;
   text-align: center;
