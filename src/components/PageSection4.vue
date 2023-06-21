@@ -17,7 +17,7 @@ export default {
       <div class="h-full w-full">
         <div class="h-full flex flex-col justify-between">
           <div class="container-header flex ">
-            <div class="relative">
+            <div class="relative z-50">
               <LogoColumbia class="text-center" />
             </div>
             <div class="container-title-header flex text-center items-center">
@@ -34,7 +34,7 @@ export default {
             <div class="container-button">
               <ButtonScroll
                 class="ButtonScroll"
-                buttonText="Scroll Down"
+                buttonText="Siguiente"
                 buttonColor="black"
                 sectionId="section-5"
               />

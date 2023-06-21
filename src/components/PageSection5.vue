@@ -13,7 +13,7 @@ export default {
   <div class="h-screen bg-section" id="section-5">
     <div class="bg-container h-full w-full">
       <div
-        class="container-header flex justify-center align-center text-center"
+        class="container-header flex justify-center align-center text-center z-10"
       >
         <LogoColumbiaVue class="w-full logo-columbia" />
         <h1 class="title-competitor">Competitor</h1>
@@ -21,7 +21,7 @@ export default {
       <div class="container-btnScroll">
         <ButtonScroll
           class="ButtonScroll"
-          buttonText="Scroll Down"
+          buttonText="Siguiente"
           buttonColor="black"
           sectionId="section-6"
         />

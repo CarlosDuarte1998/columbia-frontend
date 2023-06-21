@@ -91,7 +91,7 @@ export default {
         </div>
         <div class="container-btn-scroll">
           <button class="btn-scroll text-white" @click="scrollToSection">
-            Back To Top <img src="../assets/img/arrow-white.png" alt="">
+            Ir arriba <img src="../assets/img/arrow-white.png" alt="">
           </button>
         </div>
       </div>

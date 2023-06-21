@@ -24,26 +24,31 @@ export default {
             <div class="">
               <div class="container-info">
                 <h1 class="text-xl text-start">
-                  You probably don’t set off from the trailhead looking to be
-                  the greatest hiker of all time.
+                  Probablemente no salgas del sendero con la intención de convertirte en el mejor excursionista de todos
+                  los
+                  tiempos.
+
                 </h1>
                 <p>
-                  Like must of us, you just want to get out there. Disconnect.
-                  Or reconnect. And no matter you trail acumen, you appreciate
-                  gear that leaves you feeling a bit more confident and capable.
+                  Como la mayoría de nosotros sólo quiere salir,
+                  desconectar o reconectar, e independientemente
+                  de tu destreza en los senderos, aprecias el equipo
+                  que te hace sentir un poco más seguro y capaz.
+
                 </p>
                 <p>
-                  Facet 75’s AdaptTrax system were designed to help you become
-                  more at home in wild and wily places. Almost like... you
-                  belong there. Become one with nature...
+
+                  El sistema AdaptTrax™ de Facet 75™ se ha diseñado para
+                  ayudarte a sentirte más cómodo en lugares salvajes
+                  y desafiantes. Esos lugares en los que te conviertes
+                  en el GOAT (Greatest Of All Time). Casi como si...
+                  pertenecieras a ese lugar.
+                </p>
+                <p class="text-start w-full">
+                  ¡Conviértete en uno con la naturaleza!
                 </p>
               </div>
-              <ButtonScroll
-                class="btn-scroll"
-                buttonText="Scroll Down"
-                buttonColor="black"
-                sectionId="section-3"
-              />
+              <ButtonScroll class="btn-scroll" buttonText="Siguiente" buttonColor="black" sectionId="section-3" />
             </div>
           </div>
         </div>
@@ -72,6 +77,7 @@ export default {
   display: flex;
   height: 100%;
 }
+
 .section-2 div {
   display: flex;
   justify-content: center;
@@ -79,36 +85,43 @@ export default {
   height: 100%;
   width: 100%;
 }
+
 .section-2 .info-section div {
   flex-direction: column;
   height: 100%;
   width: 85%;
 }
-.container-info h1{
+
+.container-info h1 {
   font-family: 'GerTT-Bold';
   font-size: 30px;
   hyphens: auto;
 }
-.container-info p{
+
+.container-info p {
   font-family: 'GerTT-Regular';
   font-size: 20px;
   margin-top: 30px;
   hyphens: auto;
 }
+
 /* Pantallas para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .section-1{
+  .section-1 {
     height: 50%;
     background-position: top center;
   }
-  .section-2{
+
+  .section-2 {
     height: 50%;
   }
-  .container-info h1{
+
+  .container-info h1 {
     font-size: 30px;
     margin-top: 30px;
   }
-  .btn-scroll{
+
+  .btn-scroll {
     right: -40%;
     margin-top: 10%;
   }
@@ -119,29 +132,34 @@ export default {
   .btn-scroll {
     text-align: center;
   }
-  .section-1{
+
+  .section-1 {
     height: 50%;
   }
-  .section-2{
+
+  .section-2 {
     height: 50%;
   }
+
   .section-2 .info-section div {
     width: 95%;
   }
-  .container-info h1{
+
+  .container-info h1 {
     font-size: 20px;
     margin-top: 20px;
   }
-  .container-info p{
+
+  .container-info p {
     font-size: 14px;
     margin-top: 15px;
   }
 
   .btn-scroll {
-  display: block;
-  position: relative;
-  margin-top: 20px;
-  margin-right: 25%;
-}
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 25%;
+  }
 }
 </style>

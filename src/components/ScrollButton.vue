@@ -26,7 +26,7 @@ export default {
 };
 </script>
 <template>
-  <button v-if="buttonColor === 'black'" class="flex items-center justify-center" :class="buttonClass" @click="scrollToSection">
+  <button  class="flex items-center justify-center" :class="buttonClass" @click="scrollToSection">
   <p>  {{ buttonText }}</p>
   </button>
 
@@ -37,13 +37,16 @@ export default {
 <style scoped>
 button {
   margin: 0px;
-  padding: 10px 40px 10px 10px;
+  padding: 13px 40px 13px 13px;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: right 20px center;
   font-family: "GerTT-Bold";
+}
+button p{
+margin-bottom: -3px;
 }
 .btn-icon-white {
   background-image: url("../assets/img/arrow-black.png");

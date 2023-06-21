@@ -31,7 +31,7 @@ export default {
       <div class="lg:w-1/2 md:w-full sm:w-full">
         <div class="h-max flex items-center">
           <h1 class="flex-1 lg:text-start md:text-center sm:text-center">
-            BE THE GOAT
+            GOATOMETER
           </h1>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default {
           class="flex-1 lg:flex md:block sm:block items-center justify-center text-center"
         >
           <div class="lg:w-3/4 md:3/4 sm:w-full text-start">
-            Introducing theall-terrain, hyper-grippy Facet™ 75 Mid.
+            BE THE GOAT
           </div>
           <div class="lg:w-1/4 md:1/4 sm:w-full sm:mt-3">
             <a
@@ -48,7 +48,7 @@ export default {
             @click="scrollToSection"
               id="btn"
               class="btn-icon-scroll border-black border hover:bg-black hover:text-white"
-              >Scroll Down</a
+              >Siguiente</a
             >
           </div>
         </div>
