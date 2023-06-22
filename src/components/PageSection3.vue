@@ -10,8 +10,8 @@ export default {
 };
 </script>
 <template class="">
-    <div class="w-screen h-screen bg-black" id="section-3">
-        <div class="h-full text-white lg:flex sm:block">
+    <div class="w-screen h-screen" id="section-3">
+        <div class=" bg-black h-full text-white lg:flex sm:block">
             <div class="section-1 lg:w-1/2 sm:w-full">
                 <div class=" flex-column">
                     <div class="">
@@ -104,7 +104,18 @@ export default {
     width: 100%;
     margin-top: 15px;
 }
+/* Pantallas grandes */
+@media (min-width: 1500px) {
+    .img-section{
+    display: flex;
+    position: relative;
+    margin-top: -0px;
+    width: 85%;
+    }
+}
 
+/* PC */
+@media (min-width: 992px) and (max-width: 1499px) {}
 /* Pantallas para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .section-1 {

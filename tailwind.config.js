@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     
     extend: {
+      fontFamily: {
+        gerttr: ['GerTT-regular'],
+        gerttb: ['GerTT-bold'],
+        gerttsm: ['GerTT-medium']
+      },
     },
   },
   plugins: [],

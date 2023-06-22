@@ -20,8 +20,9 @@ export default {
             <div class="relative z-50">
               <LogoColumbia class="text-center" />
             </div>
-            <div class="container-title-header flex text-center items-center">
-              <p class="text-white">COMPETITORS</p>
+            <div class="container-title-header flex text-center items-center text-white flex-col uppercase">
+              <p class="" style="font-size: 0.85em;">Competidores</p>
+              <p class=" text-5xl">GOATOMETER</p>
             </div>
           </div>
           <div class="container-slider">
@@ -32,12 +33,7 @@ export default {
               <p class="text-white">GRIPS ON ALL TERRAIN</p>
             </div>
             <div class="container-button">
-              <ButtonScroll
-                class="ButtonScroll"
-                buttonText="Siguiente"
-                buttonColor="black"
-                sectionId="section-5"
-              />
+              <ButtonScroll class="ButtonScroll" buttonText="Siguiente" buttonColor="black" sectionId="section-5" />
             </div>
           </div>
         </div>
@@ -46,7 +42,7 @@ export default {
   </div>
 </template>
 <style scoped>
-  .bg-section {
+.bg-section {
   background-image: url("../assets/img/bg-section-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -66,22 +62,27 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 .container-header div:nth-child(1) {
   position: absolute;
   display: flex;
   justify-content: start;
   align-items: center;
   width: 100%;
- 
+
 }
-.container-title-header{
-position: absolute ;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-font-family: 'GerTT-Bold';
-font-size: 2.5em;
+
+.container-title-header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'GerTT-Bold';
+  font-size: 2.5em;
+  line-height: 1em;
+  letter-spacing: 0.08em;
+  margin-top: 12px;
 }
 
 .container-slider {
@@ -136,26 +137,25 @@ font-size: 2.5em;
 }
 
 /* Pantallas grandes */
-@media (min-width: 1500px) {
-
-}
+@media (min-width: 1500px) {}
 
 /* PC */
-@media (min-width: 992px) and (max-width: 1499px) {
+@media (min-width: 992px) and (max-width: 1499px) {}
 
-}
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
   .container-header {
-  display: block;
-}
-.container-header div:nth-child(1) {
-  position: initial;
-  display: block;
-}
-.container-title-header{
-  font-size: 3.5em;
-}
+    display: block;
+  }
+
+  .container-header div:nth-child(1) {
+    position: initial;
+    display: block;
+  }
+
+  .container-title-header {
+    font-size: 3.5em;
+  }
 
 
 }
@@ -165,56 +165,57 @@ font-size: 2.5em;
 @media (max-width: 767px) {
 
   .container-header {
-  display: block;
+    display: block;
+  }
+
+  .container-header div:nth-child(1) {
+    position: initial;
+    display: block;
+  }
+
+  .container-title-header {
+    font-size: 2em;
+  }
+
+
+  .footer-section {
+    display: block;
+    height: 13%;
+    margin-bottom: 20px;
+  }
+
+  .footer-section div:nth-child(1) {
+    position: initial;
+    display: block;
+    margin-bottom: 22px;
+  }
+
+  .footer-section div:nth-child(1) p {
+    position: initial;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+  }
+
+  .footer-section div:nth-child(2) {
+    position: initial;
+    display: flex;
+    justify-content: end;
+    margin-left: -12px;
+  }
+
+  .footer-section div:nth-child(2) button {
+    position: initial;
+    display: initial;
+
+  }
+
+
+
+
+
+
+
 }
-.container-header div:nth-child(1) {
-  position: initial;
-  display: block;
-}
-.container-title-header{
-  font-size: 2em;
-}
-
-
-.footer-section {
-  display: block;
-  height: 13%;
-  margin-bottom: 20px;
-}
-
-.footer-section div:nth-child(1) {
-  position: initial;
-  display: block;
-  margin-bottom: 22px;
-}
-
-.footer-section div:nth-child(1) p {
-  position: initial;
-  display: flex;
-  font-size: 1.3rem;
-  font-weight: 600;
- 
-}
-
-.footer-section div:nth-child(2) {
-  position: initial;
-  display: flex;
-  justify-content: end;
-  margin-left: -12px;
-}
-
-.footer-section div:nth-child(2) button {
-  position: initial;
-  display: initial;
- 
-}
-
-
-
-
-
-
-
-}
-
 </style>

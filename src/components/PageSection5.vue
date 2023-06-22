@@ -1,40 +1,64 @@
 <script>
 import ButtonScroll from "./ScrollButton.vue";
-import LogoColumbiaVue from "./LogoColumbia.vue";
+import LogoColumbia from "./LogoColumbia.vue";
 
 export default {
   components: {
     ButtonScroll,
-    LogoColumbiaVue,
+    LogoColumbia,
   },
 };
 </script>
 <template>
   <div class="h-screen bg-section" id="section-5">
     <div class="bg-container h-full w-full">
-      <div
-        class="container-header flex justify-center align-center text-center z-10"
-      >
-        <LogoColumbiaVue class="w-full logo-columbia" />
-        <h1 class="title-competitor">Competitor</h1>
-      </div>
+      <div class="container-header flex">
+            <div class="relative z-50">
+              <LogoColumbia class="text-center" />
+            </div>
+            <div class="container-title-header flex text-center items-center text-white flex-col uppercase">
+              <p class="" style="font-size: 0.85em;">Progreso</p>
+              <p class=" text-5xl">GOATOMETER</p>
+            </div>
+          </div>
       <div class="container-btnScroll">
-        <ButtonScroll
-          class="ButtonScroll"
-          buttonText="Siguiente"
-          buttonColor="black"
-          sectionId="section-6"
-        />
+        <ButtonScroll class="ButtonScroll" buttonText="Siguiente" buttonColor="black" sectionId="section-6" />
       </div>
     </div>
   </div>
 </template>
 <style scoped>
-.container-btnScroll{
-display: flex;
-justify-content: end;
-position: relative;
+.container-title-header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'GerTT-Bold';
+  font-size: 2.5em;
+  line-height: 1em;
+  letter-spacing: 0.08em;
 }
+.container-header {
+  display: flex;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-header div:nth-child(1) {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.container-btnScroll {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
 .bg-section {
   background-image: url("../assets/img/bg-section-5.jpg");
   background-repeat: no-repeat;
@@ -42,10 +66,12 @@ position: relative;
   background-position: center;
   width: 100%;
 }
+
 .ButtonScroll {
- margin-bottom: 20px;
- margin-right: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
+
 .bg-container {
   background: #00000046;
   width: 100%;
@@ -54,56 +80,33 @@ position: relative;
   justify-content: space-between;
   flex-direction: column;
 }
-.container-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.title-competitor {
-  color: white;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-family: "Gertt-bold";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-}
+
+
+
 .logo-columbia {
   width: 100%;
   display: flex;
   justify-content: start;
 }
-  /* Pantallas grandes */
-  @media (min-width: 1500px) {
-}
+
+/* Pantallas grandes */
+@media (min-width: 1500px) {}
 
 /* PC */
-@media (min-width: 992px) and (max-width: 1499px) {
-}
+@media (min-width: 992px) and (max-width: 1499px) {}
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-
-
-}
+@media (min-width: 768px) and (max-width: 991px) {}
 
 /* Mobile */
 @media (max-width: 767px) {
-.title-competitor{
-  position: initial;
-  font-size: 2em;
-  transition: all 0.5s ease-in-out;
-  margin-top: -23px;
-}
-.container-header{
-  flex-direction: column;
-}
-.logo-columbia{
-  width: 100%;
 
-}
+  .container-header {
+    flex-direction: column;
+  }
+
+  .logo-columbia {
+    width: 100%;
+  }
 }
 </style>

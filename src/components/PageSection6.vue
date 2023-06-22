@@ -50,7 +50,7 @@ export default {
         </div>
         <div class="container-img-btg">
           <img
-            src="../assets//img/bethegoat2.png"
+            src="../assets/img/goat-awards.png"
             alt=""
             class="img-portada2"
           />
@@ -90,8 +90,8 @@ export default {
           </div>
         </div>
         <div class="container-btn-scroll">
-          <button class="btn-scroll text-white" @click="scrollToSection">
-            Ir arriba <img src="../assets/img/arrow-white.png" alt="">
+          <button class="btn-scroll bg-white text-white duration-100 hover:bg-white" @click="scrollToSection">
+            <p style="margin-bottom: -3px;">Ir arriba</p> <img src="../assets/img/arrow-white.png" alt="" class="filter hover:invert">
           </button>
         </div>
       </div>
@@ -120,21 +120,12 @@ export default {
   color: white;
   font-family: "Gertt-bold";
   text-transform: uppercase;
-  transition: 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 1rem; 
+  padding: 0.8rem 1.2rem; 
 }
-.btn-scroll:hover{
-  background-color: white;
-  color: black;
-  transition: 0.5s;
-}
-.btn-scroll:hover img{
-  filter: invert(1);
-  transition: 0.5s;
-}
+
 .btn-scroll img {
   width: 0.9rem;
   margin-left: 0.5rem;

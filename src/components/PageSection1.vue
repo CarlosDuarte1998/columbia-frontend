@@ -1,9 +1,8 @@
 <script>
 export default {
- 
   methods: {
     scrollToSection() {
-      const section = document.getElementById('section-2');
+      const section = document.getElementById("section-2");
       if (section) {
         window.scrollTo({
           top: section.offsetTop,
@@ -13,18 +12,12 @@ export default {
     },
   },
 };
-
 </script>
 <template>
   <div class="section-home" id="section-1">
     <div class="bg-header" style="overflow-x: hidden">
       <div class="logo-header">
-        <img
-          src="../assets/img/logo-Columbia.png"
-          alt=""
-          class="logo-columbia"
-        />
-      
+        <img src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia" />
       </div>
     </div>
     <div class="section-intro bg-white lg:flex sm:block">
@@ -36,20 +29,13 @@ export default {
         </div>
       </div>
       <div class="lg:w-1/2 md:w-full sm:w-full">
-        <div
-          class="flex-1 lg:flex md:block sm:block items-center justify-center text-center"
-        >
-          <div class="lg:w-3/4 md:3/4 sm:w-full text-start">
-            BE THE GOAT
+        <div class="flex-1 lg:flex md:block sm:block items-center justify-center text-center">
+          <div class="lg:w-3/4 md:3/4 sm:w-full h-full items-center text-end flex">
+            <p class="w-full font-gerttr mt-2 text-goat">BE THE GOAT</p>
           </div>
           <div class="lg:w-1/4 md:1/4 sm:w-full sm:mt-3">
-            <a
-            style="cursor: pointer;"
-            @click="scrollToSection"
-              id="btn"
-              class="btn-icon-scroll border-black border hover:bg-black hover:text-white"
-              >Siguiente</a
-            >
+            <a style="cursor: pointer" @click="scrollToSection" id="btn"
+              class="btn-icon-scroll border-black border hover:bg-black hover:text-white">Siguiente</a>
           </div>
         </div>
       </div>
@@ -69,6 +55,12 @@ export default {
   position: absolute;
   top: 5%;
   left: 2%;
+}
+
+.text-goat {
+  margin: 14px 27px 0px 0px;
+  font-size: 2em;
+  word-spacing: 20px;
 }
 
 .bg-header {
@@ -99,13 +91,14 @@ export default {
 }
 
 /*Secciones de intro elementos padres e hijos mobile*/
-.section-intro > :nth-child(1) h1 {
+.section-intro> :nth-child(1) h1 {
   font-family: "Poppins-Bold";
   font-size: 4em;
   word-spacing: 20px;
   letter-spacing: 5px;
 }
-.section-intro > :nth-child(2) {
+
+.section-intro> :nth-child(2) {
   font-family: "Poppins-semibold";
 }
 
@@ -134,7 +127,7 @@ export default {
     display: flex;
   }
 
-  .bg-header{
+  .bg-header {
     background-image: url("../assets/img/bg-header-mobile.png");
     background-position: center;
   }
@@ -152,7 +145,7 @@ export default {
     height: 25%;
   }
 
-  .section-intro > :nth-child(1) h1 {
+  .section-intro> :nth-child(1) h1 {
     font-family: "Poppins-Bold";
     font-size: 2em;
     word-spacing: 20px;
@@ -164,17 +157,17 @@ export default {
   }
 
   /*Secciones de intro elementos padres e hijos mobile*/
-  .section-intro > :nth-child(1) {
+  .section-intro> :nth-child(1) {
     margin-top: 5px;
     text-align: center;
-  }
-  .section-intro > :nth-child(2) .flex-1 > :nth-child(1) {
-    margin-top: 5px;
-    text-align: center;
-  
   }
 
-  .section-intro > :nth-child(2) .flex-1 > :nth-child(2) {
+  .section-intro> :nth-child(2) .flex-1> :nth-child(1) {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .section-intro> :nth-child(2) .flex-1> :nth-child(2) {
     margin-top: 15px;
   }
 }

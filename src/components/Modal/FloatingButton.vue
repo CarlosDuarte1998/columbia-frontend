@@ -35,7 +35,7 @@ export default {
 <template>
   <div @click="open" class="btn-floating">
     <div>
-      <Button class="container-ofert">
+      <Button class="container-ofert z-50">
         <p>10%</p>
         <p>OFF</p>
       </Button>
