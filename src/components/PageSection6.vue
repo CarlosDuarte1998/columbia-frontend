@@ -18,10 +18,10 @@ export default {
     },
     scrollToSection() {
       const section = document.getElementById('section-1');
-        window.scrollTo({
-          top: section.offsetTop,
-          behavior: "smooth",
-        });
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "smooth",
+      });
     },
 
     getCurrentYear() {
@@ -34,86 +34,91 @@ export default {
 };
 </script>
 <template>
-  <div class="bg-black" id="section-6">
-    <div class="h-screen">
-      <div class="container-logo">
-        <LogoColumbia class="logo" />
-      </div>
-      <div class="container-front">
-        <div class="conatiner-img-btg">
-          <img
-            src="../assets/img/bethegoat-1.png"
-            alt=""
-            srcset=""
-            class="img-portada1"
-          />
+  <div class="bg-section" id="section-6">
+    <div class="bg-black-opacity">
+      <div class="h-screen">
+        <div class="container-logo">
+          <LogoColumbia class="logo" />
         </div>
-        <div class="container-img-btg">
-          <img
-            src="../assets/img/goat-awards.png"
-            alt=""
-            class="img-portada2"
-          />
+        <div class="container-front">
+          <div class="conatiner-img-btg flex flex-col ">
+            <img src="../assets/img/bethegoat-1.png" alt="" srcset="" class="img-portada1" />
+            <div class="container-filter-ig">
+              <button @click="goToFilter" class="btn-filter-ig">
+                <p>Prueba nuestro filtro</p>
+                <img src="../assets/img/icon-ig-black.png" alt="" class="icon-filter-ig" />
+              </button>
+            </div>
+          </div>
+          <div class="container-img-btg">
+            <img src="../assets/img/goat-award.png" alt="" class="img-portada2" />
+
+          </div>
+        </div>
+        <div class="filter-ig">
+
+          <div class="line-separator"></div>
         </div>
       </div>
-      <div class="filter-ig">
-        <div class="container-filter-ig">
-          <button @click="goToFilter" class="btn-filter-ig">
-            <p>Prueba nuestro filtro</p>
-            <img
-              src="../assets/img/icon-ig-black.png"
-              alt=""
-              class="icon-filter-ig"
-            />
-          </button>
+      <footer>
+        <div class="container-footer">
+          <div class="copyright-info">
+            <p class="">© {{ currentYear }} Columbia Sportswear</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              facere perferendis dolores ad eius ex nisi, iure alias, provident
+              odit corporis laudantium corrupti deserunt nobis aut at veritatis
+              rerum voluptas!
+            </p>
+          </div>
+          <div class="social-media">
+            <div class="">
+              <a href=""><img src="../assets/img/icon-fb.png" alt="" class="icon-fb" /></a>
+            </div>
+            <div>
+              <a href=""><img src="../assets/img/icon-ig.png" alt="" class="icon-ig" /></a>
+            </div>
+          </div>
+          <div class="container-btn-scroll">
+            <button class="btn-scroll bg-white text-white duration-100 hover:bg-white" @click="scrollToSection">
+              <p style="margin-bottom: -3px;">Ir arriba</p> <img src="../assets/img/arrow-white.png" alt=""
+                class="filter hover:invert">
+            </button>
+          </div>
         </div>
-        <div class="line-separator"></div>
-      </div>
+      </footer>
     </div>
-    <footer >
-      <div class="container-footer">
-        <div class="copyright-info">
-          <p class="">© {{currentYear}} Columbia Sportswear</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            facere perferendis dolores ad eius ex nisi, iure alias, provident
-            odit corporis laudantium corrupti deserunt nobis aut at veritatis
-            rerum voluptas!
-          </p>
-        </div>
-        <div class="social-media">
-          <div class="">
-            <a href=""><img src="../assets/img/icon-fb.png" alt="" class="icon-fb"/></a>
-          </div>
-          <div>
-            <a href=""><img src="../assets/img/icon-ig.png" alt="" class="icon-ig"/></a>
-          </div>
-        </div>
-        <div class="container-btn-scroll">
-          <button class="btn-scroll bg-white text-white duration-100 hover:bg-white" @click="scrollToSection">
-            <p style="margin-bottom: -3px;">Ir arriba</p> <img src="../assets/img/arrow-white.png" alt="" class="filter hover:invert">
-          </button>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 <style scoped>
-.icon-fb, .icon-ig {
+.bg-section {
+  background: url('../assets/img/bg-section6.jpg');
+}
+
+.bg-black-opacity {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+
+.icon-fb,
+.icon-ig {
   width: 2.5rem;
 }
+
 .social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
 }
+
 .container-btn-scroll {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
 }
+
 .btn-scroll {
   background-color: transparent;
   border: 1px solid white;
@@ -123,7 +128,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1.2rem; 
+  padding: 0.8rem 1.2rem;
 }
 
 .btn-scroll img {
@@ -132,6 +137,7 @@ export default {
   transition: 0.5s;
   transform: rotate(180deg);
 }
+
 .copyright-info {
   display: flex;
   flex-direction: column;
@@ -141,17 +147,20 @@ export default {
   font-family: "Gertt-regular";
   font-size: 0.7rem;
 }
+
 .container-footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 10px 20px 10px;
 }
+
 .line-separator {
   width: 40%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.685);
   margin: 0 auto;
 }
+
 .btn-filter-ig {
   text-transform: uppercase;
   background-color: white;
@@ -221,9 +230,11 @@ export default {
   .img-portada2 {
     width: 70%;
   }
+
   .img-portada1 {
     width: 700px;
   }
+
   .line-separator {
     margin-top: 30px;
   }
@@ -231,31 +242,31 @@ export default {
 }
 
 /* PC */
-@media (min-width: 992px) and (max-width: 1499px) {
-  
-}
+@media (min-width: 992px) and (max-width: 1499px) {}
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-  
-}
+@media (min-width: 768px) and (max-width: 991px) {}
 
 /* Mobile */
 @media (max-width: 767px) {
+
   /* Adaptabilidad del footer */
   .container-footer {
     flex-direction: column;
   }
+
   .copyright-info {
     width: 100%;
     text-align: center;
   }
-  .copyright-info p{
+
+  .copyright-info p {
     text-align: center;
     width: 100%;
     font-size: 0.6em;
   }
-  .container-footer> *:nth-child(1) {
+
+  .container-footer>*:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -263,7 +274,8 @@ export default {
     font-size: 12px;
     margin-top: 10px;
   }
-  .container-footer> *:nth-child(2) {
+
+  .container-footer>*:nth-child(2) {
     order: 2;
     display: flex;
     justify-content: center;
@@ -271,41 +283,45 @@ export default {
     margin-top: 10px;
   }
 
-  .container-footer > *:nth-child(3) {
+  .container-footer>*:nth-child(3) {
     order: 1;
     display: flex;
     justify-content: center;
     width: 100%;
-  
-  }
-/* Adaptabilidad de la portada */
-.container-front{
-  margin-top: 0%;
-  flex-direction: column;
-}
-.container-front > *:nth-child(1) {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-front > *:nth-child(2) {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-img-btg {
-  width: 100%;
-}
 
-.img-portada1 {
-  width: 85%;
-}
-.img-portada2 {
-  width: 70%;
-  transform: scaleX(-1);
-}
- 
-}
-</style>
+  }
+
+  /* Adaptabilidad de la portada */
+  .container-front {
+    margin-top: 0%;
+    flex-direction: column;
+  }
+
+  .container-front>*:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-front>*:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-img-btg {
+    width: 100%;
+  }
+
+  .img-portada1 {
+    width: 85%;
+  }
+
+  .img-portada2 {
+    width: 70%;
+    transform: scaleX(-1);
+  }
+
+}</style>
