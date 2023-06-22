@@ -36,7 +36,7 @@ export default {
 <template>
   <div class="bg-section" id="section-6">
     <div class="bg-black-opacity">
-      <div class="h-screen">
+      <div class="">
         <div class="container-logo">
           <LogoColumbia class="logo" />
         </div>
@@ -44,7 +44,7 @@ export default {
           <div class="conatiner-img-btg flex flex-col ">
             <img src="../assets/img/bethegoat-1.png" alt="" srcset="" class="img-portada1" />
             <div class="container-filter-ig">
-              <button @click="goToFilter" class="btn-filter-ig">
+              <button @click="goToFilter" class="btn-filter-ig bg-white transition duration-150">
                 <p>Prueba nuestro filtro</p>
                 <img src="../assets/img/icon-ig-black.png" alt="" class="icon-filter-ig" />
               </button>
@@ -52,15 +52,13 @@ export default {
           </div>
           <div class="container-img-btg">
             <img src="../assets/img/goat-award.png" alt="" class="img-portada2" />
-
           </div>
         </div>
         <div class="filter-ig">
-
           <div class="line-separator"></div>
         </div>
       </div>
-      <footer>
+      <footer style="max-width: 100%; width: 100%;">
         <div class="container-footer">
           <div class="copyright-info">
             <p class="">© {{ currentYear }} Columbia Sportswear</p>
@@ -163,7 +161,6 @@ export default {
 
 .btn-filter-ig {
   text-transform: uppercase;
-  background-color: white;
   color: black;
   border: none;
   padding: 1rem 2rem;
@@ -173,17 +170,15 @@ export default {
   justify-content: center;
   border: 1px solid white;
 }
-
+.btn-filter-ig p{
+  margin-bottom: -3px;
+}
 .btn-filter-ig:hover {
-  background-color: black;
-  color: white;
-  transition: 0.5s;
+  background-color: transparent;
+  filter: invert(1);
+  border: 1px solid black;
 }
 
-.btn-filter-ig:hover img {
-  filter: invert(1);
-  transition: 0.5s;
-}
 
 .icon-filter-ig {
   width: 1.5rem;

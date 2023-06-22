@@ -1,26 +1,24 @@
-<script>
+<script setup>
 import ButtonScroll from "./ScrollButton.vue";
 import LogoColumbia from "./LogoColumbia.vue";
-
-export default {
-  components: {
-    ButtonScroll,
-    LogoColumbia,
-  },
-};
+import Termometro from "../assets/img/termometro.vue";
 </script>
 <template>
   <div class="h-screen bg-section" id="section-5">
     <div class="bg-container h-full w-full">
       <div class="container-header flex">
-            <div class="relative z-50">
-              <LogoColumbia class="text-center" />
-            </div>
-            <div class="container-title-header flex text-center items-center text-white flex-col uppercase">
-              <p class="" style="font-size: 0.85em;">Progreso</p>
-              <p class=" text-5xl">GOATOMETER</p>
-            </div>
-          </div>
+        <div class="relative z-50">
+          <LogoColumbia class="text-center" />
+        </div>
+        <div class="container-title-header flex text-center items-center text-white flex-col uppercase">
+          <p class="" style="font-size: 0.85em;">Progreso</p>
+          <p class=" text-5xl">GOATOMETER</p>
+        </div>
+        <div style="margin-top: 250px;">
+          <Termometro />
+        </div>
+      </div>
+      <div class="text-xl"></div>
       <div class="container-btnScroll">
         <ButtonScroll class="ButtonScroll" buttonText="Siguiente" buttonColor="black" sectionId="section-6" />
       </div>
@@ -39,6 +37,7 @@ export default {
   line-height: 1em;
   letter-spacing: 0.08em;
 }
+
 .container-header {
   display: flex;
   height: 20%;
@@ -53,6 +52,7 @@ export default {
   align-items: center;
   width: 100%;
 }
+
 .container-btnScroll {
   display: flex;
   justify-content: end;

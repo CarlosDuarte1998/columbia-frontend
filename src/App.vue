@@ -10,15 +10,18 @@ import FloatingButton from "./components/Modal/FloatingButton.vue";
 </script>
 
 <template>
+ <div class="bg-page">
   <FloatingButton class="mx-auto z-50" />
+  <ModalsContainer />
   <PageSection1 class="mx-auto" />
   <PageSection2 class="mx-auto" />
   <PageSection3 class="mx-auto" />
   <PageSection4 class="mx-auto" />
   <PageSection5 class="mx-auto" />
   <PageSection6 class="mx-auto" />
-  <ModalsContainer  />
+ </div>
 </template>
 
 <style scoped>
+
 </style>
