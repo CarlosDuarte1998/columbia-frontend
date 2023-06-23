@@ -93,7 +93,7 @@ export default {
           <p class="rate-discount">10% OFF</p>
 
           <button class="btn-discount" @click="hideDiscount">
-            OBTENER DESCUENTO
+            <p>OBTENER DESCUENTO</p>
           </button>
 
           <div class="flex justify-center pt-5">
@@ -161,6 +161,10 @@ export default {
   border: 1px solid #000000;
   width: 100%;
   font-size: 30px;
+  
+}
+.btn-discount p {
+  margin-bottom: -3px;
 }
 
 .btn-discount:hover {

@@ -13,9 +13,7 @@ const { open: openOfert, close: closeOfert } = useModal({
       closeOfert();
     },
   },
-  slots: {
-    default: '<p>The content of the modal</p>',
-  },
+
 });
 
 const { open: openSocial, close: closeSocial } = useModal({
@@ -27,11 +25,12 @@ const { open: openSocial, close: closeSocial } = useModal({
       closeSocial();
     },
   },
-  slots: {
-    default: '<p>The content of the modal</p>',
-  },
+ 
 });
 
+onMounted(() => {
+  openOfert();
+});
 
 </script>
 

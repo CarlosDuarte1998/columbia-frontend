@@ -81,7 +81,7 @@ export default {
   },
   '@1.50': {
     slidesPerView: 4,
-    spaceBetween: 50,
+    spaceBetween: 80,
     centeredSlides: true,
   },
 }" :keyboard="{
@@ -94,7 +94,7 @@ export default {
             <img src="../assets/img/perfile.png" alt="" />
           </div>
           <div class="container-text">
-            <h1 class="">{{ usuario.name }}</h1>
+            <h1 class="lg:text-xl name-competitor uppercase">{{ usuario.name }}</h1>
             <p>@{{ usuario.user }}</p>
             <div class="container-info">
               <VButton @click="openModal">
@@ -120,6 +120,7 @@ export default {
   background-color: #fff;
   display: flex;
   width: 100%;
+  height: 400px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -192,6 +193,12 @@ export default {
   .container-perfile img {
     width: 80%;
     height: auto;
+  }
+  .container-slider {
+    height: 350px;
+  }
+  .name-competitor{
+    font-size: 1rem !important;
   }
 }
 </style>
