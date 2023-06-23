@@ -6,16 +6,16 @@ import Termometro from "../assets/img/termometro.vue";
 <template>
   <div class="h-screen bg-section" id="section-5">
     <div class="bg-container h-full w-full">
-      <div class="container-header flex">
-        <div class="relative z-50">
-          <LogoColumbia class="text-center" />
+      <div class="container-header flex ">
+        <div class="container-logo z-50 sm:block">
+          <LogoColumbia />
         </div>
         <div class="container-title-header flex text-center items-center text-white flex-col uppercase">
           <p class="" style="font-size: 0.85em;">Progreso</p>
           <p class=" text-5xl">GOATOMETER</p>
         </div>
         <div style="margin-top: 250px;">
-          <Termometro />
+          <!-- <Termometro /> -->
         </div>
       </div>
       <div class="text-xl"></div>
@@ -69,7 +69,7 @@ import Termometro from "../assets/img/termometro.vue";
 
 .ButtonScroll {
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .bg-container {
@@ -83,11 +83,7 @@ import Termometro from "../assets/img/termometro.vue";
 
 
 
-.logo-columbia {
-  width: 100%;
-  display: flex;
-  justify-content: start;
-}
+
 
 /* Pantallas grandes */
 @media (min-width: 1500px) {}
@@ -101,12 +97,31 @@ import Termometro from "../assets/img/termometro.vue";
 /* Mobile */
 @media (max-width: 767px) {
 
+
   .container-header {
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column-reverse;
+}
 
   .logo-columbia {
     width: 100%;
   }
+  
+.container-title-header {
+  position: initial;
+}
+.container-logo{
+  position: absolute;
+
+}
+.section-logo{
+ display: none;
+}
+.container-logo {
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+ width: 95% !important;
+}
+
 }
 </style>

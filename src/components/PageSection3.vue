@@ -11,8 +11,8 @@ export default {
 </script>
 <template class="">
     <div class="w-screen h-screen" id="section-3">
-        <div class=" bg-black h-full text-white lg:flex sm:block">
-            <div class="section-1 lg:w-1/2 sm:w-full">
+        <div class="  h-full text-white lg:flex sm:block">
+            <div class="section-1 lg:w-1/2 sm:w-full bg-black">
                 <div class=" flex-column">
                     <div class="">
                         <LogoColumbia />
@@ -57,7 +57,6 @@ export default {
     position: relative;
     height: auto;
     margin-top: -2%;
-    height: 100%;
 }
 .img-section{
     display: flex;
@@ -94,7 +93,7 @@ export default {
     font-family: "GerTT-Bold";
     font-size: 30px;
     hyphens: auto;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .container-info p {
@@ -163,7 +162,7 @@ export default {
 
     .container-info p {
         font-size: 14px;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .btn-scroll {

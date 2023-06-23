@@ -1,39 +1,43 @@
-<script>
+<script setup>
 import { onMounted, ref } from "vue";
 import { ModalsContainer, useModal } from "vue-final-modal";
 import DiscountModal from "./DiscountModal.vue";
+import socialModal from "./SocialModal.vue";
 
-export default {
-  setup() {
-    const showModal = ref(false);
-    const { open, close } = useModal({
-      component: DiscountModal,
-      attrs: {
-        onConfirm: handleClose,
-      },
-      slots: {
-        default: "<p>The content of the modal</p>",
-      },
-    });
-
-    function handleClose() {
-      close();
-    }
-
-    onMounted(() => {
-      open();
-    });
-    
-    return {
-      open,
-      showModal,
-    };
+const { open: openOfert, close: closeOfert } = useModal({
+  component: DiscountModal,
+  props: {
   },
-};
+  attrs: {
+    onConfirm() {
+      closeOfert();
+    },
+  },
+  slots: {
+    default: '<p>The content of the modal</p>',
+  },
+});
+
+const { open: openSocial, close: closeSocial } = useModal({
+  component: socialModal,
+  props: {
+  },
+  attrs: {
+    onConfirm() {
+      closeSocial();
+    },
+  },
+  slots: {
+    default: '<p>The content of the modal</p>',
+  },
+});
+
+
 </script>
 
 <template>
-  <div @click="open" class="btn-floating">
+ <div>
+  <div @click="openOfert" class="btn-ofert">
     <div>
       <Button class="container-ofert z-50">
         <p>10%</p>
@@ -41,19 +45,37 @@ export default {
       </Button>
     </div>
   </div>
+  <div @click="openSocial" class="btn-social">
+    <div>
+      <Button class="container-social z-50">
+        <img src="../../assets/img/icon-foUS-social.png" alt="" sizes="" srcset="">
+      </Button>
+    </div>
+  </div>
+ </div>
 </template>
 
 
 <style scoped>
-.btn-floating {
+.container-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-social img{
+  width: 80%;
+  height: 100%;
+  
+}
+.btn-social {
   position: fixed;
-  top: 10%;
+  top: 20%;
   right: 0px;
   z-index: 2;
   width: 5%;
   height: 9%;
   background-color: #f5f5f5;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-right: 0px;
   border-radius: 20% 0% 0% 20%;
   display: flex;
@@ -63,7 +85,31 @@ export default {
   font-family: "GerTT-Bold";
   transition: all 0.2s;
 }
-.btn-floating:hover {
+.btn-social:hover {
+  color: #ffffff;
+  border: 1px solid #fff;
+  filter: invert(1);
+}
+
+.btn-ofert {
+  position: fixed;
+  top: 10%;
+  right: 0px;
+  z-index: 2;
+  width: 5%;
+  height: 9%;
+  background-color: #f5f5f5;
+  border: 1px solid #000000;
+  border-right: 0px;
+  border-radius: 20% 0% 0% 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "GerTT-Bold";
+  transition: all 0.2s;
+}
+.btn-ofert:hover {
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #fff;
@@ -79,10 +125,15 @@ Button p {
 
 /* Pantallas grandes */
 @media (min-width: 1500px) {
-    .btn-floating {
+    .btn-ofert {
     width: 3.5%;
     height: 6%;
     top: 10%;
+  }
+  .btn-social {
+    width: 3.5%;
+    height: 6%;
+    top: 20%;
   }
 }
 
@@ -96,13 +147,18 @@ Button p {
 }
 /* Mobile */
 @media (max-width: 767px) {
-  .btn-floating {
+  .btn-ofert {
     width: 15%;
     height: 6%;
     top: 10%;
   }
   Button p {
     font-size: 15px;
+  }
+  .btn-social {
+    width: 15%;
+    height: 6%;
+    top: 18%;
   }
 }
 

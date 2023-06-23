@@ -42,6 +42,7 @@ export default {
   </div>
 </template>
 <style scoped>
+
 .bg-section {
   background-image: url("../assets/img/bg-section-4.jpg");
   background-repeat: no-repeat;
@@ -133,11 +134,19 @@ export default {
   text-align: end;
   justify-content: end;
   align-items: end;
-  right: 24px;
+  right: 40px;
 }
 
 /* Pantallas grandes */
-@media (min-width: 1500px) {}
+@media (min-width: 1500px) {
+  .footer-section div:nth-child(2) button {
+  position: absolute;
+  text-align: end;
+  justify-content: end;
+  align-items: end;
+  right: 70px;
+}
+}
 
 /* PC */
 @media (min-width: 992px) and (max-width: 1499px) {}

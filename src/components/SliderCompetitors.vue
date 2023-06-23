@@ -6,7 +6,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Keyboard, Pagination, Navigation } from "swiper";
 import { Competitors } from "./Competitor/Competitors.js";
-
 import { ModalsContainer, useModal } from "vue-final-modal";
 import ModalConfirmPlainCss from './Modal/CompetitorModal.vue'
 
@@ -23,8 +22,8 @@ export default {
   },
   methods: {
     handleInfoClick(id) {
-      console.log("Clicked on element with id: " + id);
-      // Otras acciones utilizando el identificador
+      // console.log("Clicked on element with id: " + id);
+     
     },
   },
   setup() {
@@ -48,7 +47,8 @@ export default {
     };
     const onSlideChange = (swiper) => {
       const activeSlideIndex = swiper.activeIndex;
-      console.log("Slide change: " + activeSlideIndex);
+      //Slider que esta activo
+      // console.log("Slide change: " + activeSlideIndex);
     };
     return {
       Competitor: Competitors,

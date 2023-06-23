@@ -4,12 +4,16 @@ import 'vue-final-modal/style.css'
 import { createApp } from 'vue'
 import { createVfm } from 'vue-final-modal'
 import { createPinia } from 'pinia'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import * as IconsFa from '@fortawesome/free-solid-svg-icons'
 import App from './App.vue'
+
 
 
 const pinia = createPinia()
 const app = createApp(App)
 const vfm = createVfm()
-
 app.use(pinia)
+app.component('font-awesome-icon', FontAwesomeIcon)
 app.use(vfm).mount('#app')

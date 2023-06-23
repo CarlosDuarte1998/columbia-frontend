@@ -107,6 +107,7 @@ export default {
               :showDays="true"
               :showLabels="true"
               :labels="labels"
+              :scroll="false"
             />
           </div>
           <p class="info-discount">

@@ -64,6 +64,7 @@ export default {
   background-position: right center;
   display: flex;
   height: 100%;
+  z-index: 1;
 }
 
 .btn-scroll {
@@ -148,11 +149,13 @@ export default {
   .container-info h1 {
     font-size: 20px;
     margin-top: 20px;
+    margin-bottom: 5px;
+    line-height: 19px;
   }
 
   .container-info p {
-    font-size: 14px;
-    margin-top: 15px;
+    font-size: 13px;
+    margin-top: 8px;
   }
 
   .btn-scroll {

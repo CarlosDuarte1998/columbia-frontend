@@ -45,7 +45,7 @@ export default {
             <img src="../assets/img/bethegoat-1.png" alt="" srcset="" class="img-portada1" />
             <div class="container-filter-ig">
               <button @click="goToFilter" class="btn-filter-ig bg-white transition duration-150">
-                <p>Prueba nuestro filtro</p>
+                <span>Usa nuestro filtro</span>
                 <img src="../assets/img/icon-ig-black.png" alt="" class="icon-filter-ig" />
               </button>
             </div>
@@ -78,9 +78,9 @@ export default {
             </div>
           </div>
           <div class="container-btn-scroll">
-            <button class="btn-scroll bg-white text-white duration-100 hover:bg-white" @click="scrollToSection">
-              <p style="margin-bottom: -3px;">Ir arriba</p> <img src="../assets/img/arrow-white.png" alt=""
-                class="filter hover:invert">
+            <button class="btn-scroll bg-white text-white duration-200" @click="scrollToSection">
+              <span style="margin-bottom: -3px;" class="">Ir arriba</span> <img
+                src="../assets/img/arrow-white.png" alt="" class="hover:invert">
             </button>
           </div>
         </div>
@@ -91,6 +91,8 @@ export default {
 <style scoped>
 .bg-section {
   background: url('../assets/img/bg-section6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-black-opacity {
@@ -129,12 +131,20 @@ export default {
   padding: 0.8rem 1.2rem;
 }
 
+.btn-scroll:hover{
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.5s;
+  color: black;
+}
+
 .btn-scroll img {
   width: 0.9rem;
   margin-left: 0.5rem;
   transition: 0.5s;
   transform: rotate(180deg);
 }
+
 
 .copyright-info {
   display: flex;
@@ -170,9 +180,11 @@ export default {
   justify-content: center;
   border: 1px solid white;
 }
-.btn-filter-ig p{
+
+.btn-filter-ig p {
   margin-bottom: -3px;
 }
+
 .btn-filter-ig:hover {
   background-color: transparent;
   filter: invert(1);
@@ -192,7 +204,7 @@ export default {
   padding: 15px 0px 15px 0px;
 }
 
-.container-filter-ig p {
+.container-filter-ig span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +229,7 @@ export default {
 }
 
 .img-portada2 {
-  width: 78%;
+  width: 100%;
 }
 
 /* Pantallas grandes */
@@ -315,8 +327,7 @@ export default {
   }
 
   .img-portada2 {
-    width: 70%;
-    transform: scaleX(-1);
+    width: 90%;
   }
 
 }</style>
