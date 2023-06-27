@@ -92,7 +92,14 @@ import Termometro from "../assets/img/termometro.vue";
 @media (min-width: 992px) and (max-width: 1499px) {}
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-logo{
+      position: initial;
+      display: block;
+      width: 50%;
+      margin: 0px 0px 0px 0px;
+  }
+}
 
 /* Mobile */
 @media (max-width: 767px) {

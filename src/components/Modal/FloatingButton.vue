@@ -135,14 +135,35 @@ Button p {
     top: 20%;
   }
 }
+/*Pantallas grandes*/
+@media (min-width: 1500px) {
+  .btn-social {
+    top: 17%;
+  }
+}
 
 /* PC */
 @media (min-width: 992px) and (max-width: 1499px) {
-    
+  
+  
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
+  .btn-ofert {
+    width: 10% !important;
+    height: 6%;
+    top: 10%;
+  }
+  .btn-social {
+    width: 10% !important;
+    height: 6%;
+    top: 18%;
+  }
+  .container-social img{
+    width: 50px;
+    height: 50px;
+  }
 }
 /* Mobile */
 @media (max-width: 767px) {
@@ -158,6 +179,11 @@ Button p {
     width: 15%;
     height: 6%;
     top: 18%;
+  }
+
+  .container-social img{
+    width: 40px;
+    height: 40px;
   }
 }
 

@@ -54,12 +54,12 @@ export default {
             <img src="../assets/img/goat-award.png" alt="" class="img-portada2" />
           </div>
         </div>
-        <div class="filter-ig">
+        <div class="mt-12 mb-7">
           <div class="line-separator"></div>
         </div>
       </div>
       <footer style="max-width: 100%; width: 100%;">
-        <div class="container-footer">
+        <div class="container-footer ml-10">
           <div class="copyright-info">
             <p class="">© {{ currentYear }} Columbia Sportswear</p>
             <p>
