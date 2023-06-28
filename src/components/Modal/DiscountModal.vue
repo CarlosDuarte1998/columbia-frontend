@@ -201,7 +201,7 @@ export default {
 
 
 .rate-discount {
-  font-size: 100px;
+  font-size: 95px;
   font-family: "GerTT-Bold";
   text-align: center;
 }
