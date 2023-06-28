@@ -38,6 +38,10 @@
       src: url('../assets/fonts/GerTT/GerTTBold.otf') format('truetype');
     }
 
+  /*Modificacion de estilos de los modales*/
+ 
+  /*Fin*/
+
   html, body {
     overflow-x: hidden;
     max-width: 100vw;
@@ -56,13 +60,13 @@
   .confirm-modal-content {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    background: #fff;
+    padding: 0rem;
+
     border-radius: 0.5rem;
     width: 80%;
   }
   .confirm-modal-content > * + * {
-    margin: 0.5rem 0;
+    margin: 0.0rem 0;
   }
   .confirm-modal-content h1 {
     font-size: 1.375rem;

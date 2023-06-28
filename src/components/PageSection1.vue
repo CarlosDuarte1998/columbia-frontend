@@ -23,7 +23,7 @@ export default {
     <div class="section-intro bg-white lg:flex sm:block">
       <div class="lg:w-1/2 md:w-full sm:w-full">
         <div class="h-max flex items-center">
-          <h1 class="flex-1 lg:text-start md:text-center sm:text-center">
+          <h1 class="flex-1 lg:text-start md:text-center sm:text-center text-goatometer">
             GOATOMETER
           </h1>
         </div>
@@ -170,5 +170,13 @@ export default {
   .section-intro> :nth-child(2) .flex-1> :nth-child(2) {
     margin-top: 15px;
   }
+
+  .text-goat {
+  word-spacing: 12px;
+}
+
+.text-goatometer{
+  margin-top: 15px;
+}
 }
 </style>

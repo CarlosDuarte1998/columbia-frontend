@@ -9,7 +9,7 @@ export default {
     },
 };
 </script>
-<template class="">
+<template>
     <div class="w-screen h-screen" id="section-3">
         <div class="  h-full text-white lg:flex sm:block">
             <div class="section-1 lg:w-1/2 sm:w-full bg-black">
@@ -157,7 +157,7 @@ export default {
 
     .container-info h1 {
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .container-info p {

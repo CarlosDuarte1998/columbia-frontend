@@ -145,10 +145,13 @@ export default {
   .section-2 .info-section div {
     width: 95%;
   }
+  .container-info{
+    padding: 0px 5px 0px 5px;
+  }
 
   .container-info h1 {
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 19px;
+    margin-top: 25px;
     margin-bottom: 5px;
     line-height: 19px;
   }

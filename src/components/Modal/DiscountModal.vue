@@ -72,25 +72,15 @@ export default {
         />
       </svg>
     </button>
-    <div class="container-discount flex">
-      <div class="w-2/4 container-img">
-        <img
-          class="img-discount w-auto"
-          src="../../assets/img/shoes-discount-2.png"
-          alt=""
-          v-if="showDiscount"
-        />
-        <img
-          class="img-discount w-auto"
-          src="../../assets/img/shoes-discount-1.png"
-          alt=""
-          v-else
-          style="transition: all 0.5s ease-in-out;"
-        />
+    <div class="container-discount flex bg-white" >
+      <div v-if="showDiscount" class="w-2/4 flex h-full container-img  justify-center items-center m-0" >
+
       </div>
+      <div v-else class="w-2/4 flex h-full img-container-child  justify-center items-center m-0" >
+</div>
       <div class="container-infoCompetitor">
-        <div v-if="showDiscount">
-          <p class="rate-discount">10% OFF</p>
+        <div v-if="showDiscount" class="lg:pr-14 lg:pl-14 ">
+          <p class="rate-discount">15% OFF</p>
 
           <button class="btn-discount" @click="hideDiscount">
             <p>OBTENER DESCUENTO</p>
@@ -111,7 +101,7 @@ export default {
             />
           </div>
           <p class="info-discount">
-            Llena el formulario y recibe al instante 10% de descuento en tu
+            Llena el formulario y recibe al instante 15% de descuento en tu
             próxima compra en tienda o sitio web. Producto sujeto a existencias.
             Fotografía de carácter ilustrativo.
           </p>
@@ -135,8 +125,8 @@ export default {
             <div class="flex flex-col">
               <FormDiscount />
             </div>
-            <p class="info-discount text-center">
-              Llena el formulario y recibe al instante 10% de descuento en tu
+            <p class="info-discount text-center lg:pl-14 lg:pr-14">
+              Llena el formulario y recibe al instante 15% de descuento en tu
               próxima compra en tienda o sitio web. Producto sujeto a
               existencias. Fotografía de carácter ilustrativo.
             </p>
@@ -148,6 +138,33 @@ export default {
 </template>
 
 <style scoped>
+
+.img-container-child{
+  background: url("../../assets/img/goat-modal-2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 550px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.container-img {
+  background: url("../../assets/img/goat-modal-1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 550px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+
 .title-form {
   font-size: 60px;
   font-family: "GerTT-Bold";
@@ -161,10 +178,9 @@ export default {
   border: 1px solid #000000;
   width: 100%;
   font-size: 30px;
-  
 }
 .btn-discount p {
-  margin-bottom: -3px;
+  margin-bottom: -5px;
 }
 
 .btn-discount:hover {
@@ -173,23 +189,17 @@ export default {
   cursor: pointer;
 }
 
-.container-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .container-infoCompetitor {
   width: 50%;
   padding: 12px;
 }
 
-.container-img {
-  width: 50%;
-}
+
 
 .rate-discount {
-  font-size: 120px;
+  font-size: 100px;
   font-family: "GerTT-Bold";
   text-align: center;
 }
@@ -222,25 +232,27 @@ export default {
   justify-content: center;
   align-items: center;
   margin-bottom: 12px;
+  border-radius: 0.5rem;
 }
 
 .confirm-modal {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .confirm-modal-content {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  background: #fff;
+  padding: 0rem;
+  background: transparent;
   border-radius: 0.5rem;
   width: 80%;
 }
 
 .confirm-modal-content > * + * {
-  margin: 0.5rem 0;
+  margin: 0.0rem 0;
 }
 
 .confirm-modal-content h1 {
@@ -252,14 +264,19 @@ export default {
   display: flex;
   margin: 0.25rem 0 -20px auto;
   padding: 0 8px;
-  border-radius: 0.5rem;
+  cursor: pointer;  
   font-family: "GerTT-Bold";
   font-size: 1.5rem;
+  right: 1px;
 }
 
 .btn-close svg {
   width: 30px;
   height: 30px;
+  position: relative;
+  top: 2rem;
+  right: 1rem;
+
 }
 
 .dark .confirm-modal-content {
@@ -300,9 +317,7 @@ export default {
     flex-direction: column;
   }
 
-  .container-img {
-    width: 100%;
-  }
+  
 
   .container-infoCompetitor {
     width: 100%;
@@ -340,5 +355,32 @@ export default {
   .time-discount {
     font-size: 30px;
   }
+
+  .btn-close svg {
+    right: 1em;
+    top: 1em;
+    z-index: 1;
+  }
+
+  .container-img {
+  width: 100%;
+  height: 300px;
+  border-radius:  0.5em 0.5rem 0rem 0rem;
+  background: url('../../assets/img/goat-modal-2.jpg') no-repeat ;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-container-child{
+  width: 100%;
+  height: 300px;
+  border-radius:  0.5em 0.5rem 0rem 0rem;
+  background: url('../../assets/img/goat-modal-2.jpg') no-repeat ;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
 }
 </style>

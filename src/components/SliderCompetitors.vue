@@ -1,4 +1,4 @@
-<script >
+<script>
 // Importacion Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
@@ -7,9 +7,7 @@ import "swiper/css/navigation";
 import { Autoplay, Keyboard, Pagination, Navigation } from "swiper";
 import { Competitors } from "./Competitor/Competitors.js";
 import { ModalsContainer, useModal } from "vue-final-modal";
-import ModalConfirmPlainCss from './Modal/CompetitorModal.vue'
-
-
+import ModalConfirmPlainCss from "./Modal/CompetitorModal.vue";
 
 export default {
   data() {
@@ -23,24 +21,21 @@ export default {
   methods: {
     handleInfoClick(id) {
       // console.log("Clicked on element with id: " + id);
-     
     },
   },
   setup() {
     const { open: openModal, close: closeModal } = useModal({
       component: ModalConfirmPlainCss,
-      props: {
-      },
+      props: {},
       attrs: {
         onConfirm() {
           closeModal();
         },
       },
       slots: {
-        default: '<p>The content of the modal</p>',
+        default: "<p>The content of the modal</p>",
       },
     });
-
 
     const onSwiper = (swiper) => {
       console.log(swiper);
@@ -94,8 +89,10 @@ export default {
             <img src="../assets/img/perfile.png" alt="" />
           </div>
           <div class="container-text">
-            <h1 class="lg:text-xl name-competitor uppercase">{{ usuario.name }}</h1>
-            <p>@{{ usuario.user }}</p>
+            <h1 class="lg:text-xl name-competitor uppercase">
+              {{ usuario.name }}
+            </h1>
+            <p class="uppercase">@{{ usuario.user }}</p>
             <div class="container-info">
               <VButton @click="openModal">
                 <p @click="handleInfoClick(usuario.id)" class="btn-info">
@@ -107,12 +104,7 @@ export default {
         </div>
       </di>
     </swiper-slide>
-   
   </swiper>
-
-
-
- 
 </template>
 
 <style scoped>
@@ -194,10 +186,12 @@ export default {
     width: 80%;
     height: auto;
   }
+
   .container-slider {
     height: 350px;
   }
-  .name-competitor{
+
+  .name-competitor {
     font-size: 1rem !important;
   }
 }

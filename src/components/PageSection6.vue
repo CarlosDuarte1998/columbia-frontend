@@ -73,14 +73,14 @@ export default {
             <div class="">
               <a href=""><img src="../assets/img/icon-fb.png" alt="" class="icon-fb" /></a>
             </div>
-            <div>
+            <!-- <div>
               <a href=""><img src="../assets/img/icon-ig.png" alt="" class="icon-ig" /></a>
-            </div>
+            </div> -->
           </div>
           <div class="container-btn-scroll">
             <button class="btn-scroll bg-white text-white duration-200" @click="scrollToSection">
               <span style="margin-bottom: -3px;" class="">Ir arriba</span> <img
-                src="../assets/img/arrow-white.png" alt="" class="hover:invert">
+                src="../assets/img/arrow-white.png" alt="" class="">
             </button>
           </div>
         </div>
@@ -136,6 +136,10 @@ export default {
   border: 1px solid black;
   transition: 0.5s;
   color: black;
+}
+
+.btn-scroll:hover img {
+ filter: invert(1);
 }
 
 .btn-scroll img {

@@ -1,54 +1,26 @@
-<script>
+<script setup>
 import { useVuelidate } from "@vuelidate/core";
 import { required, email } from "@vuelidate/validators";
 
-export default {
-  setup() {
-    return {};
-  },
-  data() {
-    return {
-      v$: useVuelidate(),
-      email: "",
-      name: "",
-      country: "",
-    };
-  },
-  validations() {
-    return {
-      email: { required, email },
-      name: { required },
-      country: { required },
-    };
-  },
-  methods: {
-    submitForm() {
-      this.v$.$validate();
-      if (this.v$.$error) {
-        console.log("error");
-      } else {
-        console.log("success");
-      }
-    },
-  },
-};
+
 </script>
+
 <template>
-  <div>
-    <form @submit.prevent="" action="" class="form-discount">
+  <div class=" lg:pr-14 lg:pl-14">
+    <form  action="" class="form-discount">
       <input
         type="text"
         placeholder="Nombre"
-        v-model="name"
+        
         class="input-name"
       />
       <input
         type="email"
         placeholder="Correo"
-        v-model="email"
+        
         class="input-email"
       />
-      <select name="" id="" class="input-select" v-model="country">
+      <select name="" id="" class="input-select" >
         <option value="" disabled selected>País</option>
         <option value="CR">Costa Rica</option>
         <option value="SV">El Salvador</option>
@@ -59,11 +31,8 @@ export default {
         <option value="DO">República Dominicana</option>
         <option value="VE">Venezuela</option>
       </select>
-      <div v-if="v$.$error" class="error">
-        <p>Los campos no deben quedar vacíos</p>
-      </div>
-      <div style="display:none">Datos enviados correctamente</div>
-      <input type="submit" value="Obtener descuento" @click="submitForm" />
+      
+      <input type="submit" value="Obtener descuento" />
     </form>
   </div>
 </template>
@@ -108,5 +77,13 @@ export default {
     color: #ffffff;
     cursor: pointer;
   }
+  .form-discount input {
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 5px;
+  font-family: "GerTT-medium";
+  font-size: 20px;
+  font-size: 17px;
+}
+
 }
 </style>
