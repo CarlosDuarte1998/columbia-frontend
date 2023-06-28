@@ -14,9 +14,11 @@ import Termometro from "../assets/img/termometro.vue";
           <p class="" style="font-size: 0.85em;">Progreso</p>
           <p class=" text-5xl">GOATOMETER</p>
         </div>
-        <div style="margin-top: 250px;">
-          <!-- <Termometro /> -->
-        </div>
+        
+      </div>
+      <div class="container-competitors">
+        <img src="../assets/img/list-competitors.png" alt="" class="img-competitors">
+        <img src="../assets/img/list-competitors-mobile.png" alt="" class="img-competitors-mobile">
       </div>
       <div class="text-xl"></div>
       <div class="container-btnScroll">
@@ -38,6 +40,22 @@ import Termometro from "../assets/img/termometro.vue";
   letter-spacing: 0.08em;
 }
 
+.container-competitors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.img-competitors{
+  width: 90%;
+}
+.img-competitors{
+  display: black;
+}
+.img-competitors-mobile{
+  display: none;
+}
 .container-header {
   display: flex;
   height: 20%;
@@ -99,15 +117,25 @@ import Termometro from "../assets/img/termometro.vue";
       width: 50%;
       margin: 0px 0px 0px 0px;
   }
+
+  .img-competitors-mobile{
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+
 }
 
 /* Mobile */
 @media (max-width: 767px) {
 
-
+  .container-header div:nth-child(1){
+    position: initial;
+  }
   .container-header {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column !important;
 }
 
   .logo-columbia {
@@ -129,6 +157,20 @@ import Termometro from "../assets/img/termometro.vue";
  margin: 0px 0px 0px 0px;
  width: 95% !important;
 }
+.bg-section{
+  background: url('../assets/img/bg-section-5-mobile.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
 
+
+.img-competitors{
+  display: none;
+}
+.img-competitors-mobile{
+  display: block;
+  width: 90%;
+  height: auto;
+}
 }
 </style>

@@ -64,12 +64,13 @@ export default {
 <template>
   <VueFinalModal
     class="confirm-modal"
-    content-class="confirm-modal-content"
+    content-class="competitor-modal-content"
     overlay-transition="vfm-fade"
     content-transition="vfm-fade"
     lock-scroll="true"
   >
-    <button @click="close" class="btn-close">
+<div>
+  <button @click="close" class="btn-close">
       <svg
         width="39"
         height="38"
@@ -87,10 +88,10 @@ export default {
         />
       </svg>
     </button>
-    <div class="container-competitor flex lg:p-16">
+    <div class="container-competitor flex lg:p-16 mt-8">
       <div class="w-2/4 container-img">
         <img
-          class="img-competitor"
+          class="img-competitor rounded-full"
           :src="user ? user.picture : urlImgCompetitor"
           alt=""
         />
@@ -108,13 +109,15 @@ export default {
           Challenge: Walk 1,893 meters
         </p>
       </div>
-   
-      
     </div>
+</div>
   </VueFinalModal>
 </template>
 
 <style scoped>
+
+
+
 .container-img {
   display: flex;
   justify-content: center;
@@ -177,6 +180,10 @@ export default {
 .btn-close svg{
     width: 30px;
     height: 30px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+
   }
 .dark .confirm-modal-content {
   background: #000;

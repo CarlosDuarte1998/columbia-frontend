@@ -98,6 +98,7 @@ export default {
               :showLabels="true"
               :labels="labels"
               :scroll="false"
+              class="hidden"
             />
           </div>
           <p class="info-discount">
@@ -120,6 +121,7 @@ export default {
                 :showDays="true"
                 :showLabels="true"
                 :labels="labels"
+                class="hidden"
               />
             </div>
             <div class="flex flex-col">
@@ -309,6 +311,38 @@ export default {
     width: 200px;
     margin-bottom: 20px;
   }
+
+  .container-discount {
+    flex-direction: column;
+  }
+  .btn-close svg {
+    z-index: 1;
+  }
+  .container-infoCompetitor {
+    width: 80%;
+    text-align: center;
+  }
+
+  .container-img {
+  width: 100%;
+  height: 300px;
+  border-radius:  0.5em 0.5rem 0rem 0rem;
+  background: url('../../assets/img/goat-modal-1.jpg') no-repeat ;
+  background-size: cover;
+  background-position: center;
+  background-position: 50% 60%;
+}
+
+.img-container-child{
+  width: 100%;
+  height: 300px;
+  border-radius:  0.5em 0.5rem 0rem 0rem;
+  background: url('../../assets/img/goat-modal-2.jpg') no-repeat ;
+  background-size: cover;
+  background-position: 50% 80%;
+}
+
+
 }
 
 /* Mobile */
@@ -366,7 +400,7 @@ export default {
   width: 100%;
   height: 300px;
   border-radius:  0.5em 0.5rem 0rem 0rem;
-  background: url('../../assets/img/goat-modal-2.jpg') no-repeat ;
+  background: url('../../assets/img/goat-modal-1.jpg') no-repeat ;
   background-size: cover;
   background-position: center;
 }

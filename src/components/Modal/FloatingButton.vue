@@ -39,7 +39,7 @@ onMounted(() => {
   <div @click="openOfert" class="btn-ofert">
     <div>
       <Button class="container-ofert z-50">
-        <p>10%</p>
+        <p>15%</p>
         <p>OFF</p>
       </Button>
     </div>

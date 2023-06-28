@@ -14,7 +14,7 @@ export default {
 <template>
   <div class="container-logo" style="overflow-x: hidden">
     <div class="logo text-white">
-      <img @click="scrollToSection" src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia" />
+      <img @click="scrollToSection" src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia " />
     </div>
   </div>
 </template>
@@ -46,6 +46,7 @@ export default {
     width: 150px;
     height: 150px;
     top: 0%;
+    padding-left: 4px;
   }
 }
 </style>

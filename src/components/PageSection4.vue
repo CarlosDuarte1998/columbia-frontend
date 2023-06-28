@@ -217,14 +217,9 @@ export default {
   .footer-section div:nth-child(2) button {
     position: initial;
     display: initial;
-
   }
-
-
-
-
-
-
-
+  .container-slider{
+    margin-top: 30px;
+  }
 }
 </style>

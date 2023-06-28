@@ -128,8 +128,11 @@ export default {
   }
 
   .bg-header {
-    background-image: url("../assets/img/bg-header-mobile.png");
+    background-image: url("../assets/img/bg-header-mobile.jpg");
     background-position: center;
+  }
+  .text-goatometer{
+    margin-bottom: -10px;
   }
 }
 
@@ -172,11 +175,13 @@ export default {
   }
 
   .text-goat {
-  word-spacing: 12px;
+  word-spacing: 8px;
 }
 
 .text-goatometer{
   margin-top: 15px;
 }
 }
+
+
 </style>

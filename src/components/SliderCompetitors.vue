@@ -94,11 +94,11 @@ export default {
             </h1>
             <p class="uppercase">@{{ usuario.user }}</p>
             <div class="container-info">
-              <VButton @click="openModal">
+              <button @click="openModal">
                 <p @click="handleInfoClick(usuario.id)" class="btn-info">
                   + Info
                 </p>
-              </VButton>
+              </button>
             </div>
           </div>
         </div>
@@ -195,4 +195,21 @@ export default {
     font-size: 1rem !important;
   }
 }
+
+/*Mobile con pantallas pequeñas*/
+@media (max-width: 575px) {
+  .container-perfile img {
+    width: 60%;
+    height: auto;
+  }
+
+  .container-slider {
+    height: 290px;
+  }
+  .container-info{
+    margin-top: 15px;
+  }
+
+}
+
 </style>

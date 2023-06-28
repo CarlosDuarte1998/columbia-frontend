@@ -1,38 +1,49 @@
-<script>
+<script setup>
 import LogoColumbia from "./LogoColumbia.vue";
-export default {
-  components: {
-    LogoColumbia,
+import { ref, onMounted } from "vue";
+import { useModal } from "vue-final-modal";
+import FacebookSocialModal from "./Modal/FacebookSocialModal.vue";
+
+const { open: openSocial, close: closeSocial } = useModal({
+  component: FacebookSocialModal,
+  props: {
   },
-  data() {
-    return {
-      currentYear: null,
-    };
-  },
-  mounted() {
-    this.getCurrentYear();
-  },
-  methods: {
-    goToFilter() {
-      window.open("https://www.instagram.com/columbia_cr/", "_blank");
+  attrs: {
+    onConfirm() {
+      closeSocial();
     },
-    scrollToSection() {
-      const section = document.getElementById('section-1');
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth",
-      });
-    },
-
-    getCurrentYear() {
-      const date = new Date();
-      this.currentYear = date.getFullYear();
-    }
-
-
   },
-};
+ 
+});
+
+
+const currentYear = ref(null);
+
+onMounted(() => {
+  getCurrentYear();
+});
+
+function goToFilter() {
+  window.open("https://www.instagram.com/columbia_cr/", "_blank");
+}
+
+function scrollToSection() {
+  const section = document.getElementById('section-1');
+  window.scrollTo({
+    top: section.offsetTop,
+    behavior: "smooth",
+  });
+}
+
+function getCurrentYear() {
+  const date = new Date();
+  currentYear.value = date.getFullYear();
+}
+
+
+
 </script>
+
 <template>
   <div class="bg-section" id="section-6">
     <div class="bg-black-opacity">
@@ -71,14 +82,14 @@ export default {
           </div>
           <div class="social-media">
             <div class="">
-              <a href=""><img src="../assets/img/icon-fb.png" alt="" class="icon-fb" /></a>
+              <a href=""><img src="../assets/img/icon-fb.png" alt="" class="icon-fb" @click.prevent="openSocial" /></a>
             </div>
             <!-- <div>
               <a href=""><img src="../assets/img/icon-ig.png" alt="" class="icon-ig" /></a>
             </div> -->
           </div>
           <div class="container-btn-scroll">
-            <button class="btn-scroll bg-white text-white duration-200" @click="scrollToSection">
+            <button class="btn-scroll bg-white text-white duration-200" >
               <span style="margin-bottom: -3px;" class="">Ir arriba</span> <img
                 src="../assets/img/arrow-white.png" alt="" class="">
             </button>

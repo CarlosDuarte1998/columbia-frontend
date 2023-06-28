@@ -10,13 +10,13 @@ import { required, email } from "@vuelidate/validators";
     <form  action="" class="form-discount">
       <input
         type="text"
-        placeholder="Nombre"
+        placeholder="Nombre completo"
         
         class="input-name"
       />
       <input
         type="email"
-        placeholder="Correo"
+        placeholder="Correo Electrónico"
         
         class="input-email"
       />

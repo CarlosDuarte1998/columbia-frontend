@@ -14,7 +14,7 @@ export default {
   <div class="w-screen h-screen bg-black" id="section-2">
     <div class="h-full text-white lg:flex sm:block">
       <div class="section-1 lg:w-1/2 sm:w-full">
-        <div class="">
+        <div class="ml-1">
           <LogoColumbia />
         </div>
       </div>
@@ -167,5 +167,21 @@ export default {
     margin-top: 20px;
     margin-right: 25%;
   }
+}
+/*Mobile con pantallas pequeñas*/
+@media (max-width: 575px) {
+  .container-info h1 {
+    font-size: 16px;
+    margin-top: 1em;
+    margin-bottom: 5px;
+    line-height: 19px;
+  }
+
+  .container-info p {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+
 }
 </style>

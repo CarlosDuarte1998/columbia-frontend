@@ -117,6 +117,9 @@ export default {
 @media (min-width: 992px) and (max-width: 1499px) {}
 /* Pantallas para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .img-section{
+        width: 60%;
+    }
     .section-1 {
         height: 50%;
         background-position: top center;
@@ -162,14 +165,20 @@ export default {
 
     .container-info p {
         font-size: 14px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .btn-scroll {
         display: block;
         position: relative;
-        margin-top: 20px;
+        
         margin-right: 25%;
     }
+    .img-section{
+        width: 21rem;
+    }
+
 }
+
+
 </style>
