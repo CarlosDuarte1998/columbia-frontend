@@ -175,7 +175,7 @@ export default {
   }
 
   .text-goat {
-  word-spacing: 8px;
+  word-spacing: 3px;
 }
 
 .text-goatometer{

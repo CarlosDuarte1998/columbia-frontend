@@ -48,7 +48,7 @@ import Termometro from "../assets/img/termometro.vue";
   height: 100%;
 }
 .img-competitors{
-  width: 90%;
+  width: 80%;
 }
 .img-competitors{
   display: black;
@@ -169,7 +169,7 @@ import Termometro from "../assets/img/termometro.vue";
 }
 .img-competitors-mobile{
   display: block;
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 }

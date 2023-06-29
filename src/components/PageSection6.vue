@@ -73,12 +73,12 @@ function getCurrentYear() {
         <div class="container-footer ml-10">
           <div class="copyright-info">
             <p class="">© {{ currentYear }} Columbia Sportswear</p>
-            <p>
+            <!-- <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
               facere perferendis dolores ad eius ex nisi, iure alias, provident
               odit corporis laudantium corrupti deserunt nobis aut at veritatis
               rerum voluptas!
-            </p>
+            </p> -->
           </div>
           <div class="social-media">
             <div class="">
