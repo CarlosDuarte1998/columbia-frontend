@@ -89,7 +89,7 @@ function getCurrentYear() {
             </div> -->
           </div>
           <div class="container-btn-scroll">
-            <button class="btn-scroll bg-white text-white duration-200" >
+            <button class="btn-scroll bg-white text-white duration-200" @click="scrollToSection">
               <span style="margin-bottom: -3px;" class="">Ir arriba</span> <img
                 src="../assets/img/arrow-white.png" alt="" class="">
             </button>
