@@ -42,7 +42,9 @@ export default {
   </div>
 </template>
 <style scoped>
-
+.ButtonScroll{
+  z-index: 100;
+}
 .bg-section {
   background-image: url("../assets/img/bg-section-4.jpg");
   background-repeat: no-repeat;

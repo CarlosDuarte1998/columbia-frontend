@@ -1,64 +1,36 @@
-<script >
-
-import { defineProps, defineEmits, ref } from "vue";
+<script setup>
+import { defineProps, defineEmits, ref, onMounted} from "vue";
 import axios from "axios";
 import { VueFinalModal, ModalsContainer } from "vue-final-modal";
+import { useCompetitorStore } from "@/stores/competitor";
 
 
-function confirm() {
-  document.getElementById("show").value = false;
-}
+const emit = defineEmits(['confirm']);
+const props = defineProps({
+  id_competitor: {
+    type: String,
+    default: undefined
+  }
+});
 
 
-export default {
-  components: {
-    VueFinalModal,
-    ModalsContainer,
-  },
-  props: {
-    nameCompetitor: {
-      type: String,
-      default: "",
-    },
-    urlImgCompetitor: {
-      type: String,
-      default: "",
-    },
-    infoCompetitor: {
-      type: String,
-      default: "",
-    },
-  },
-
-  setup(props, { emit }) {
-    const user = ref(null);
-
-    const fetchUser = async () => {
-      try {
-        const response = await axios.get("https://randomuser.me/api/");
-        const userData = response.data.results[0];
-        const name = `${userData.name.first} ${userData.name.last}`;
-        const picture = userData.picture.large;
-        const info = `${userData.login.username}`;
-        const country = `${userData.location.country}`;
-        user.value = { name, picture, info, country };
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchUser();
-
-    return {
-      user,
-    };
-  },
-  methods: {
-    close() {
-      this.$emit('confirm');
-    }
-  },
+const close = () => {
+  emit('confirm');
 };
+
+
+// Peticion de los datos del store
+
+const competitorStore = useCompetitorStore();
+const competitor = ref([]);
+
+
+onMounted(async () => {
+  await competitorStore.showCompetitor(props.id_competitor)
+  competitor.value = competitorStore.competitors
+});
+
+
 </script>
 
 <template>
@@ -97,13 +69,10 @@ export default {
         />
       </div>
       <div class="container-infoCompetitor">
-        <p class="name-competitor">{{ user ? user.name : nameCompetitor }}</p>
-        <p class="user-competitor">@{{ user ? user.info : infoCompetitor }}</p>
+        <p class="name-competitor" >{{ competitor.name }}</p>
+        <p class="user-competitor">{{ competitor.instagram_username }}</p>
         <p class="info-competitor">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          veritatis sapiente dolores. Odit libero minima dicta harum ea rerum
-          repellendus nesciunt, necessitatibus voluptatibus earum? Dignissimos
-          alias culpa laboriosam dicta aut.
+          {{ competitor.instagram_biography }}
         </p>
         <p class="challenge-competitor">
           Challenge: Walk 1,893 meters

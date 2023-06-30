@@ -1,59 +1,65 @@
-<script>
-// Importacion Swiper Vue.js components
+<script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Keyboard, Pagination, Navigation } from "swiper";
-import { Competitors } from "./Competitor/Competitors.js";
 import { ModalsContainer, useModal } from "vue-final-modal";
-import ModalConfirmPlainCss from "./Modal/CompetitorModal.vue";
+import CompetitorModal from "./Modal/CompetitorModal.vue";
+import { useCompetitorStore } from "@/stores/competitor";
+import { onMounted, ref, reactive } from "vue";
 
-export default {
-  data() {
-    return {};
+// Configuracion del modal
+let id_competitor = ref(null);
+const handleIdCompetitor = (id) => {
+  id_competitor.value = id;
+  console.log(id);
+  openModal();
+};
+
+const { open: openModal, close: closeModal } = useModal({
+  component: CompetitorModal,
+  props: {
+    
   },
-  components: {
-    Swiper,
-    SwiperSlide,
-    ModalsContainer,
-  },
-  methods: {
-    handleInfoClick(id) {
-      // console.log("Clicked on element with id: " + id);
+  attrs: {
+    id_competitor: id_competitor,
+    onConfirm() {
+      closeModal();
     },
   },
-  setup() {
-    const { open: openModal, close: closeModal } = useModal({
-      component: ModalConfirmPlainCss,
-      props: {},
-      attrs: {
-        onConfirm() {
-          closeModal();
-        },
-      },
-      slots: {
-        default: "<p>The content of the modal</p>",
-      },
-    });
-
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = (swiper) => {
-      const activeSlideIndex = swiper.activeIndex;
-      //Slider que esta activo
-      // console.log("Slide change: " + activeSlideIndex);
-    };
-    return {
-      Competitor: Competitors,
-      modules: [Keyboard, Autoplay, Pagination, Navigation],
-      onSwiper,
-      onSlideChange,
-      openModal,
-    };
+  slots: {
+    default: "<p>The content of the modal</p>",
   },
+});
+
+const onSwiper = (swiper) => {
+  console.log(swiper);
 };
+
+const onSlideChange = (swiper) => {
+  const activeSlideIndex = swiper.activeIndex;
+  //Slider que esta activo
+  // console.log("Slide change: " + activeSlideIndex);
+};
+
+
+const modules = [Keyboard, Autoplay, Pagination, Navigation];
+
+
+
+// Peticion de los datos del store
+
+const competitorStore = useCompetitorStore();
+const competitors = ref([]);
+
+
+onMounted(async () => {
+  await competitorStore.getCompetitors()
+  competitors.value = competitorStore.competitors
+});
+
+
 </script>
 <template>
   <swiper :slidesPerView="4" :centeredSlides="true" :spaceBetween="20" :loop="true" :autoplay="{
@@ -82,7 +88,9 @@ export default {
 }" :keyboard="{
   enabled: true,
 }" :modules="modules" :speed="400" @swiper="onSwiper" @slideChange="onSlideChange" class="mySwiper">
-    <swiper-slide v-for="usuario in Competitor">
+    <swiper-slide v-for="competitor in competitors" :key="competitor.id">
+      <!-- Se pasa el objeto al componente -->
+      <CompetitorModal :id_competitor="id_competitor" />
       <di class="container-slider">
         <div class="block">
           <div class="container-perfile">
@@ -90,12 +98,12 @@ export default {
           </div>
           <div class="container-text">
             <h1 class="lg:text-xl name-competitor uppercase">
-              {{ usuario.name }}
+              {{ competitor.name }}
             </h1>
-            <p class="uppercase">@{{ usuario.user }}</p>
+            <p class="uppercase">{{ competitor.instagram_username }}</p>
             <div class="container-info">
-              <button @click="openModal">
-                <p @click="handleInfoClick(usuario.id)" class="btn-info">
+              <button @click="handleIdCompetitor(competitor.id)" >
+                <p class="btn-info">
                   + Info
                 </p>
               </button>

@@ -45,10 +45,10 @@ import Termometro from "../assets/img/termometro.vue";
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .img-competitors{
-  width: 80%;
+  width: 75%;
 }
 .img-competitors{
   display: black;
@@ -168,6 +168,7 @@ import Termometro from "../assets/img/termometro.vue";
   display: none;
 }
 .img-competitors-mobile{
+  margin-top: 20px;
   display: block;
   width: 80%;
   height: auto;

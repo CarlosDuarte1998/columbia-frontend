@@ -92,14 +92,12 @@ export default {
 .container-info h1 {
     font-family: "GerTT-Bold";
     font-size: 30px;
-    hyphens: auto;
     margin-bottom: 20px;
 }
 
 .container-info p {
     font-family: "GerTT-Regular";
     font-size: 20px;
-    hyphens: auto;
     width: 100%;
     margin-top: 15px;
 }

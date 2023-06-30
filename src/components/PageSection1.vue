@@ -17,10 +17,10 @@ export default {
   <div class="section-home" id="section-1">
     <div class="bg-header" style="overflow-x: hidden">
       <div class="logo-header">
-        <img src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia" />
+        <img src="../assets/img/logo-Columbia.png" alt="" class="logo-columbia filter invert" />
       </div>
     </div>
-    <div class="section-intro bg-white lg:flex sm:block">
+    <div class="section-intro bg-white lg:flex sm:block ">
       <div class="lg:w-1/2 md:w-full sm:w-full">
         <div class="h-max flex items-center">
           <h1 class="flex-1 lg:text-start md:text-center sm:text-center text-goatometer">
@@ -60,7 +60,7 @@ export default {
 .text-goat {
   margin: 14px 27px 0px 0px;
   font-size: 2em;
-  word-spacing: 20px;
+  word-spacing: 4px;
 }
 
 .bg-header {

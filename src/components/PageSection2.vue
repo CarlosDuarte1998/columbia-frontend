@@ -14,7 +14,7 @@ export default {
   <div class="w-screen h-screen bg-black" id="section-2">
     <div class="h-full text-white lg:flex sm:block">
       <div class="section-1 lg:w-1/2 sm:w-full">
-        <div class="ml-1">
+        <div class="ml-1 filter invert">
           <LogoColumbia />
         </div>
       </div>
@@ -96,14 +96,14 @@ export default {
 .container-info h1 {
   font-family: 'GerTT-Bold';
   font-size: 30px;
-  hyphens: auto;
+ 
 }
 
 .container-info p {
   font-family: 'GerTT-Regular';
   font-size: 20px;
   margin-top: 30px;
-  hyphens: auto;
+  
 }
 
 /* Pantallas para tablets */

@@ -36,19 +36,19 @@ onMounted(() => {
 
 <template>
  <div>
-  <div @click="openOfert" class="btn-ofert">
+  <div @click="openOfert" class="btn-ofert z-50">
     <div>
-      <Button class="container-ofert z-50">
+      <button class="container-ofert z-50">
         <p>15%</p>
         <p>OFF</p>
-      </Button>
+      </button>
     </div>
   </div>
   <div @click="openSocial" class="btn-social">
     <div>
-      <Button class="container-social z-50">
+      <button class="container-social z-50">
         <img src="../../assets/img/icon-foUS-social.png" alt="" sizes="" srcset="">
-      </Button>
+      </button>
     </div>
   </div>
  </div>
@@ -70,7 +70,7 @@ onMounted(() => {
   position: fixed;
   top: 20%;
   right: 0px;
-  z-index: 2;
+  z-index: 100;
   width: 5%;
   height: 9%;
   background-color: #f5f5f5;
@@ -94,7 +94,7 @@ onMounted(() => {
   position: fixed;
   top: 10%;
   right: 0px;
-  z-index: 2;
+  z-index: 100;
   width: 5%;
   height: 9%;
   background-color: #f5f5f5;
@@ -162,7 +162,7 @@ Button p {
   }
   .container-social img{
     width: 50px;
-    height: 50px;
+    height: auto;
   }
 }
 /* Mobile */
@@ -183,7 +183,7 @@ Button p {
 
   .container-social img{
     width: 40px;
-    height: 40px;
+    height: auto;
   }
 }
 
