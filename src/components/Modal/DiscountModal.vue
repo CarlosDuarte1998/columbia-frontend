@@ -72,6 +72,12 @@ export default {
         />
       </svg>
     </button>
+    <div class="container-logo">
+      <div>
+        <img src="../../assets/img/logo-columbia.png" alt="logo" class="logo" />
+      </div>
+    </div>
+    
     <div class="container-discount flex bg-white" >
       <div v-if="showDiscount" class="w-2/4 flex h-full container-img  justify-center items-center m-0" >
 
@@ -105,23 +111,9 @@ export default {
             Llena el formulario y recibe al instante 15% de descuento en tu próxima compra en nuestras tiendas de Centroamérica, Rep. Dominicana y Venezuela. *Cupón no transferible. *Cupón con vigencia hasta el 31 de agosto 2023. Aplican solamente productos seleccionados. aplica sobre otras promociones. *Otras restricciones aplican.
           </p>
         </div>
-        <div class="container-form" v-else>
+        <div class="container-form mt-14" v-else>
           <div>
             <p class="title-form">BE THE GOAT</p>
-            <div class="flex justify-center pb-6">
-              <Countdown
-                :mainColor="'white'"
-                :secondaryColor="'white'"
-                :mainFlipBackgroundColor="'#000'"
-                :labelColor="'black'"
-                :deadline="'2023-10-10 00:00:00'"
-                :countdownSize="'2em'"
-                :showDays="true"
-                :showLabels="true"
-                :labels="labels"
-                class="hidden"
-              />
-            </div>
             <div class="flex flex-col">
               <FormDiscount />
             </div>
@@ -274,13 +266,29 @@ export default {
   position: relative;
   top: 2rem;
   right: 1rem;
-
+  z-index: 100;
 }
 
 .dark .confirm-modal-content {
   background: #000;
 }
-
+.container-logo{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 15%;
+}
+.logo{
+  padding-top: 12px;
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: auto;
+  filter: invert(1);
+}
 /* Pantallas grandes */
 @media (min-width: 1500px) {
 }
@@ -311,9 +319,7 @@ export default {
   .container-discount {
     flex-direction: column;
   }
-  .btn-close svg {
-    z-index: 1;
-  }
+  
   .container-infoCompetitor {
     width: 80%;
     text-align: center;
@@ -335,9 +341,26 @@ export default {
   border-radius:  0.5em 0.5rem 0rem 0rem;
   background: url('../../assets/img/goat-modal-2.jpg') no-repeat ;
   background-size: cover;
-  background-position: 50% 80%;
+  background-position: 50% 40%;
 }
-
+.container-logo{
+  position: absolute;
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  z-index: 1;
+  width: 90%;
+  height: 12%;
+  margin-left: 12px;
+}
+.logo{
+  padding-top: 5px;
+  display: flex;
+  position: relative;
+  width: 150px;
+  height: auto;
+  filter: invert(1);
+}
 
 }
 
@@ -346,8 +369,6 @@ export default {
   .container-discount {
     flex-direction: column;
   }
-
-  
 
   .container-infoCompetitor {
     width: 100%;
@@ -389,7 +410,7 @@ export default {
   .btn-close svg {
     right: 1em;
     top: 1em;
-    z-index: 1;
+    z-index: 10;
   }
 
   .container-img {
@@ -410,7 +431,24 @@ export default {
   background-position: center;
 }
 
-
+.container-logo{
+  position: absolute;
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  z-index: 1;
+  width: 90%;
+  height: 12%;
+  margin-left: 12px;
+}
+.logo{
+  padding-top: 5px;
+  display: flex;
+  position: relative;
+  width: 150px;
+  height: auto;
+  filter: invert(1);
+}
 
 }
 </style>
