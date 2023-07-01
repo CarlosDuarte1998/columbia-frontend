@@ -74,7 +74,7 @@ export default {
     </button>
     <div class="container-logo">
       <div>
-        <img src="../../assets/img/logo-columbia.png" alt="logo" class="logo" />
+        <img src="../../../src/assets/img/logo-columbia.png" alt="logo" class="logo" />
       </div>
     </div>
     
