@@ -74,7 +74,7 @@ export default {
     </button>
     <div class="container-logo">
       <div>
-        <img src="https://dive-columbia.loca.lt/src/assets/img/logo-Columbia.png"  class="logo" />
+        <img src="https://columbia-frontend.vercel.app/assets/logo-Columbia-fa7c06ee.png"  class="logo" />
       </div>
     </div>
     
