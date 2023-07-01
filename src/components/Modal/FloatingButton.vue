@@ -74,7 +74,7 @@ onMounted(() => {
   width: 5%;
   height: 9%;
   background-color: #f5f5f5;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   border-right: 0px;
   border-radius: 20% 0% 0% 20%;
   display: flex;
@@ -86,8 +86,12 @@ onMounted(() => {
 }
 .btn-social:hover {
   color: #ffffff;
-  border: 1px solid #fff;
-  filter: invert(1);
+  border: 1px solid #000000;
+  background-color: #161616;
+}
+
+.btn-social:hover img{
+  filter: invert(100%);
 }
 
 .btn-ofert {
@@ -98,7 +102,7 @@ onMounted(() => {
   width: 5%;
   height: 9%;
   background-color: #f5f5f5;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   border-right: 0px;
   border-radius: 20% 0% 0% 20%;
   display: flex;
@@ -109,9 +113,9 @@ onMounted(() => {
   transition: all 0.2s;
 }
 .btn-ofert:hover {
-  background-color: #000000;
+  background-color: #161616;
   color: #ffffff;
-  border: 1px solid #fff;
+  border: 1px solid #000000;
 }
 Button p {
   font-size: 20px;

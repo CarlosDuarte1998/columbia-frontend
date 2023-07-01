@@ -30,7 +30,7 @@ export default {
 
                 </h1>
                 <p>
-                  Como la mayoría de nosotros sólo quiere salir,
+                  Como la mayoría de nosotros sólo quieres salir,
                   desconectar o reconectar, e independientemente
                   de tu destreza en los senderos, aprecias el equipo
                   que te hace sentir un poco más seguro y capaz.

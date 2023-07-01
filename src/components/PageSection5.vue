@@ -120,11 +120,12 @@ import Termometro from "../assets/img/termometro.vue";
 
   .img-competitors-mobile{
   display: block;
-  width: 80%;
+  width: 60%;
   height: auto;
 }
-
-
+.img-competitors{
+  display: none;
+}
 }
 
 /* Mobile */
@@ -143,11 +144,11 @@ import Termometro from "../assets/img/termometro.vue";
   }
   
 .container-title-header {
-  position: initial;
+  position: relative;
+  margin-bottom: 10px;
 }
 .container-logo{
   position: absolute;
-
 }
 .section-logo{
  display: none;
@@ -168,9 +169,9 @@ import Termometro from "../assets/img/termometro.vue";
   display: none;
 }
 .img-competitors-mobile{
-  margin-top: 20px;
+  margin-top: 25px;
   display: block;
-  width: 80%;
+  width: 75%;
   height: auto;
 }
 }

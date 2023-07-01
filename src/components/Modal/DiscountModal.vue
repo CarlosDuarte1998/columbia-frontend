@@ -80,33 +80,16 @@ export default {
     
     <div class="container-discount flex bg-white" >
       <div v-if="showDiscount" class="w-2/4 flex h-full container-img  justify-center items-center m-0" >
-
       </div>
       <div v-else class="w-2/4 flex h-full img-container-child  justify-center items-center m-0" >
 </div>
       <div class="container-infoCompetitor">
         <div v-if="showDiscount" class="lg:pr-14 lg:pl-14 ">
           <p class="rate-discount">15% OFF</p>
-
           <button class="btn-discount" @click="hideDiscount">
             <p>OBTENER DESCUENTO</p>
           </button>
-
-          <div class="flex justify-center pt-5">
-            <Countdown
-              :mainColor="'white'"
-              :secondaryColor="'white'"
-              :mainFlipBackgroundColor="'#000'"
-              :labelColor="'black'"
-              :deadline="'2023-10-10 00:00:00'"
-              :countdownSize="'2em'"
-              :showDays="true"
-              :showLabels="true"
-              :labels="labels"
-              :scroll="false"
-              class="hidden"
-            />
-          </div>
+     
           <p class="info-discount">
             Llena el formulario y recibe al instante 15% de descuento en tu próxima compra en nuestras tiendas de Centroamérica, Rep. Dominicana y Venezuela. *Cupón no transferible. *Cupón con vigencia hasta el 31 de agosto 2023. Aplican solamente productos seleccionados. aplica sobre otras promociones. *Otras restricciones aplican.
           </p>
@@ -332,7 +315,7 @@ export default {
   background: url('../../assets/img/goat-modal-1.jpg') no-repeat ;
   background-size: cover;
   background-position: center;
-  background-position: 50% 60%;
+  background-position: 50% 50%;
 }
 
 .img-container-child{
