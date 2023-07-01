@@ -3,6 +3,7 @@ import { defineProps, defineEmits, ref, onMounted} from "vue";
 import axios from "axios";
 import { VueFinalModal, ModalsContainer } from "vue-final-modal";
 import { useCompetitorStore } from "@/stores/competitor";
+import { url } from "@vuelidate/validators";
 
 
 const emit = defineEmits(['confirm']);
@@ -23,6 +24,7 @@ const close = () => {
 
 const competitorStore = useCompetitorStore();
 const competitor = ref([]);
+let url_img = "";
 
 
 onMounted(async () => {
@@ -61,12 +63,15 @@ onMounted(async () => {
       </svg>
     </button>
     <div class="container-competitor flex lg:p-16 mt-8">
+      
       <div class="w-2/4 container-img">
-        <img
-          class="img-competitor rounded-full"
-          :src="user ? user.picture : urlImgCompetitor"
-          alt=""
-        />
+        <div v-for="competitor in competitor.images" :key="competitor.id" class="flex justify-center items-center">
+          <img
+        class="img-competitor"
+        :src="competitor.url" 
+        alt=""
+      />
+      </div>
       </div>
       <div class="container-infoCompetitor">
         <p class="name-competitor" >{{ competitor.name }}</p>
@@ -126,7 +131,7 @@ onMounted(async () => {
   margin-top: 15px;
 }
 .img-competitor {
-  width: 50%;
+  width: 100%;
 }
 
 .container-competitor {
@@ -182,7 +187,8 @@ onMounted(async () => {
     width: 100%;
   }
   .img-competitor {
-    width: 150px;
+    width: 300px;
+    
   }
 
   .container-content:nth-child(2) {
@@ -219,5 +225,9 @@ onMounted(async () => {
   .btn-close {
     right: -10px;
   }
+  .img-competitor{
+    width: 90%;
+  }
+  
 }
 </style>

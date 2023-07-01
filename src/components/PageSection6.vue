@@ -55,10 +55,11 @@ function getCurrentYear() {
           <div class="conatiner-img-btg flex flex-col ">
             <img src="../assets/img/bethegoat-1.png" alt="" srcset="" class="img-portada1" />
             <div class="container-filter-ig">
-              <button @click="goToFilter" class="btn-filter-ig bg-white transition duration-150">
+              <!-- <button @click="goToFilter" class="btn-filter-ig bg-white transition duration-150">
                 <span>Usa nuestro filtro</span>
                 <img src="../assets/img/icon-ig-black.png" alt="" class="icon-filter-ig" />
-              </button>
+              </button> -->
+              
             </div>
           </div>
           <div class="container-img-btg">

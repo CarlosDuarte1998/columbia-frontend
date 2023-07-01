@@ -94,13 +94,13 @@ onMounted(async () => {
       <di class="container-slider">
         <div class="block">
           <div class="container-perfile">
-            <img src="../assets/img/perfile.png" alt="" />
+            <img :src="competitor.images[0].url" alt="" />
           </div>
           <div class="container-text">
             <h1 class="lg:text-xl name-competitor uppercase">
               {{ competitor.name }}
             </h1>
-            <p class="uppercase">{{ competitor.instagram_username }}</p>
+            <p class="uppercase user-competitor">{{ competitor.instagram_username }}</p>
             <div class="container-info">
               <button @click="handleIdCompetitor(competitor.id)" >
                 <p class="btn-info">
@@ -142,7 +142,7 @@ onMounted(async () => {
 }
 
 .container-perfile img {
-  width: 90%;
+  width: 80%;
   height: auto;
 }
 
@@ -217,7 +217,9 @@ onMounted(async () => {
   .container-info{
     margin-top: 15px;
   }
-
+  .user-competitor{
+    font-size: 0.8rem !important;
+  }
 }
 
 </style>

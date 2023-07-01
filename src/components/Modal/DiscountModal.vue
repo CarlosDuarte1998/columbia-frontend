@@ -102,9 +102,7 @@ export default {
             />
           </div>
           <p class="info-discount">
-            Llena el formulario y recibe al instante 15% de descuento en tu
-            próxima compra en tienda o sitio web. Producto sujeto a existencias.
-            Fotografía de carácter ilustrativo.
+            Llena el formulario y recibe al instante 15% de descuento en tu próxima compra en nuestras tiendas de Centroamérica, Rep. Dominicana y Venezuela. *Cupón no transferible. *Cupón con vigencia hasta el 31 de agosto 2023. Aplican solamente productos seleccionados. aplica sobre otras promociones. *Otras restricciones aplican.
           </p>
         </div>
         <div class="container-form" v-else>
@@ -128,9 +126,7 @@ export default {
               <FormDiscount />
             </div>
             <p class="info-discount text-center lg:pl-14 lg:pr-14">
-              Llena el formulario y recibe al instante 15% de descuento en tu
-              próxima compra en tienda o sitio web. Producto sujeto a
-              existencias. Fotografía de carácter ilustrativo.
+              Llena el formulario y recibe al instante 15% de descuento en tu próxima compra en nuestras tiendas de Centroamérica, Rep. Dominicana y Venezuela. *Cupón no transferible. *Cupón con vigencia hasta el 31 de agosto 2023. Aplican solamente productos seleccionados. aplica sobre otras promociones. *Otras restricciones aplican.
             </p>
           </div>
         </div>

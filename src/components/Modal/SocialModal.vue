@@ -11,7 +11,7 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
             <div class="mt-10 flex flex-col justify-center items-center">
                 <div class="mb-10 font-gerttb">
                     <p class="text-title lg:text-5xl uppercase text-center">
-                        !Síguenos en <br />
+                        ¡Síguenos en <br />
                         instagram!
                     </p>
                 </div>
