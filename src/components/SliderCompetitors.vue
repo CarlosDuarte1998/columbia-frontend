@@ -104,7 +104,7 @@ onMounted(async () => {
             <div class="container-info">
               <button @click="handleIdCompetitor(competitor.id)" >
                 <p class="btn-info">
-                  + Info
+                  <!-- + Info -->
                 </p>
               </button>
             </div>
