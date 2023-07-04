@@ -22,6 +22,7 @@
     "swiper": "^9.3.2",
     "vue": "^3.3.2",
     "vue-final-modal": "^4.4.2",
+    "vue-sweetalert2": "^5.0.5",
     "vue3-flip-countdown": "^0.1.6"
   },
   "devDependencies": {

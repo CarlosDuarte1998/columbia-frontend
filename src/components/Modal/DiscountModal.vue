@@ -1,49 +1,41 @@
-<script>
+<script setup>
 import { defineProps, defineEmits, ref } from "vue";
 import { VueFinalModal, ModalsContainer } from "vue-final-modal";
 import FormDiscount from "./FormDiscount.vue";
 import { Countdown } from "vue3-flip-countdown";
 
-export default {
-  components: {
-    VueFinalModal,
-    ModalsContainer,
-    FormDiscount,
-    Countdown,
-  },
-  props: {
-    labels: {
-      type: Object,
-      default: () => ({
-        days: "Días",
-        hours: "Horas",
-        minutes: "Minutos",
-        seconds: "Segundos",
-      }),
-    },
-  },
+const emit = defineEmits(["confirm", "close"]);
 
-  setup(_, { emit }) {
-    const showDiscount = ref(true);
-    const closeModal = () => {
-      emit("close");
-    };
-    const hideDiscount = () => {
-      showDiscount.value = false;
-    };
+const props = defineProps({
+  labels: {
+    type: Object,
+    default: () => ({
+      days: "Días",
+      hours: "Horas",
+      minutes: "Minutos",
+      seconds: "Segundos",
+    }),
+  },
+});
 
-    return {
-      closeModal,
-      showDiscount,
-      hideDiscount,
-    };
-  },
-  methods: {
-    close() {
-      this.$emit("confirm");
-    },
-  },
+const showDiscount = ref(true);
+const closeModal = () => {
+  emit("close");
 };
+const hideDiscount = () => {
+  showDiscount.value = false;
+};
+
+const close = () => {
+  emit("confirm");
+};
+
+const event = {
+  close : () => {
+    emit("confirm");
+  }
+}
+
 </script>
 
 <template>
@@ -98,7 +90,7 @@ export default {
           <div>
             <p class="title-form">BE THE GOAT</p>
             <div class="flex flex-col">
-              <FormDiscount />
+              <FormDiscount v-on="event" />
             </div>
             <p class="info-discount text-center lg:pl-14 lg:pr-14">
               Llena el formulario y recibe al instante 15% de descuento en tu próxima compra en nuestras tiendas de Centroamérica, Rep. Dominicana y Venezuela. *Cupón no transferible. *Cupón con vigencia hasta el 31 de agosto 2023. Aplican solamente productos seleccionados. aplica sobre otras promociones. *Otras restricciones aplican.
