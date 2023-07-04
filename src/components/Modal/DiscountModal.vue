@@ -34,7 +34,7 @@ const event = {
   close : () => {
     emit("confirm");
   }
-}
+};
 
 </script>
 
@@ -424,6 +424,10 @@ const event = {
   height: auto;
   filter: invert(1);
 }
-
+.info-discount{
+  font-size: 10px;
+  margin-bottom: 10px;
+  line-height: 12px;
+}
 }
 </style>

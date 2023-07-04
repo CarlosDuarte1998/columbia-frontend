@@ -5,6 +5,21 @@ import { useModal } from "vue-final-modal";
 import FacebookSocialModal from "./Modal/FacebookSocialModal.vue";
 import SectionFooter from "./SectionFooter.vue";
 
+const isMobile = ref(window.matchMedia("(max-width: 767px)").matches);
+const showFooterShop = ref(false);
+
+
+onMounted(() => {
+  window.addEventListener("resize", handleResize);
+});
+
+
+function handleResize() {
+  isMobile.value = window.matchMedia("(max-width: 767px)").matches;
+}
+
+
+
 const { open: openSocial, close: closeSocial } = useModal({
   component: FacebookSocialModal,
   props: {
@@ -43,11 +58,35 @@ function getCurrentYear() {
 
 
 
+function showFooter() {
+  if (showFooterShop.value) {
+  
+    const section = document.getElementById('section-6');
+  window.scrollTo({
+    top: section.offsetTop,
+    behavior: "smooth",
+  });
+  setTimeout(() => {
+    showFooterShop.value = false;
+  }, 500);
+
+  
+  } else {
+    showFooterShop.value = true;
+    const section = document.getElementById('footer-shop');
+const offset = section.offsetTop;
+const scrollDistance = offset - window.scrollY;
+window.scrollTo({
+  top: window.scrollY + scrollDistance,
+  behavior: "smooth",
+});
+  }
+}
 </script>
 
 <template>
-  <div class="bg-section" id="section-6">
-    <div class="bg-black-opacity">
+  <div class="bg-section " id="section-6">
+    <div class="bg-black-opacity pb-10">
       <div class="">
         <div class="container-logo">
           <LogoColumbia class="logo" />
@@ -75,34 +114,50 @@ function getCurrentYear() {
         <div class="container-footer ml-10">
           <div class="copyright-info">
             <p class="">© {{ currentYear }} Columbia Sportswear</p>
-            <!-- <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              facere perferendis dolores ad eius ex nisi, iure alias, provident
-              odit corporis laudantium corrupti deserunt nobis aut at veritatis
-              rerum voluptas!
-            </p> -->
           </div>
-          <div class="social-media">
+          <div class=" text-center w-full flex justify-center footer-shop" :class="{'absolute':!isMobile}">
+           <div class="w-2/6  container-shops "  >
+            <div class=" cursor-pointer" @click="showFooter">
+              <span class="text-white ">ENCUÉNTRANOS EN CENTRO AMÉRICA,<br> VENEZUELA Y EL CARIBE</span>
+              <div class="text-white transition duration-500" :class="{' rotate-180' : showFooterShop}">
+                <font-awesome-icon icon="fa-solid fa-angle-down" class=" transition duration-500"/>
+              </div>
+            </div>
+           </div>
+          </div>
+          <div class="social-media z-50">
             <div class="">
               <a href=""><img src="../assets/img/icon-fb.png" alt="" class="icon-fb" @click.prevent="openSocial" /></a>
             </div>
-            <!-- <div>
-              <a href=""><img src="../assets/img/icon-ig.png" alt="" class="icon-ig" /></a>
-            </div> -->
           </div>
-          <div class="container-btn-scroll">
+          <div class="container-btn-scroll z-50">
             <button class="btn-scroll bg-white text-white duration-200" @click="scrollToSection">
               <span style="margin-bottom: -3px;" class="">Ir arriba</span> <img
                 src="../assets/img/arrow-white.png" alt="" class="">
             </button>
           </div>
         </div>
-        <SectionFooter />
       </footer>
     </div>
   </div>
+<div v-if="showFooterShop">
+  <SectionFooter />
+</div>
 </template>
 <style scoped>
+
+.container-shops{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: -100px;
+  font-size: 1.3em;
+  font-family: "Gertt-bold";
+  line-height: 20px;
+}
 .bg-section {
   background: url('../assets/img/bg-section6.jpg');
   background-size: cover;
@@ -291,6 +346,8 @@ function getCurrentYear() {
     font-size: 0.6em;
   }
 
+ 
+
   .container-footer>*:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -299,22 +356,35 @@ function getCurrentYear() {
     font-size: 12px;
     margin-top: 10px;
   }
-
   .container-footer>*:nth-child(2) {
-    order: 2;
+    order: 4;
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 10px;
   }
-
   .container-footer>*:nth-child(3) {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .container-footer>*:nth-child(4) {
     order: 1;
     display: flex;
     justify-content: center;
     width: 100%;
-
   }
+
+.container-footer{
+  margin-left: 0px;
+}
+
+
+ 
+
+  
 
   /* Adaptabilidad de la portada */
   .container-front {
@@ -346,6 +416,24 @@ function getCurrentYear() {
 
   .img-portada2 {
     width: 90%;
+  }
+
+  .container-shops{
+  position: initial !important;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 0px;
+  font-size: 1em;
+  font-family: "Gertt-bold";
+  line-height: 20px;
+  width: 100%;
+}
+
+.bg-black-opacity{
+    padding-bottom: 0px; 
   }
 
 }</style>

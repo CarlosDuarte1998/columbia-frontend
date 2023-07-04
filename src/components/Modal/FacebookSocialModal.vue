@@ -18,56 +18,56 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
                 <div class="grid grid-cols-4 gap-4 lg:w-5/6 md:w-80 sm:w-80">
                     <div>
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="#" >
                             <img src="../../assets/img/icon-fb.png" class="icon-social transition duration-150" />
                             <span>@columbia_GT</span>
                         </a>
                     </div>
                     <div>
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="https://www.facebook.com/ColumbiaSportswearElSalvador">
+                            target="_blank" href="https://www.facebook.com/ColumbiaSportswearElSalvador">
                             <img src="../../assets/img/icon-fb.png" class="icon-social transition duration-150" />
                             <span>@columbia_SV</span>
                         </a>
                     </div>
                     <div>
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="https://www.facebook.com/ColumbiaSportswearDominicanRepublic/">
+                            target="_blank" href="https://www.facebook.com/ColumbiaSportswearDominicanRepublic/">
                             <img src="../../assets/img/icon-fb.png" class="icon-social transition duration-150" />
                             <span>@columbia_RD</span>
                         </a>
                     </div>
                     <div>
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="https://www.facebook.com/ColumbiaSportswearVenezuela">
+                            target="_blank" href="https://www.facebook.com/ColumbiaSportswearVenezuela">
                             <img src="../../assets/img/icon-fb.png" class="icon-social transition duration-150" />
                             <span>@columbia_VE</span>
                         </a>
                     </div>
                     <div>
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="https://www.facebook.com/ColumbiaSportswearPanama/">
+                            target="_blank" href="https://www.facebook.com/ColumbiaSportswearPanama/">
                             <img src="../../assets/img/icon-fb.png" class="icon-social transition duration-150" />
                             <span>@columbia_PA</span>
                         </a>
                     </div>
                     <div>
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="https://www.facebook.com/ColumbiaSportswearNicaragua/">
+                            target="_blank" href="https://www.facebook.com/ColumbiaSportswearNicaragua/">
                             <img src="../../assets/img/icon-fb.png" class="icon-social transition duration-150" />
                             <span>@columbia_ni</span>
                         </a>
                     </div>
                     <div>
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="#">
                             <img src="../../assets/img/icon-fb.png" class="icon-social transition duration-150" />
                             <span>@columbia_HN</span>
                         </a>
                     </div>
                     <div>
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="https://www.facebook.com/ColumbiaSportswearCostaRica/">
+                            target="_blank" href="https://www.facebook.com/ColumbiaSportswearCostaRica/">
                             <img src="../../assets/img/icon-fb.png" class="icon-social transition duration-150" />
                             <span>@columbia_CR</span>
                         </a>
