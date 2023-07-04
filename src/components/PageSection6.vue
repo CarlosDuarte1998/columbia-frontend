@@ -3,6 +3,7 @@ import LogoColumbia from "./LogoColumbia.vue";
 import { ref, onMounted } from "vue";
 import { useModal } from "vue-final-modal";
 import FacebookSocialModal from "./Modal/FacebookSocialModal.vue";
+import SectionFooter from "./SectionFooter.vue";
 
 const { open: openSocial, close: closeSocial } = useModal({
   component: FacebookSocialModal,
@@ -96,6 +97,7 @@ function getCurrentYear() {
             </button>
           </div>
         </div>
+        <SectionFooter />
       </footer>
     </div>
   </div>

@@ -58,7 +58,7 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
                             <span>@columbia_ni</span>
                         </a>
                     </div>
-                    <div>
+                    <div class="hidden">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
                             href="#">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
