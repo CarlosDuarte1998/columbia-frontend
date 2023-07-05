@@ -98,30 +98,33 @@
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-ve.png" class="icon-country">Venezuela</div>
-                            <span class="address-shop">Caracas, Tolón Fashion Mall,
-                                Nivel 2, Local P2-04
+                            <span class="address-shop">Sambil, Caracas,
+Nivel Acuario, Local AC-20A
+
                             </span>
                             <span class="phone-shop">
                                 WA 414-865-3445</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">Caracas, Sambil Chacao
-                                Nivel Acuario
+                            <span class="address-shop">Caracas, Tolón Fashion Mall,
+Nivel 2, Local P2-04
+
                             </span>
+                            <span class="phone-shop">WA 414-865-3445</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Marcay, Parque Los Aviadores,
-                                Entrada Lago, Local L 379-380
-
+Entrada Lago, Local L 379-380
 
                             </span>
                             <span class="phone-shop">WA 5841-2313-0114</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
-                                Maracaibo, Lago Mall,
-                                Nivel Plaza. Local PC-18
+                                aracaibo, Lago Mall,
+Nivel Plaza, Local PC-18
+
 
                             </span>
                             <span class="phone-shop">TEL 5842-4630-9199</span>
@@ -129,7 +132,8 @@
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Sambil, Isla Margarita,
-                                Nivel 1, Local T207
+Nivel 1, Local T207
+
                             </span>
                             <span class="phone-shop">TEL 0058-0295-260-2486</span>
                         </div>
@@ -293,7 +297,6 @@
     padding: 0px 30px 0px 30px;
 }
 
-.container-country {}
 
 .container-footer {
     padding: 40px 0px 40px 0px;
