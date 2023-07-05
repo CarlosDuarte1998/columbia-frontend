@@ -84,10 +84,14 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
     width: 25px;
     height: 25px;
     margin-right: 5px;
+    
 }
 
 .btn-social span {
     margin-bottom: -3px;
+}
+.btn-social{
+    border-radius: 5px;
 }
 
 .btn-social:hover .icon-social {

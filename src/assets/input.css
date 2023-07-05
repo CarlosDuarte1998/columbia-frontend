@@ -61,7 +61,6 @@
     display: flex;
     flex-direction: column;
     padding: 0rem;
-
     border-radius: 0.5rem;
     width: 80%;
   }
@@ -76,7 +75,7 @@
     display: flex;
     flex-direction: column;
     padding: 0rem;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 0.5rem;
     width: 80%;
   }
@@ -84,6 +83,28 @@
   .flip-clock__slot{
     font-family: 'GerTT-medium';
   }
+/* Estilos del social-modal */
+.social-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  border-radius: 0.8rem;
+  width: 50%;
+  background-color: #ffffff;
+}
+.social-modal-content > * + * {
+  margin: 0.0rem 0;
+}
+.social-modal-content h1 {
+  font-size: 1.375rem;
+}
+
+
 
   /* Color de la barra de desplazamiento */
   ::-webkit-scrollbar {
@@ -101,6 +122,9 @@
 
   /* Pantallas grandes */
 @media (min-width: 1500px) {
+  .confirm-modal-content {
+    width: 65%;
+  }
 }
 
 /* PC */
@@ -121,6 +145,10 @@
   }
 
   .competitor-modal-content{
+    width: 95%;
+  }
+
+  .social-modal-content {
     width: 95%;
   }
 }

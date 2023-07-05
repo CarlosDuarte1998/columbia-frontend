@@ -5,7 +5,7 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
 </script>
 
 <template>
-    <VueFinalModal class="confirm-modal" content-class="confirm-modal-content" overlay-transition="vfm-fade"
+    <VueFinalModal class="social-modal" content-class="social-modal-content" overlay-transition="vfm-fade"
         content-transition="vfm-fade" lock-scroll="true">
         <div class="bg-white container-social">
             <div class="mt-10 flex flex-col justify-center items-center">
@@ -15,59 +15,59 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
                         instagram!
                     </p>
                 </div>
-                <div class="grid grid-cols-4 gap-4 lg:w-5/6 md:w-80 sm:w-80">
-                    <div>
+                <div class="grid grid-cols-2 gap-4 ">
+                    <div class="container-btn">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="https://www.instagram.com/columbia_gt/">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_GT</span>
                         </a>
                     </div>
                     <div class="hidden">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="#">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_SV</span>
                         </a>
                     </div>
                     <div class="hidden">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="#">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_RD</span>
                         </a>
                     </div>
-                    <div>
+                    <div class="container-btn">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="https://www.instagram.com/columbia_ve/">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_VE</span>
                         </a>
                     </div>
-                    <div>
+                    <div class="container-btn">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="https://www.instagram.com/columbia_pty/">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_PTY</span>
                         </a>
                     </div>
-                    <div>
+                    <div class="container-btn">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="https://www.instagram.com/columbia_ni/">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_ni</span>
                         </a>
                     </div>
                     <div class="hidden">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="#">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_HN</span>
                         </a>
                     </div>
                     <div class="hidden">
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            href="#">
+                            target="_blank" href="#">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_CR</span>
                         </a>
@@ -80,11 +80,14 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
 </template>
 
 <style scoped>
+.container-social {
+    border-radius: 0.8rem;
+}
+
 .icon-social {
     width: 25px;
     height: 25px;
     margin-right: 5px;
-
     filter: invert(1);
 }
 
@@ -96,8 +99,8 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
     filter: initial;
 }
 
-.container-social{
-    border-radius: 0.5em;
+.btn-social {
+    border-radius: 5px;
 }
 
 
@@ -110,22 +113,26 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-    .btn-social{
+    .btn-social {
         padding: 0.8rem 1.5rem 0.8rem 1.5rem;
     }
-    .text-title{
+
+    .text-title {
         font-size: 35px;
     }
+
     .md\:w-80 {
-    width: 36rem !important;
-}
-.btn-social span {
-    margin-bottom: -3px;
-    font-size: 12px !important;
-}
-.text-goat{
-    font-size: 30px;
-}
+        width: 36rem !important;
+    }
+
+    .btn-social span {
+        margin-bottom: -3px;
+        font-size: 12px !important;
+    }
+
+    .text-goat {
+        font-size: 30px;
+    }
 
 }
 
@@ -139,10 +146,10 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
         margin-bottom: -3px;
         font-size: 13px !important;
     }
+
     .text-title {
         font-size: 30px !important;
     }
 
 
-}
-</style>
+}</style>

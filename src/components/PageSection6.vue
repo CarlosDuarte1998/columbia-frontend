@@ -335,7 +335,11 @@ function showFooter() {
 @media (min-width: 992px) and (max-width: 1499px) {}
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-shop{
+    display: none;
+  }
+}
 
 /* Mobile */
 @media (max-width: 767px) {
