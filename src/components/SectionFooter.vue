@@ -122,7 +122,7 @@ Entrada Lago, Local L 379-380
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
-                                aracaibo, Lago Mall,
+                                Maracaibo, Lago Mall,
 Nivel Plaza, Local PC-18
 
 
