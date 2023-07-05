@@ -61,25 +61,22 @@ function getCurrentYear() {
 function showFooter() {
   if (showFooterShop.value) {
   
-    const section = document.getElementById('section-6');
-  window.scrollTo({
-    top: section.offsetTop,
-    behavior: "smooth",
-  });
-  setTimeout(() => {
-    showFooterShop.value = false;
-  }, 500);
-
+  //   const section = document.getElementById('section-6');
+  // window.scrollTo({
+  //   top: section.offsetTop,
+  //   behavior: "smooth",
+  // });
   
+    showFooterShop.value = false;
   } else {
     showFooterShop.value = true;
-    const section = document.getElementById('footer-shop');
-const offset = section.offsetTop;
-const scrollDistance = offset - window.scrollY;
-window.scrollTo({
-  top: window.scrollY + scrollDistance,
-  behavior: "smooth",
-});
+    const section = document.getElementById("footer-shops");
+  if (section) {
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: "smooth",
+    });
+  }
   }
 }
 </script>
@@ -140,12 +137,25 @@ window.scrollTo({
       </footer>
     </div>
   </div>
-<div v-if="showFooterShop">
-  <SectionFooter />
+<div v-if="showFooterShop" class="bg-black">
+  <SectionFooter class="bg-black transition duration-150 slide-up"/>
 </div>
 </template>
 <style scoped>
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+.slide-up {
+  animation: slide-up 0.5s ease-in-out;
+}
 .container-shops{
   height: 100%;
   display: flex;

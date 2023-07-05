@@ -14,7 +14,7 @@
             </div>
             <div class="col-span-3 md:col-span-1 lg:col-span-1 w-full container-shops">
                 <div class="flex">
-                    <div class="w-1/2 text-center md:text-left container-items pl-1 pr-3">
+                    <div class="w-1/2 text-center md:text-left container-items pl-1 pr-6">
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-gt.png" class="icon-country"> Guatemala</div>
@@ -43,7 +43,7 @@
                             <span class="phone-shop">WA 6065-1818</span>
                         </div>
                     </div>
-                    <div class="w-1/2 text-center md:text-left pl-1 pr-1">
+                    <div class="w-1/2 text-center md:text-left pl-3 pr-3">
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-hn.png" class="icon-country"> Honduras</div>
@@ -72,7 +72,7 @@
                             <span class="phone-shop">WA 849-449-1433</span>
                         </div>
                     </div>
-                    <div class="w-1/2 text-center md:text-left pl-1 pr-1">
+                    <div class="w-1/2 text-center md:text-left pl-3 pr-5">
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-pa.png" class="icon-country">Panamá</div>
@@ -94,7 +94,7 @@
                             <span class="phone-shop">TEL 309-2598</span>
                         </div>
                     </div>
-                    <div class="w-1/2 text-center md:text-left pl-1 pr-1">
+                    <div class="w-1/2 text-center md:text-left pl-3 pr-6">
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-ve.png" class="icon-country">Venezuela</div>
@@ -304,7 +304,12 @@
 }
 
 /* Pantallas grandes */
-@media (min-width: 1500px) {}
+@media (min-width: 1500px) {
+    .title-footer {
+        font-size: 2.9rem;
+        line-height: 52px;
+    }
+}
 
 /* PC */
 @media (min-width: 992px) and (max-width: 1499px) {}

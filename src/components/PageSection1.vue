@@ -1,18 +1,17 @@
-<script>
-export default {
-  methods: {
-    scrollToSection() {
-      const section = document.getElementById("section-2");
-      if (section) {
-        window.scrollTo({
-          top: section.offsetTop,
-          behavior: "smooth",
-        });
-      }
-    },
-  },
+<script setup>
+import { ref } from 'vue';
+
+const scrollToSection = () => {
+  const section = document.getElementById("section-2");
+  if (section) {
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: "smooth",
+    });
+  }
 };
 </script>
+
 <template>
   <div class="section-home" id="section-1">
     <div class="bg-header" style="overflow-x: hidden">
