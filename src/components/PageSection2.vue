@@ -101,7 +101,7 @@ import { ref, onMounted, onBeforeUnmount, watchEffect } from "vue";
 
 .container-info p {
   font-family: "GerTT-Regular";
-  font-size: 20px;
+  font-size: 17px;
   margin-top: 30px;
 }
 

@@ -100,7 +100,7 @@ export default {
 
 .container-info p {
     font-family: "GerTT-Regular";
-    font-size: 20px;
+    font-size: 17px;
     width: 100%;
     margin-top: 15px;
 }
