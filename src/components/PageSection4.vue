@@ -33,7 +33,9 @@ export default {
               <p class="text-white">GRIPS ON ALL TERRAIN</p>
             </div>
             <div class="container-button">
-              <ButtonScroll class="ButtonScroll" buttonText="Siguiente" buttonColor="black" sectionId="section-5" />
+              <ButtonScroll class="ButtonScroll" buttonText="Siguiente" buttonColor="black" sectionId="section-5" 
+              sectionIdTop="section-3"
+              />
             </div>
           </div>
         </div>
@@ -44,6 +46,11 @@ export default {
 <style scoped>
 .ButtonScroll{
   z-index: 100;
+  position: relative;
+  display: flex;
+  flex-direction: initial !important;
+  justify-content: end !important;
+  margin-right: 5.5rem;
 }
 .bg-section {
   background-image: url("../assets/img/bg-section-4.jpg");
@@ -148,6 +155,17 @@ export default {
   align-items: end;
   right: 70px;
 }
+
+.ButtonScroll{
+  z-index: 100;
+  position: relative;
+  display: flex;
+  flex-direction: initial !important;
+  justify-content: end !important;
+  margin-right: 8.2rem;
+}
+
+
 }
 
 /* PC */
@@ -173,8 +191,16 @@ export default {
 
 
 /* Mobile */
-@media (max-width: 767px) {
-
+/* Pantallas mobiles */
+@media only screen and (min-width: 381px) and (max-width: 767px) {
+  .ButtonScroll{
+  z-index: 100;
+  position: relative;
+  display: flex;
+  flex-direction: initial !important;
+  justify-content: end !important;
+  margin-right: 0.2rem;
+}
   .container-header {
     display: block;
   }
@@ -191,13 +217,67 @@ export default {
 
   .footer-section {
     display: block;
-    height: 13%;
+    height: 15%;
     margin-bottom: 20px;
   }
 
   .footer-section div:nth-child(1) {
     position: initial;
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  .footer-section div:nth-child(1) p {
+    position: initial;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+  }
+
+  .footer-section div:nth-child(2) {
+    position: initial;
+    display: flex;
+    justify-content: end;
+    margin-left: -12px;
+  }
+
+  .footer-section div:nth-child(2) button {
+    position: initial;
+    display: initial;
+  }
+  .container-slider{
+    margin-top: 30px;
+  }
+}
+
+
+
+/*Mobile con pantallas pequeñas*/
+@media (max-width: 380px) { 
+  .container-header {
     display: block;
+  }
+
+  .container-header div:nth-child(1) {
+    position: initial;
+    display: block;
+  }
+
+  .container-title-header {
+    font-size: 2em;
+  }
+
+
+  .footer-section {
+    display: block;
+    height: 19%;
+    margin-bottom: 20px;
+  }
+
+  .footer-section div:nth-child(1) {
+    position: initial;
+    display: flex;
     margin-bottom: 22px;
   }
 

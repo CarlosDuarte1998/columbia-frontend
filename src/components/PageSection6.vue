@@ -115,7 +115,7 @@ function showFooter() {
           <div class=" text-center w-full flex justify-center footer-shop" :class="{'absolute':!isMobile}">
            <div class="w-2/6  container-shops "  >
             <div class=" cursor-pointer" @click="showFooter">
-              <span class="text-white ">ENCUÉNTRANOS EN CENTRO AMÉRICA,<br> VENEZUELA Y EL CARIBE</span>
+              <span class="text-white ">ENCUÉNTRANOS EN CENTROAMÉRICA,<br> VENEZUELA Y EL CARIBE</span>
               <div class="text-white transition duration-500" :class="{' rotate-180' : showFooterShop}">
                 <font-awesome-icon icon="fa-solid fa-angle-down" class=" transition duration-500"/>
               </div>

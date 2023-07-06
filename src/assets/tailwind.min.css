@@ -571,6 +571,10 @@ video {
   margin-left: 2.5rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -966,7 +970,7 @@ html, body {
   flex-direction: column;
   padding: 0rem;
   border-radius: 0.8rem;
-  width: 50%;
+  width: 70%;
   background-color: #ffffff;
 }
 
@@ -999,6 +1003,10 @@ html, body {
 @media (min-width: 1500px) {
   .confirm-modal-content {
     width: 65%;
+  }
+
+  .social-modal-content{
+    width: 55%;
   }
 }
 

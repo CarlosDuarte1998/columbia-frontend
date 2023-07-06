@@ -94,7 +94,7 @@
   flex-direction: column;
   padding: 0rem;
   border-radius: 0.8rem;
-  width: 50%;
+  width: 70%;
   background-color: #ffffff;
 }
 .social-modal-content > * + * {
@@ -124,6 +124,9 @@
 @media (min-width: 1500px) {
   .confirm-modal-content {
     width: 65%;
+  }
+  .social-modal-content{
+    width: 55%;
   }
 }
 

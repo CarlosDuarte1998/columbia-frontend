@@ -135,8 +135,8 @@ const scrollToSection = () => {
   }
 }
 
-/*Pantallas mobiles*/
-@media (max-width: 767px) {
+/* Pantallas mobiles */
+@media only screen and (min-width: 381px) and (max-width: 767px) {
   .bg-header {
     height: 75%;
     background-image: url("../assets/img/bg-header-mobile.jpg");
@@ -182,5 +182,53 @@ const scrollToSection = () => {
 }
 }
 
+
+/*Mobile con pantallas pequeñas*/
+@media (max-width: 380px) { 
+  .bg-header {
+    height: 75%;
+    background-image: url("../assets/img/bg-header-mobile.jpg");
+    background-position: center;
+  }
+
+  .section-intro {
+    height: 25%;
+  }
+
+  .section-intro> :nth-child(1) h1 {
+    font-family: "Poppins-Bold";
+    font-size: 1.5em;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+  }
+
+  .items-center {
+    display: block;
+  }
+
+  /*Secciones de intro elementos padres e hijos mobile*/
+  .section-intro> :nth-child(1) {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .section-intro> :nth-child(2) .flex-1> :nth-child(1) {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .section-intro> :nth-child(2) .flex-1> :nth-child(2) {
+    margin-top: 15px;
+  }
+
+  .text-goat {
+  word-spacing: 3px;
+  font-size: 1.6rem;
+}
+
+.text-goatometer{
+  margin-top: 0.8rem;
+}
+}
 
 </style>

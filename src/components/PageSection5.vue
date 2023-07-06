@@ -22,7 +22,7 @@ import Termometro from "../assets/img/termometro.vue";
       </div>
       <div class="text-xl"></div>
       <div class="container-btnScroll">
-        <ButtonScroll class="ButtonScroll" buttonText="Siguiente" buttonColor="black" sectionId="section-6" />
+        <ButtonScroll class="ButtonScroll" buttonText="Siguiente" buttonColor="black" sectionId="section-6" sectionIdTop="section-4"/>
       </div>
     </div>
   </div>
@@ -128,9 +128,60 @@ import Termometro from "../assets/img/termometro.vue";
 }
 }
 
-/* Mobile */
-@media (max-width: 767px) {
 
+/* Pantallas mobiles */
+@media only screen and (min-width: 381px) and (max-width: 767px) {
+.ButtonScroll{
+  margin-right: 0.9rem;
+}
+  .container-header div:nth-child(1){
+    position: initial;
+  }
+  .container-header {
+  display: flex;
+  flex-direction: column !important;
+}
+
+  .logo-columbia {
+    width: 100%;
+  }
+  
+.container-title-header {
+  position: relative;
+  margin-bottom: 10px;
+}
+.container-logo{
+  position: absolute;
+}
+.section-logo{
+ display: none;
+}
+.container-logo {
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+ width: 95% !important;
+}
+.bg-section{
+  background: url('../assets/img/bg-section-5-mobile.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+
+.img-competitors{
+  display: none;
+}
+.img-competitors-mobile{
+  margin-top: 25px;
+  display: block;
+  width: 75%;
+  height: auto;
+}
+}
+
+/*Mobile con pantallas pequeñas*/
+@media (max-width: 380px) { 
+  
   .container-header div:nth-child(1){
     position: initial;
   }

@@ -43,7 +43,9 @@ export default {
                                 <p>Sé el mejor... Be The GOAT.</p>
                             </div>
                             <ButtonScroll class="btn-scroll" buttonText="Siguiente" buttonColor="white"
-                                sectionId="section-4" />
+                                sectionId="section-4" 
+                                sectionIdTop="section-2"
+                                />
                         </div>
                     </div>
                 </div>
@@ -64,10 +66,11 @@ export default {
     margin-top: -60px;
 }
 .btn-scroll {
-    display: block;
+    display: flex;
     position: relative;
-    bottom: 3%;
-    right: -40%;
+    flex-direction: initial !important;
+    top: 7rem;
+    right: -36%;
 }
 
 .section-2 {
@@ -85,7 +88,7 @@ export default {
 
 .section-2 .info-section div {
     flex-direction: column;
-    height: 100%;
+    height: auto;
     width: 85%;
 }
 
@@ -109,14 +112,25 @@ export default {
     margin-top: -0px;
     width: 85%;
     }
+    .btn-scroll {
+        display: flex;
+        position: relative;
+        flex-direction: initial !important;
+        top: 14.2rem;
+        right: -37%;
+    }
 }
+
+
 
 /* PC */
 @media (min-width: 992px) and (max-width: 1499px) {}
+
+
 /* Pantallas para tablets */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 801px) and (max-width: 1023px) {
     .img-section{
-        width: 60%;
+        width: 70%;
     }
     .section-1 {
         height: 50%;
@@ -136,10 +150,54 @@ export default {
         right: -40%;
         margin-top: 10%;
     }
+
+    .btn-scroll {
+        top: 1rem;
+        right: -40%;
+    }
+
+
+}
+
+/* Pantallas para tablets pequeñas*/
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+    .img-section{
+        width: 60%;
+    }
+    .section-1 {
+        height: 50%;
+        background-position: top center;
+    }
+
+    .section-2 {
+        height: 50%;
+    }
+
+    .container-info h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .container-info p {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+
+    .btn-scroll {
+        right: -40%;
+        margin-top: 10%;
+    }
+
+    .btn-scroll {
+        top: 1rem;
+        right: -40%;
+    }
+
+
 }
 
 /* Pantallas mobiles */
-@media (max-width: 767px) {
+/* Pantallas mobiles */
+@media only screen and (min-width: 381px) and (max-width: 767px) {
     .btn-scroll {
         text-align: center;
     }
@@ -157,25 +215,64 @@ export default {
     }
 
     .container-info h1 {
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 10px;
     }
 
     .container-info p {
-        font-size: 14px;
+        font-size: 15px;
         margin-top: 5px;
     }
 
     .btn-scroll {
         display: block;
         position: relative;
-        
-        margin-right: 25%;
+        margin-right: 27%;
+        top: 2rem;
     }
     .img-section{
         width: 21rem;
     }
 
+}
+
+/*Mobile con pantallas pequeñas*/
+@media (max-width: 380px) { 
+    .btn-scroll {
+        text-align: center;
+    }
+
+    .section-1 {
+        height: 50%;
+    }
+
+    .section-2 {
+        height: 50%;
+    }
+
+    .section-2 .info-section div {
+        width: 95%;
+    }
+
+    .container-info h1 {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .container-info p {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    .btn-scroll {
+        display: block;
+        position: relative;
+        margin-right: 25%;
+        top: 2rem;
+    }
+    .img-section{
+        width: 18rem;
+    }
 }
 
 

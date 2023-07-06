@@ -7,7 +7,7 @@
         <div class="flex md:grid-cols-2 bg-black text-white container-footer">
             <div class="col-span-1 md:col-span-1 lg:col-span-1 w-3/6 flex justify-center items-center container-title">
                 <div class="">
-                    <h1 class="text-center md:text-start title-footer font-gerttb text-4xl"  >ENCUÉNTRANOS EN
+                    <h1 class="text-center md:text-start title-footer font-gerttb text-4xl">ENCUÉNTRANOS EN
                         CENTRO AMÉRICA,
                         VENEZUELA Y EL CARIBE</h1>
                 </div>
@@ -99,15 +99,14 @@
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-ve.png" class="icon-country">Venezuela</div>
                             <span class="address-shop">Sambil, Caracas,
-Nivel Acuario, Local AC-20A
-
+                                Nivel Acuario, Local AC-20A
                             </span>
                             <span class="phone-shop">
                                 WA 414-865-3445</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Caracas, Tolón Fashion Mall,
-Nivel 2, Local P2-04
+                                Nivel 2, Local P2-04
 
                             </span>
                             <span class="phone-shop">WA 414-865-3445</span>
@@ -115,7 +114,7 @@ Nivel 2, Local P2-04
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Marcay, Parque Los Aviadores,
-Entrada Lago, Local L 379-380
+                                Entrada Lago, Local L 379-380
 
                             </span>
                             <span class="phone-shop">WA 5841-2313-0114</span>
@@ -123,7 +122,7 @@ Entrada Lago, Local L 379-380
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Maracaibo, Lago Mall,
-Nivel Plaza, Local PC-18
+                                Nivel Plaza, Local PC-18
 
 
                             </span>
@@ -132,7 +131,7 @@ Nivel Plaza, Local PC-18
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Sambil, Isla Margarita,
-Nivel 1, Local T207
+                                Nivel 1, Local T207
 
                             </span>
                             <span class="phone-shop">TEL 0058-0295-260-2486</span>
@@ -224,30 +223,29 @@ Nivel 1, Local T207
                         <div class="flex flex-col container-country pt-4">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-ve.png" class="icon-country">Venezuela</div>
-                            <span class="address-shop">Caracas, Tolón Fashion Mall,
-                                Nivel 2, Local P2-04
+                            <span class="address-shop">Sambil, Caracas,
+                                Nivel Acuario, Local AC-20A
                             </span>
                             <span class="phone-shop">
                                 WA 414-865-3445</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">Caracas, Sambil Chacao
-                                Nivel Acuario
+                            <span class="address-shop">Caracas, Tolón Fashion Mall,
+                                Nivel 2, Local P2-04
                             </span>
+                            <span class="phone-shop">WA 414-865-3445</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Marcay, Parque Los Aviadores,
                                 Entrada Lago, Local L 379-380
-
-
                             </span>
                             <span class="phone-shop">WA 5841-2313-0114</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Maracaibo, Lago Mall,
-                                Nivel Plaza. Local PC-18
+                                Nivel Plaza, Local PC-18
 
                             </span>
                             <span class="phone-shop">TEL 5842-4630-9199</span>
@@ -260,7 +258,7 @@ Nivel 1, Local T207
                             <span class="phone-shop">TEL 0058-0295-260-2486</span>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
@@ -368,10 +366,12 @@ Nivel 1, Local T207
         display: block;
         margin-top: 20px;
     }
-    .address-shop, .phone-shop {
-    font-family: 'gertt-regular';
-    font-size: 0.8rem;
-}
+
+    .address-shop,
+    .phone-shop {
+        font-family: 'gertt-regular';
+        font-size: 0.8rem;
+    }
 
 
 }
