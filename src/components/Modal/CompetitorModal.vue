@@ -64,7 +64,7 @@ onMounted(async () => {
     </button>
     <div class="absolute">
       <div class="">
-        <img src="../../assets/img/logo-columbia.png" alt="" class="filter invert logo ml-5">
+        <img src="https://columbia-frontend.vercel.app/assets/logo-Columbia-fa7c06ee.png/" alt="" class="filter invert logo ml-5">
       </div>
     </div>
     <div class="container-competitor flex lg:p-16 mt-1">
