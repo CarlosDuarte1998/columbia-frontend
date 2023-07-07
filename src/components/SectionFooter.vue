@@ -8,7 +8,7 @@
             <div class="col-span-1 md:col-span-1 lg:col-span-1 w-3/6 flex justify-center items-center container-title">
                 <div class="">
                     <h1 class="text-center md:text-start title-footer font-gerttb text-4xl">ENCUÉNTRANOS EN
-                        CENTRO AMÉRICA,
+                        CENTROAMÉRICA,
                         VENEZUELA Y EL CARIBE</h1>
                 </div>
             </div>
@@ -19,28 +19,28 @@
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-gt.png" class="icon-country"> Guatemala</div>
                             <span class="address-shop">Oakland Mall, Nivel 2, Local 203</span>
-                            <span class="phone-shop">WA 5512-6359</span>
+                            <span class="phone-shop">WA +502 55126359</span>
                         </div>
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-sv.png" class="icon-country"> El Salvador</div>
                             <span class="address-shop">Multiplaza, Nivel 2,
                                 Local C57-58</span>
-                            <span class="phone-shop">WA 7808-4388</span>
+                            <span class="phone-shop">WA +503 78084388</span>
                         </div>
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-ni.png" class="icon-country"> Nicaragua</div>
                             <span class="address-shop">Galerías Santo Domingo,
                                 Nivel 2, Local N17</span>
-                            <span class="phone-shop">WA 8700-0915</span>
+                            <span class="phone-shop">WA +505 87000915</span>
                         </div>
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-cr.png" class="icon-country"> Costa Rica</div>
                             <span class="address-shop">Multiplaza Escazú, Nivel 2,
                                 Local 386, V Etapa</span>
-                            <span class="phone-shop">WA 6065-1818</span>
+                            <span class="phone-shop">WA +506 60651818</span>
                         </div>
                     </div>
                     <div class="w-1/2 text-center md:text-left pl-3 pr-3">
@@ -49,27 +49,27 @@
                                     src="../assets/img/icon-countries/icon-hn.png" class="icon-country"> Honduras</div>
                             <span class="address-shop">City Mall Tegucigalpa.
                                 Nivel 1, Local 145-146</span>
-                            <span class="phone-shop">WA 3342-0398</span>
+                            <span class="phone-shop">WA +504 33420398</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">City Mall San Pedro Sula,
                                 Nivel 1, Local 155
                             </span>
-                            <span class="phone-shop">WA 3342-0080</span>
+                            <span class="phone-shop">WA +504 33420080</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Multiplaza, Nivel 2, Local 2013-2014, III Etapa</span>
-                            <span class="phone-shop">WA 3342-0449</span>
+                            <span class="phone-shop">WA +504 33420449</span>
                         </div>
                         <div class="flex flex-col container-country mt-3 ">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-do.png" class="icon-country">R. DOMINICANA</div>
                             <span class="address-shop">Galería 360, Nivel 1, Local 5</span>
-                            <span class="phone-shop">WA 849-449-1435</span>
+                            <span class="phone-shop">WA +1 (849) 4491435</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Agora Mall, Nivel 2, Local 215</span>
-                            <span class="phone-shop">WA 849-449-1433</span>
+                            <span class="phone-shop">WA +1 (849) 4491433</span>
                         </div>
                     </div>
                     <div class="w-1/2 text-center md:text-left pl-3 pr-5">
@@ -79,59 +79,64 @@
                             <span class="address-shop">Multiplaza Pacific,
                                 Planta Baja, Local A330</span>
                             <span class="phone-shop">
-                                WA 6937-3605</span>
-                        </div>
-                        <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">Albrook Mall, Pasillo del
-                                Canguro, Local L14
-                            </span>
-                            <span class="phone-shop">TEL 309-2597</span>
+                                 TEL +507 69373605</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Metromall. Nivel 2,
                                 Local B 104
                             </span>
-                            <span class="phone-shop">TEL 309-2598</span>
+                            <span class="phone-shop">TEL +507 3092598</span>
                         </div>
+                        <div class="flex flex-col container-country mt-2">
+                            <span class="address-shop">Albrook Mall, Pasillo del
+                                Canguro, Local L14
+                            </span>
+                            <span class="phone-shop">TEL +507 3092597</span>
+                        </div>
+                       
                     </div>
                     <div class="w-1/2 text-center md:text-left pl-3 pr-6">
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-ve.png" class="icon-country">Venezuela</div>
                             <span class="address-shop">Sambil, Caracas,
-                                Nivel Acuario, Local AC-20A
+Nivel Acuario, Local AC-20A
+
                             </span>
                             <span class="phone-shop">
-                                WA 414-865-3445</span>
+                                TEL +58 414-8653445</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">Caracas, Tolón Fashion Mall,
-                                Nivel 2, Local P2-04
+                            <span class="address-shop">Tolón Fashion Mall, Caracas
+Nivel 2, Local P2-04
+
 
                             </span>
-                            <span class="phone-shop">WA 414-865-3445</span>
-                        </div>
-                        <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">
-                                Marcay, Parque Los Aviadores,
-                                Entrada Lago, Local L 379-380
-
-                            </span>
-                            <span class="phone-shop">WA 5841-2313-0114</span>
+                            <span class="phone-shop">TEL +58 414-8653445</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
-                                Maracaibo, Lago Mall,
-                                Nivel Plaza, Local PC-18
+                                Parque Los Aviadores, Maracay
+Entrada Lago, Local L 379-380
 
 
                             </span>
-                            <span class="phone-shop">TEL 5842-4630-9199</span>
+                            <span class="phone-shop">WA +58 412-3130114</span>
+                        </div>
+                        <div class="flex flex-col container-country mt-2">
+                            <span class="address-shop">
+                                Lago Mall, Maracaibo
+Nivel Plaza, Local PC-18
+
+
+                            </span>
+                            <span class="phone-shop">TEL +58 424-6309199</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Sambil, Isla Margarita,
-                                Nivel 1, Local T207
+Nivel 1, Local T207
+
 
                             </span>
                             <span class="phone-shop">TEL 0058-0295-260-2486</span>
@@ -146,28 +151,28 @@
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-gt.png" class="icon-country"> Guatemala</div>
                             <span class="address-shop">Oakland Mall, Nivel 2, Local 203</span>
-                            <span class="phone-shop">WA 5512-6359</span>
+                            <span class="phone-shop">WA +502 55126359</span>
                         </div>
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-sv.png" class="icon-country"> El Salvador</div>
                             <span class="address-shop">Multiplaza, Nivel 2,
                                 Local C57-58</span>
-                            <span class="phone-shop">WA 7808-4388</span>
+                            <span class="phone-shop">WA +503 78084388</span>
                         </div>
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-ni.png" class="icon-country"> Nicaragua</div>
                             <span class="address-shop">Galerías Santo Domingo,
                                 Nivel 2, Local N17</span>
-                            <span class="phone-shop">WA 8700-0915</span>
+                            <span class="phone-shop">WA +505 87000915</span>
                         </div>
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-cr.png" class="icon-country"> Costa Rica</div>
                             <span class="address-shop">Multiplaza Escazú, Nivel 2,
                                 Local 386, V Etapa</span>
-                            <span class="phone-shop">WA 6065-1818</span>
+                            <span class="phone-shop">WA +506 60651818</span>
                         </div>
                         <div class="flex flex-col container-country">
                             <div class="flex items-center   title-country"><img
@@ -175,20 +180,21 @@
                             <span class="address-shop">Multiplaza Pacific,
                                 Planta Baja, Local A330</span>
                             <span class="phone-shop">
-                                WA 6937-3605</span>
-                        </div>
-                        <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">Albrook Mall, Pasillo del
-                                Canguro, Local L14
-                            </span>
-                            <span class="phone-shop">TEL 309-2597</span>
+                                TEL +507 69373605</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Metromall. Nivel 2,
                                 Local B 104
                             </span>
-                            <span class="phone-shop">TEL 309-2598</span>
+                            <span class="phone-shop">TEL +507 3092598</span>
                         </div>
+                        <div class="flex flex-col container-country mt-2">
+                            <span class="address-shop">Albrook Mall, Pasillo del
+                                Canguro, Local L14
+                            </span>
+                            <span class="phone-shop">TEL +507 3092597</span>
+                        </div>
+                    
 
 
                     </div>
@@ -198,62 +204,68 @@
                                     src="../assets/img/icon-countries/icon-hn.png" class="icon-country"> Honduras</div>
                             <span class="address-shop">City Mall Tegucigalpa.
                                 Nivel 1, Local 145-146</span>
-                            <span class="phone-shop">WA 3342-0398</span>
+                            <span class="phone-shop">WA +504 33420398</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">City Mall San Pedro Sula,
                                 Nivel 1, Local 155</span>
-                            <span class="phone-shop">WA 3342-0080</span>
+                            <span class="phone-shop">WA +504 33420080</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Multiplaza, Nivel 2, Local 2013-2014, III Etapa</span>
-                            <span class="phone-shop">WA 3342-0449</span>
+                            <span class="phone-shop">WA +504 33420449</span>
                         </div>
                         <div class="flex flex-col container-country mt-3 ">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-do.png" class="icon-country">R. DOMINICANA</div>
                             <span class="address-shop">Galería 360, Nivel 1, Local 5</span>
-                            <span class="phone-shop">WA 849-449-1435</span>
+                            <span class="phone-shop">WA +1 (849) 4491435</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Agora Mall, Nivel 2, Local 215</span>
-                            <span class="phone-shop">WA 849-449-1433</span>
+                            <span class="phone-shop">WA +1 (849) 4491433</span>
                         </div>
 
                         <div class="flex flex-col container-country pt-4">
                             <div class="flex items-center   title-country"><img
                                     src="../assets/img/icon-countries/icon-ve.png" class="icon-country">Venezuela</div>
                             <span class="address-shop">Sambil, Caracas,
-                                Nivel Acuario, Local AC-20A
-                            </span>
-                            <span class="phone-shop">
-                                WA 414-865-3445</span>
-                        </div>
-                        <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">Caracas, Tolón Fashion Mall,
-                                Nivel 2, Local P2-04
-                            </span>
-                            <span class="phone-shop">WA 414-865-3445</span>
-                        </div>
-                        <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">
-                                Marcay, Parque Los Aviadores,
-                                Entrada Lago, Local L 379-380
-                            </span>
-                            <span class="phone-shop">WA 5841-2313-0114</span>
-                        </div>
-                        <div class="flex flex-col container-country mt-2">
-                            <span class="address-shop">
-                                Maracaibo, Lago Mall,
-                                Nivel Plaza, Local PC-18
+Nivel Acuario, Local AC-20A
+
 
                             </span>
-                            <span class="phone-shop">TEL 5842-4630-9199</span>
+                            <span class="phone-shop">
+                                TEL +58 414-8653445</span>
+                        </div>
+                        <div class="flex flex-col container-country mt-2">
+                            <span class="address-shop">Tolón Fashion Mall, Caracas
+Nivel 2, Local P2-04
+
+                            </span>
+                            <span class="phone-shop">TEL +58 414-8653445</span>
+                        </div>
+                        <div class="flex flex-col container-country mt-2">
+                            <span class="address-shop">
+                                Parque Los Aviadores, Maracay
+Entrada Lago, Local L 379-380
+
+                            </span>
+                            <span class="phone-shop">WA +58 412-3130114</span>
+                        </div>
+                        <div class="flex flex-col container-country mt-2">
+                            <span class="address-shop">
+                                Lago Mall, Maracaibo
+Nivel Plaza, Local PC-18
+
+                            </span>
+                            <span class="phone-shop">TEL +58 424-6309199
+</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">
                                 Sambil, Isla Margarita,
-                                Nivel 1, Local T207
+Nivel 1, Local T207
+
                             </span>
                             <span class="phone-shop">TEL 0058-0295-260-2486</span>
                         </div>
