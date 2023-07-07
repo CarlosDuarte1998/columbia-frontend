@@ -62,7 +62,12 @@ onMounted(async () => {
         />
       </svg>
     </button>
-    <div class="container-competitor flex lg:p-16 mt-8">
+    <div class="absolute">
+      <div class="">
+        <img src="../../assets/img/logo-columbia.png" alt="" class="filter invert logo ml-5">
+      </div>
+    </div>
+    <div class="container-competitor flex lg:p-16 mt-1">
       
       <div class="w-2/4 container-img">
         <div v-for="competitor in competitor.images" :key="competitor.id" class="flex justify-center items-center">
@@ -79,8 +84,8 @@ onMounted(async () => {
         <p class="info-competitor">
           {{ competitor.instagram_biography }}
         </p>
-        <p class="challenge-competitor">
-          Challenge: Walk 1,893 meters
+        <p class="challenge-competitor hidden">
+          Reto: 1,893 meters
         </p>
       </div>
     </div>
@@ -90,8 +95,11 @@ onMounted(async () => {
 
 <style scoped>
 
-
-
+.logo{
+  width: 50%;
+  height: auto;
+  margin-top: 15px;
+}
 .container-img {
   display: flex;
   justify-content: center;
@@ -172,6 +180,9 @@ onMounted(async () => {
 }
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991px) {
+  .container-competitor {
+    margin: 40px 0px 40px 0px;
+  }
   .container-content {
     display: block;
   }
@@ -205,8 +216,10 @@ onMounted(async () => {
 
 /* Mobile */
 @media (max-width: 767px) {
+  
   .container-competitor {
     flex-direction: column;
+    margin-top: 70px;
   }
   .confirm-modal-content {
     width: 100%;
@@ -217,6 +230,7 @@ onMounted(async () => {
   .container-infoCompetitor {
     width: 100%;
     text-align: center;
+    padding: 20px 30px 20px 30px;
   }
   .btn-close svg{
     width: 20px;

@@ -571,8 +571,16 @@ video {
   margin-left: 2.5rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-10 {
@@ -593,10 +601,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .block {
@@ -950,7 +954,7 @@ html, body {
   padding: 0rem;
   background-color: #ffffff;
   border-radius: 0.5rem;
-  width: 80%;
+  width: 70%;
 }
 
 .flip-clock__slot{
@@ -1008,6 +1012,10 @@ html, body {
   .social-modal-content{
     width: 55%;
   }
+
+  .competitor-modal-content{
+    width: 50%;
+  }
 }
 
 /* PC */
@@ -1018,6 +1026,9 @@ html, body {
 /* Tablet */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .competitor-modal-content{
+    width: 90%;
+  }
 }
 
 /* Mobile */
