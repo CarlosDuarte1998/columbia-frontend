@@ -47,7 +47,7 @@ onMounted(() => {
   <div @click="openSocial" class="btn-social">
     <div>
       <button class="container-social z-50">
-        <img src="../../assets/img/icon-foUS-social.png" alt="" sizes="" srcset="">
+        <img src="../../assets/img/icon-foUS-social.png" alt="" sizes="" srcset="" >
       </button>
     </div>
   </div>
@@ -65,6 +65,12 @@ onMounted(() => {
   width: 80%;
   height: 100%;
   
+}
+.container-social:focus {
+  outline: none;
+}
+.container-ofert:focus {
+  outline: none;
 }
 .btn-social {
   position: fixed;

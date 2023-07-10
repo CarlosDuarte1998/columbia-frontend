@@ -265,7 +265,6 @@ Nivel Plaza, Local PC-18
                             <span class="address-shop">
                                 Sambil, Isla Margarita,
 Nivel 1, Local T207
-
                             </span>
                             <span class="phone-shop">TEL 0058-0295-260-2486</span>
                         </div>
