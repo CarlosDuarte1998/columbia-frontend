@@ -1071,19 +1071,6 @@ html, body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.focus\:border:focus {
-  border-width: 1px;
-}
-
-.focus\:border-transparent:focus {
-  border-color: transparent;
-}
-
-.focus\:border-white:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 @media (min-width: 640px) {
   .sm\:mt-3 {
     margin-top: 0.75rem;

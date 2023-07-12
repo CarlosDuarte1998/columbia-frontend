@@ -84,8 +84,8 @@ onMounted(async () => {
         <p class="info-competitor">
           {{ competitor.instagram_biography }}
         </p>
-        <p class="challenge-competitor hidden">
-          Reto: 1,893 meters
+        <p class="challenge-competitor ">
+          Reto: {{ competitor.challenge }}
         </p>
       </div>
     </div>
