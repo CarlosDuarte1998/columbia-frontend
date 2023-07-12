@@ -25,14 +25,14 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
                     </div>
                     <div >
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            target="_blank" href="#">
+                            target="_blank" href="https://www.instagram.com/columbia_sv/">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_SV</span>
                         </a>
                     </div>
                     <div >
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            target="_blank" href="#">
+                            target="_blank" href="https://www.instagram.com/columbia_rd/">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_RD</span>
                         </a>
@@ -67,7 +67,7 @@ import { VueFinalModal, ModalsContainer } from "vue-final-modal";
                     </div>
                     <div >
                         <a class="btn-social uppercase text-lg font-gerttsm bg-black text-white p-4 border flex item-center justify-center border-black hover:text-black hover:bg-white transition duration-150"
-                            target="_blank" href="#">
+                            target="_blank" href="https://www.instagram.com/columbiacr/">
                             <img src="../../assets/img/instagram-social.svg" class="icon-social transition duration-150" />
                             <span>@columbia_CR</span>
                         </a>
