@@ -865,6 +865,10 @@ video {
   transition-duration: 500ms;
 }
 
+.duration-700 {
+  transition-duration: 700ms;
+}
+
 /*Fuentes desde ./fonts/poppins*/
 
 @font-face {

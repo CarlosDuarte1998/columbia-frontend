@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lt": "npx lt --port 3000 --subdomain columbia-dive",
+    "lt": "npx lt --port 3000 --subdomain dive-columbia",
     "tailwind": "npx tailwindcss -i ./src/assets/input.css -o ./src/assets/tailwind.min.css --watch"
   },
   "dependencies": {

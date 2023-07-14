@@ -4,6 +4,7 @@ import { ref, onMounted } from "vue";
 import { useModal } from "vue-final-modal";
 import FacebookSocialModal from "./Modal/FacebookSocialModal.vue";
 import SectionFooter from "./SectionFooter.vue";
+import goatAwards from "../assets/svg/goat-awards.vue";
 
 const isMobile = ref(window.matchMedia("(max-width: 767px)").matches);
 const showFooterShop = ref(false);
@@ -100,7 +101,8 @@ function showFooter() {
             </div>
           </div>
           <div class="container-img-btg">
-            <img src="../assets/img/goat-award.png" alt="" class="img-portada2" />
+            <img src="../assets/img/goat-award.png" alt="" class="img-portada2 hidden" />
+            <goatAwards class="img-portada2" />
           </div>
         </div>
         <div class="mt-12 mb-7">
@@ -312,13 +314,13 @@ function showFooter() {
 }
 
 .img-portada2 {
-  width: 100%;
+  width: auto;
 }
 
 /* Pantallas grandes */
 @media (min-width: 1500px) {
   .img-portada2 {
-    width: 70%;
+    width: 98%;
   }
 
   .img-portada1 {
@@ -429,7 +431,7 @@ function showFooter() {
   }
 
   .img-portada2 {
-    width: 90%;
+    width: 98%;
   }
 
   .container-shops{
