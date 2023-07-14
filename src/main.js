@@ -12,6 +12,7 @@ import VueSweetalert2 from 'vue-sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css'
 import './axios'
 
+
 //Se agrega los iconos de fontawesome
 library.add(IconsFa.faAngleDown)
 
@@ -20,4 +21,5 @@ const app = createApp(App)
 const vfm = createVfm()
 app.use(pinia)
 app.component('font-awesome-icon', FontAwesomeIcon)
+
 app.use(vfm).mount('#app')

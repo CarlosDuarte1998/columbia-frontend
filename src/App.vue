@@ -7,10 +7,12 @@ import PageSection4 from "./components/PageSection4.vue";
 import PageSection5 from "./components/PageSection5.vue";
 import PageSection6 from "./components/PageSection6.vue";
 import FloatingButton from "./components/Modal/FloatingButton.vue";
+import GoogleAnalatitycs from "./components/GoogleAnalatitycs.vue";
 </script>
 
 <template>
  <div class="bg-page">
+    <GoogleAnalatitycs />
   <FloatingButton class="mx-auto z-50" />
   <ModalsContainer />
   <PageSection1 class="mx-auto" />
