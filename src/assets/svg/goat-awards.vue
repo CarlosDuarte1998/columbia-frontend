@@ -1,9 +1,22 @@
 <script setup>
+import { ModalsContainer, useModal } from "vue-final-modal";
+import FilterIG from '../../components/Modal/FilterIG.vue';
 
-//Se agrega una funcion que hacer click en un elemento del svg abra a instagram en una nueva pestaña
+const { open: openFilter, close: closeFilter } = useModal({
+  component: FilterIG,
+  props: {
+  },
+  attrs: {
+    onConfirm() {
+      closeFilter();
+    },
+  },
+ 
+});
+
 
 function goToFilter() {
-  window.open("https://www.instagram.com/columbia_cr/", "_blank");
+  openFilter()
 }
 </script>
 <template>

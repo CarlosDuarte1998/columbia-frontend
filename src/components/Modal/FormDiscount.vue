@@ -20,6 +20,14 @@ const register = ref([]);
 onMounted(async () => {
   await countryStore.getCountries();
   countries.value = countryStore.countries;
+ 
+  const currentDate = new Date();
+  const targetDate = new Date("2023-07-19");
+
+  if (currentDate < targetDate) {
+    countries.value.splice(2, 1);
+  }
+
 });
 
 // Validacion de formulario
@@ -69,8 +77,11 @@ const submitForm = async () => {
       <input type="email" placeholder="Correo Electrónico" class="input-email"  v-model="formData.email" required/>
       <select name="" id="" class="input-select"  v-model="formData.country_id" required>
         <option value="" disabled selected>País</option>
-        <option class="item-country" v-for="country in countries" :key="country.id" :value=" country.id " >{{
-          country.name }}</option>
+        
+        <option class="item-country" v-for="country in countries" :key="country.id" :value="country.id">
+  {{ country.name }}
+</option>
+
       </select>
       <input type="submit" value="Obtener descuento" />
     </form>
