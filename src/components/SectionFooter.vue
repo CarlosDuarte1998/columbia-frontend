@@ -82,16 +82,16 @@
                                 <img src="../assets/img/icon-countries/icon-pa.png" class="icon-country" />Panamá
                             </div>
                             <span class="address-shop">Multiplaza Pacific, Planta Baja, Local A330</span>
-                            <span class="phone-shop"> TEL +507 69373605</span>
+                            <span class="phone-shop"> WA: +507 69373605</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Metromall. Nivel 2, Local B 104 </span>
-                            <span class="phone-shop">TEL +507 3092598</span>
+                            <span class="phone-shop">WA: +507 69367922</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Albrook Mall - Acceso K-Kanguro, Local L14
                             </span>
-                            <span class="phone-shop">TEL +507 3092597</span>
+                            <span class="phone-shop">WA: +507 68312808</span>
                         </div>
                     </div>
                     <div class="w-1/2 text-center md:text-left pl-3 pr-6">
@@ -169,16 +169,16 @@
                                 <img src="../assets/img/icon-countries/icon-pa.png" class="icon-country" />Panamá
                             </div>
                             <span class="address-shop">Multiplaza Pacific, Planta Baja, Local A330</span>
-                            <span class="phone-shop"> TEL +507 69373605</span>
+                            <span class="phone-shop"> WA: +507 69373605</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Metromall. Nivel 2, Local B 104 </span>
-                            <span class="phone-shop">TEL +507 3092598</span>
+                            <span class="phone-shop">WA: +507 69367922</span>
                         </div>
                         <div class="flex flex-col container-country mt-2">
                             <span class="address-shop">Albrook Mall - Acceso K-Kanguro, Local L14
                             </span>
-                            <span class="phone-shop">TEL +507 3092597</span>
+                            <span class="phone-shop">WA: +507 68312808</span>
                         </div>
                     </div>
                     <div class="p-2">
