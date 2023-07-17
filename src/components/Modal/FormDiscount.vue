@@ -21,12 +21,6 @@ onMounted(async () => {
   await countryStore.getCountries();
   countries.value = countryStore.countries;
  
-  const currentDate = new Date();
-  const targetDate = new Date("2023-07-19");
-
-  if (currentDate < targetDate) {
-    countries.value.splice(2, 1);
-  }
 
 });
 
