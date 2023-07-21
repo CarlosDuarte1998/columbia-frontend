@@ -93,6 +93,11 @@
                             </span>
                             <span class="phone-shop">WA: +507 68312808</span>
                         </div>
+                        <div class="flex flex-col container-country mt-2">
+                            <span class="address-shop">Próximamente en Aeropuerto Internacional de Tocumen
+                            </span>
+                            
+                        </div>
                     </div>
                     <div class="w-1/2 text-center md:text-left pl-3 pr-6">
                         <div class="flex flex-col container-country">
@@ -179,6 +184,11 @@
                             <span class="address-shop">Albrook Mall - Acceso K-Kanguro, Local L14
                             </span>
                             <span class="phone-shop">WA: +507 68312808</span>
+                        </div>
+                        <div class="flex flex-col container-country mt-2">
+                            <span class="address-shop">Próximamente en Aeropuerto Internacional de Tocumen
+                            </span>
+                           
                         </div>
                     </div>
                     <div class="p-2">

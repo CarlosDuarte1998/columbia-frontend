@@ -36,7 +36,7 @@ watch(() => historyStore.hist, (newHist, oldHist) => {
     if(orderHistories.value[i].id == 10){
       dataHistories.value[0] = orderHistories.value[i];
     }
-    if(orderHistories.value[i].id == 13){
+    if(orderHistories.value[i].id == 9){
       dataHistories.value[1] = orderHistories.value[i];
     }
     if(orderHistories.value[i].id == 6){
@@ -45,7 +45,7 @@ watch(() => historyStore.hist, (newHist, oldHist) => {
     if(orderHistories.value[i].id == 12){
       dataHistories.value[3] = orderHistories.value[i];
     }
-    if(orderHistories.value[i].id == 9){
+    if(orderHistories.value[i].id == 13){
       dataHistories.value[4] = orderHistories.value[i];
     }
     if(orderHistories.value[i].id == 5){
@@ -84,7 +84,7 @@ watch(() => historyStore.hist, (newHist, oldHist) => {
                     <img :src="competidor.images[0].url" alt="" class="profile-competitor" />
                   </div>
                   <div class="block competitor-info">
-                    <span class="competitor-destination">RECORRIDO: {{ competidor.challenge }}</span><br />
+                    <span class="competitor-destination">RECORRIDO: {{ competidor.id }}</span><br />
                     <span class="competitor-country"> {{ competidor.country.name }}</span><br />
                     <span class="competitor-destino">Destino <br />{{ destino[competidor.id] }} <br /></span>
                     <span class="competitor-challengeDate">Fecha del reto<br />
