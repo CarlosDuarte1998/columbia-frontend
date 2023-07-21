@@ -84,9 +84,10 @@ onMounted(async () => {
         <p class="info-competitor">
           {{ competitor.instagram_biography }}
         </p>
-        <p class="challenge-competitor ">
-          Reto: {{ competitor.challenge }} metros
-        </p>
+        <div class="challenge-competitor ">
+          <p> <span class=" font-gerttb">Reto:</span> {{ competitor.challenge }} metros</p>
+          <p v-if="competitor.destination" class="destination-competitor pt-2"><span class=" font-gerttb">Destino:</span> {{ competitor.destination }}</p>
+        </div>
       </div>
     </div>
 </div>
@@ -94,7 +95,9 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-
+.destination-competitor{
+  font-size: 1rem;
+}
 .logo{
   width: 50%;
   height: auto;
@@ -120,7 +123,7 @@ onMounted(async () => {
   text-align: start;
 }
 .name-competitor {
-  font-size: 40px;
+  font-size: 35px;
   font-family: "GerTT-Bold";
 }
 .user-competitor {
@@ -131,12 +134,14 @@ onMounted(async () => {
   font-size: 1rem;
   font-family: "GerTT-medium";
   margin-top: 15px;
+  line-height: 18px;
 }
 
 .challenge-competitor {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "GerTT-Medium";
   margin-top: 15px;
+  line-height: 19px;
 }
 .img-competitor {
   width: 100%;
@@ -173,6 +178,7 @@ onMounted(async () => {
 
 /* Pantallas grandes */
 @media (min-width: 1500px) {
+  
 }
 
 /* PC */
@@ -217,6 +223,7 @@ onMounted(async () => {
 /* Mobile */
 @media (max-width: 767px) {
   
+  
   .container-competitor {
     flex-direction: column;
     margin-top: 70px;
@@ -240,8 +247,20 @@ onMounted(async () => {
     right: -10px;
   }
   .img-competitor{
-    width: 90%;
+    width: 70%;
   }
-  
+  .name-competitor{
+    font-size: 30px;
+  }
+  .user-competitor{
+    font-size: 20px;
+  }
+  .info-competitor{
+    line-height: 16px;
+  }
+  .challenge-competitor, .destination-competitor{
+    font-size: 16px;
+    line-height: 17px;
+  }
 }
 </style>

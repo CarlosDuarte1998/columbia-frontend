@@ -164,7 +164,7 @@ const event = {
 
 
 .rate-discount {
-  font-size: 95px;
+  font-size: 85px;
   font-family: "GerTT-Bold";
   text-align: center;
 }

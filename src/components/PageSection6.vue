@@ -318,7 +318,7 @@ function showFooter() {
 }
 
 /* Pantallas grandes */
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
   .img-portada2 {
     width: 98%;
   }

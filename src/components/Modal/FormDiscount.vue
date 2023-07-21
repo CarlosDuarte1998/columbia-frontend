@@ -57,8 +57,6 @@ const submitForm = async () => {
   } catch (error) {
     console.error(error);
     showMessagesError.value = true;
-   
-  
   }
 };
 </script>

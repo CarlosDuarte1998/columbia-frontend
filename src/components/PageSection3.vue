@@ -105,7 +105,7 @@ export default {
     margin-top: 15px;
 }
 /* Pantallas grandes */
-@media (min-width: 1500px) {
+@media (min-width: 1600px) {
     .img-section{
     display: flex;
     position: relative;
