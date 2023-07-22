@@ -84,7 +84,7 @@ watch(() => historyStore.hist, (newHist, oldHist) => {
                     <img :src="competidor.images[0].url" alt="" class="profile-competitor" />
                   </div>
                   <div class="block competitor-info">
-                    <span class="competitor-destination">RECORRIDO: {{ competidor.id }}</span><br />
+                    <span class="competitor-destination">RECORRIDO: {{ competidor.challenge }}</span><br />
                     <span class="competitor-country"> {{ competidor.country.name }}</span><br />
                     <span class="competitor-destino">Destino <br />{{ destino[competidor.id] }} <br /></span>
                     <span class="competitor-challengeDate">Fecha del reto<br />
