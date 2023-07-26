@@ -17,7 +17,7 @@ onMounted(async () => {
 const destino = ref({
   5: 'Cerro El Águila',
   13: 'Volcán de Fuego',
-  9: 'Pendiente',
+  9: 'Parque Nacional Montaña de Santa Bárbara',
   6: 'Volcán Telica',
   4: 'Valle del Tetero',
   10: 'Cerro Chame',
