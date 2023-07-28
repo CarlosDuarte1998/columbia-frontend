@@ -15,7 +15,7 @@ onMounted(async () => {
 });
 
 const destino = ref({
-  5: 'Cerro El Águila',
+  5: 'Cerró Imán, Metapan',
   13: 'Volcán de Fuego',
   9: 'Parque Nacional Montaña de Santa Bárbara',
   6: 'Volcán Telica',
