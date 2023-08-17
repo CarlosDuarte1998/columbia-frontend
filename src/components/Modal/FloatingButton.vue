@@ -3,6 +3,7 @@ import { onMounted, ref } from "vue";
 import { ModalsContainer, useModal } from "vue-final-modal";
 import DiscountModal from "./DiscountModal.vue";
 import socialModal from "./SocialModal.vue";
+import CompetitionVideo from "./CompetitionVideo.vue";
 
 const { open: openOfert, close: closeOfert } = useModal({
   component: DiscountModal,
@@ -28,8 +29,24 @@ const { open: openSocial, close: closeSocial } = useModal({
  
 });
 
+const { open: openVideo, close: closeVideo } = useModal({
+  component: CompetitionVideo,
+  props: {
+  },
+  attrs: {
+    onConfirm() {
+      closeVideo();
+    },
+  },
+ 
+});
+
+
+
 onMounted(() => {
-  openOfert();
+  // openOfert();
+  // openSocial();
+   openVideo();
 });
 
 </script>

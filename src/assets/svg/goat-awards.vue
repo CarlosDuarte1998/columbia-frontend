@@ -46,10 +46,10 @@ function goToFilter() {
         </g>
         <g id="Grupo_576" data-name="Grupo 576" >
           <g id="Grupo_575" data-name="Grupo 575" class="cls-6">
-            <text id="MANTENTE_PENDIENTE_Y_PARTICIPA_PARA" data-name="MANTENTE PENDIENTE Y PARTICIPA PARA" class="cls-7" transform="translate(889.168 673.431)"><tspan x="0" y="0">MANTENTE PENDIENTE Y PARTICIPA PARA</tspan></text>
+            <text id="MANTENTE_PENDIENTE_Y_PARTICIPA_PARA" data-name="MANTENTE PENDIENTE Y PARTICIPA PARA" class="cls-7" transform="translate(889.168 673.431)"><tspan x="0" y="0"></tspan></text>
           </g>
         </g>
-        <text id="GANAR_PREMIOS" data-name="GANAR PREMIOS" class="cls-8" transform="translate(976.969 725.806)"><tspan x="0" y="0">GANAR PREMIOS</tspan></text>
+        <text id="GANAR_PREMIOS" data-name="GANAR PREMIOS" class="cls-8" transform="translate(976.969 725.806)"><tspan x="0" y="0"></tspan></text>
         <g id="Grupo_629" data-name="Grupo 629" transform="translate(37 22)" @click="goToFilter">
           <rect id="Rectángulo_402" data-name="Rectángulo 402" class="cls-9" width="478.227" height="86.607" transform="translate(897.355 521.696)"/>
           <text id="USA_NUESTRO_FILTRO" data-name="USA NUESTRO FILTRO" class="cls-10" transform="translate(925.383 576.343)"><tspan x="0" y="0">USA NUESTRO FILTRO</tspan></text>
