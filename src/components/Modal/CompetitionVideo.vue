@@ -4,37 +4,36 @@ import { onMounted } from 'vue';
 
 onMounted(() => {
     onYouTubeIframeAPIReady();
-    const containerSocial = document.querySelector(".videofb");
-if (containerSocial) {
-  setTimeout(() => {
-    containerSocial.click();
-  }, 2000); // 2000 milisegundos = 2 segundos
-}
-
-
 });
 
 var player;
 
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            height: '315',
-            width: '560',
-            videoId: 'Ypx6w5Aqmow', // Cambia esto al ID del video que proporcionaste
-            playerVars: {
-                'controls': 0,
-                'autoplay': 1,
-                'mute': 1,
-                showinfo: 0,
-                rel: 0,
-                loop: 1,
-            },
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
+function onYouTubeIframeAPIReady() {
+    player = createPlayer('Ypx6w5Aqmow'); 
+}
+
+function createPlayer(videoId) {
+    var player = new YT.Player('player', {
+        height: '315',
+        width: '560',
+        videoId: videoId,
+        playerVars: {
+            modestbranding: 1,
+            showinfo: 0,
+            controls: 0,
+            rel: 0,
+            autoplay: 1,
+            mute: 1,
+            loop: 1,
+        },
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+
+    return player;
+}
 
 function onPlayerReady(event) {
     event.target.playVideo();
@@ -43,15 +42,11 @@ function onPlayerReady(event) {
 var done = false;
 function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.PLAYING && !done) {
-     
+        setTimeout(stopVideo, 6000);
+        done = true;
     }
 }
-
-function stopVideo() {
-    player.stopVideo();
-}
 </script>
-
 <template>
     <VueFinalModal class="social-modal" content-class="social-modal-content" overlay-transition="vfm-fade"
         content-transition="vfm-fade" lock-scroll="true">
@@ -64,18 +59,16 @@ function stopVideo() {
                 </div>
                 <div class="grid grid-cols-1 gap-1 iframe-video">
 
-                    <!-- <iframe
-              src="https://www.youtube.com/embed/Ypx6w5Aqmow?controls=0&autoplay=1&mute=1&loop=1&playlist=Ypx6w5Aqmow"
-              width="560"
-              height="315"
-              frameborder="0"
-              allowfullscreen
-            
-            ></iframe> -->
+                    <div id="player"></div>
+                
 
-                    <!-- <div id="player"></div> -->
 
-                    <iframe id="videofb" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FColumbiaSportswearDominicanRepublic%2Fvideos%2F1010355243428628%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    <!-- iframe de facebook -->
+                    <!-- <div class="fb-video" data-href="https://www.facebook.com/watch/?v=1010355243428628" data-width="500"
+                        data-show-text="false" data-allowfullscreen="true" data-autoplay="true" data-show-captions="false">
+                    </div> -->
+
+
                 </div>
                 <div class="mt-14 text-3xl font-gerttb text-goat"><span>#BETHEGOAT</span></div>
             </div>
@@ -84,16 +77,14 @@ function stopVideo() {
 </template>
 
 <style scoped>
-
-
-#player{
+#player {
     pointer-events: none;
 }
 
 .iframe-video>iframe {
     width: 560px;
     height: 315px;
-   
+
 }
 
 
